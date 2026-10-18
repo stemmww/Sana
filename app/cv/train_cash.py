@@ -1,4 +1,4 @@
-"""Fine-tune a local YOLO detector on reviewed cash frames (CPU by default)."""
+"""Fine-tune a local YOLO detector on reviewed frames (CUDA when available)."""
 
 import argparse
 import json
@@ -24,7 +24,11 @@ def main() -> None:
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--imgsz", type=int, default=768)
     parser.add_argument("--batch", type=int, default=4)
-    parser.add_argument("--device", default="cpu")
+    parser.add_argument(
+        "--device",
+        default="",
+        help="Default: available CUDA GPU, otherwise CPU; use 0 or cpu to force",
+    )
     parser.add_argument("--name", default="baseline")
     args = parser.parse_args()
     if not args.base.is_file() or not args.data.is_file():

@@ -1,0 +1,7 @@
+{
+  "data\\counter_occupancy_v1\\opencv-models.json": "843d7ec961cbf224cb29c0a8c73f315a01443da5d6395afdbee047a2c8e37ea7",
+  "data\\counter_occupancy_v1\\cnn-models.json": "f1322927f08425ed3e4a0070ffeb6ca23041df99a0f669f538c0ced181d0d627",
+  "data\\counter_occupancy_v1\\empty-reference.png": "a71218ee2b59cc56951651f939a6e3f1b50d1ef041bee160dd51fc5cdde26014",
+  "datasets\\counter_occupancy_v1\\annotations.json": "373b429fa6ea43f5d8dd312e0c8cb3889fa59196a3f927737122cafde61ceda6",
+  "datasets\\counter_occupancy_v1\\validation.json": "070d41da44cb25a155bda5a196a37a1e68903c50753212bfdfa903e5fced3203"
+}

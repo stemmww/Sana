@@ -1,0 +1,371 @@
+{
+  "items": [
+    {
+      "id": "x01_008",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": [
+        "missing_id_card_in_hand"
+      ]
+    },
+    {
+      "id": "x01_012",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": []
+    },
+    {
+      "id": "x01_018",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": [
+        "excluded_positive_cash_at_counter",
+        "missing_id_card_on_table"
+      ]
+    },
+    {
+      "id": "x01_022",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": []
+    },
+    {
+      "id": "x04_015",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": [
+        "missing_id_card_in_hand"
+      ]
+    },
+    {
+      "id": "x04_030",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": [
+        "missing_cash_at_counter",
+        "missing_id_card_on_table"
+      ]
+    },
+    {
+      "id": "x04_045",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": []
+    },
+    {
+      "id": "x04_057",
+      "original_split": "train",
+      "disposition": "replaced_by_denser_reviewed_sequence",
+      "issues": []
+    },
+    {
+      "id": "x13_015",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x13_030",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x13_045",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x13_055",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x14_025",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x14_055",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x14_085",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x14_115",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x20_002",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x20_005",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x20_008",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x26_003",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x26_006",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x26_009",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x35_015",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x35_030",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x35_045",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x43_005",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x43_010",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x43_018",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x46_005",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x46_010",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x46_015",
+      "original_split": "train",
+      "disposition": "retained_after_visual_review",
+      "issues": []
+    },
+    {
+      "id": "x05_015",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": [
+        "cash_box_identity_or_boundary_ambiguous",
+        "unlabelled_id_in_cashier_hand"
+      ]
+    },
+    {
+      "id": "x05_030",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": [
+        "missing_cash_at_counter",
+        "missing_id_card_on_table"
+      ]
+    },
+    {
+      "id": "x05_045",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x12_008",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x12_020",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x28_003",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x28_007",
+      "original_split": "train",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x08_008",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x08_015",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x08_025",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x08_032",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x39_020",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x39_035",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x39_050",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x39_065",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x27_003",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x27_007",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x27_011",
+      "original_split": "val",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x38_010",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x38_020",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x38_033",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x38_045",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x45_010",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x45_020",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x45_030",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x38_002",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    },
+    {
+      "id": "x45_002",
+      "original_split": "test",
+      "disposition": "excluded_pending_separate_two_class_sequence_review",
+      "issues": []
+    }
+  ],
+  "original_count": 58,
+  "annotation_duplicates_exact": 0,
+  "out_of_bounds_boxes": 0
+}

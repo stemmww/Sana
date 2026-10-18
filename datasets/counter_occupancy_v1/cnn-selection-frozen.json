@@ -1,0 +1,7 @@
+{
+  "model_sha256": "f1322927f08425ed3e4a0070ffeb6ca23041df99a0f669f538c0ced181d0d627",
+  "selected_model": "mobilenet_v3_small_frozen_ridge_10",
+  "train_annotation_sha256": "373b429fa6ea43f5d8dd312e0c8cb3889fa59196a3f927737122cafde61ceda6",
+  "opencv_validation_seen_before_fallback": true,
+  "fixed_validation_used_for_fit_or_threshold": false
+}

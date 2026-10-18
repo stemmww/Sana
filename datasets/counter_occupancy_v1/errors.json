@@ -1,0 +1,412 @@
+[
+  {
+    "model": "absolute_difference",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 5.376840696117805,
+    "result": "FN"
+  },
+  {
+    "model": "absolute_difference",
+    "id": "v03_01900",
+    "timecode_sec": 18.99654980523094,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 6.443620636391721,
+    "result": "FN"
+  },
+  {
+    "model": "absolute_difference",
+    "id": "v03_01950",
+    "timecode_sec": 19.498219254312744,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 6.388888888888889,
+    "result": "FN"
+  },
+  {
+    "model": "absolute_difference",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 5.502831840181238,
+    "result": "FN"
+  },
+  {
+    "model": "absolute_difference",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 5.6451961692925545,
+    "result": "FN"
+  },
+  {
+    "model": "absolute_difference",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 6.424261147152714,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 14.652412414550781,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v03_01900",
+    "timecode_sec": 18.99654980523094,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 19.13582992553711,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v03_01950",
+    "timecode_sec": 19.498219254312744,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 18.666513442993164,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 17.926513671875,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 18.484947204589844,
+    "result": "FN"
+  },
+  {
+    "model": "compensated_difference_p98",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 20.841938018798828,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_1",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.5989838748408503,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_1",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.7365610914119789,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_1",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.3063619657156669,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_10",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.0563431719193188,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_10",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.6360358052215289,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_10",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.9238607055825137,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_10",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 0.17787482840842164,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_100",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.41843043973394006,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_100",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.3623899608215842,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_100",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.3660299762194628,
+    "result": "FN"
+  },
+  {
+    "model": "color_texture_ridge_100",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": 0.2349160635012722,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.52644832213878,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v03_01900",
+    "timecode_sec": 18.99654980523094,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.28210323243433033,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v03_01950",
+    "timecode_sec": 19.498219254312744,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.09166839306715237,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.8065898702615915,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.0380134067439988,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_1",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.4168041919444927,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.5414995500481699,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v03_01900",
+    "timecode_sec": 18.99654980523094,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.31165024993926127,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v03_01950",
+    "timecode_sec": 19.498219254312744,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.14626511797713976,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.7743360366255574,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.9806324120739212,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_10",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.3535412881006803,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v03_01850",
+    "timecode_sec": 18.49488035614914,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.5495231119805306,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v03_01900",
+    "timecode_sec": 18.99654980523094,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.3713327949037191,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v03_01950",
+    "timecode_sec": 19.498219254312744,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.2947893265183055,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v02_01550",
+    "timecode_sec": 15.493856209150326,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.5922450489031479,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v02_01600",
+    "timecode_sec": 15.995816993464052,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -0.7079446056353548,
+    "result": "FN"
+  },
+  {
+    "model": "mobilenet_v3_small_frozen_ridge_100",
+    "id": "v02_01650",
+    "timecode_sec": 16.497777777777777,
+    "subset": "six_counter_without_hand",
+    "label": "CASH_PRESENT",
+    "prediction": "EMPTY",
+    "score": -1.0083753443282089,
+    "result": "FN"
+  }
+]

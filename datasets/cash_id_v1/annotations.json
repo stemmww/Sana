@@ -1,0 +1,4471 @@
+{
+  "classes": [
+    "cash",
+    "id_card"
+  ],
+  "items": [
+    {
+      "id": "v01_00000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 0.0,
+      "image": "data\\cash_id\\frames\\v01_00000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "8c7860b27a573f03238f603ff2d8086db0b38584a01fed060b2c9b2c6eac5f79"
+    },
+    {
+      "id": "v01_00400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 4.010309278350515,
+      "image": "data\\cash_id\\frames\\v01_00400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b1de4837bf488606dc63076e04f65af464c7bfcfb33bca7d888bbc97b5e2bc87"
+    },
+    {
+      "id": "v01_00550",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 5.514175257731958,
+      "image": "data\\cash_id\\frames\\v01_00550.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            104,
+            376,
+            118,
+            384
+          ],
+          "category": "id_customer_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5cf7945f46de1d391568e1949411b57e8912d72bbb14f13aaf1a2621f21956c2"
+    },
+    {
+      "id": "v01_00600",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 6.015463917525773,
+      "image": "data\\cash_id\\frames\\v01_00600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            135,
+            405,
+            149,
+            413
+          ],
+          "category": "id_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "d1b0e4114b6f420ef98a054b987339a0568eb4020951863f07cde1a91b9c0711"
+    },
+    {
+      "id": "v01_00650",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 6.483333333333333,
+      "image": "data\\cash_id\\frames\\v01_00650.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            165,
+            409,
+            178,
+            419
+          ],
+          "category": "id_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b2185083c7ae3b4daad9e2262a4d1f6b6468418d1315f4fb1b49e94d1f66a7af"
+    },
+    {
+      "id": "v01_00700",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 6.984621993127147,
+      "image": "data\\cash_id\\frames\\v01_00700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            176,
+            405,
+            192,
+            422
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b1f5d0d67117afaf5f3cc1577cbedee75d6be8aa3d235ffc6e0fe638efa042ef"
+    },
+    {
+      "id": "v01_00750",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 7.485910652920961,
+      "image": "data\\cash_id\\frames\\v01_00750.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            197,
+            415,
+            207,
+            428
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "e80da0bcc12a5d72c7b68d91538d3d2abe872b25716b341f437a0e52e70602ce"
+    },
+    {
+      "id": "v01_00850",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 8.48848797250859,
+      "image": "data\\cash_id\\frames\\v01_00850.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            194,
+            423,
+            207,
+            439
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "bf27c2f84495c77adf7ca157a4f8bdc7775ae9c7cf4cab879ef9629d633c48ef"
+    },
+    {
+      "id": "v01_00900",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 8.989776632302405,
+      "image": "data\\cash_id\\frames\\v01_00900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "f1ed55731e64b837a62b8e3b54c26b04b2d3f43bbcb982ab3a0e089af8f66c2f"
+    },
+    {
+      "id": "v01_00950",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 9.49106529209622,
+      "image": "data\\cash_id\\frames\\v01_00950.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            153,
+            399,
+            162,
+            412
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "763250b0f8f53084e6ae39bf7a1dec54876d796ad7355ca81014850ed6a37ae2"
+    },
+    {
+      "id": "v01_01000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 9.992353951890033,
+      "image": "data\\cash_id\\frames\\v01_01000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            167,
+            421,
+            181,
+            427
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "82693da8f14664347b42dbaa180b5808140cbc2bd6021125f500604092285eca"
+    },
+    {
+      "id": "v01_01050",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 10.493642611683848,
+      "image": "data\\cash_id\\frames\\v01_01050.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended."
+    },
+    {
+      "id": "v01_01100",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 10.994931271477663,
+      "image": "data\\cash_id\\frames\\v01_01100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            177,
+            418,
+            189,
+            427
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ecf6a80c4a09c2db401626fdb026291cf66bee56550276cff90d8d7119703075"
+    },
+    {
+      "id": "v01_01200",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 11.99750859106529,
+      "image": "data\\cash_id\\frames\\v01_01200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            188,
+            441,
+            210,
+            458
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "50a54b16b22dc4cb0784ff612f9e3e523909fa94f8e0fddb656261ca73f712a4"
+    },
+    {
+      "id": "v01_01300",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 13.00008591065292,
+      "image": "data\\cash_id\\frames\\v01_01300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            421,
+            205,
+            446
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "a6b0d9c7b2cf75bccaacfc63690b471c0ed1ad44fba168b0c43611077073a18e"
+    },
+    {
+      "id": "v01_01350",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 13.501374570446735,
+      "image": "data\\cash_id\\frames\\v01_01350.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            165,
+            430,
+            186,
+            451
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "29991c1090463933cc2a1e8905826a83d85e62e8ed6a3fd0956934f4008c8628"
+    },
+    {
+      "id": "v01_01400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 14.002663230240548,
+      "image": "data\\cash_id\\frames\\v01_01400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            110,
+            399,
+            130,
+            408
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "78528f3f24fa837efb2b5664afea01d06aa9fb174b824a9c6f601cf40069dfd0"
+    },
+    {
+      "id": "v01_01450",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 14.503951890034363,
+      "image": "data\\cash_id\\frames\\v01_01450.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            77,
+            414,
+            91,
+            423
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ee6346c4b10021bc9031c32d45f71ace5cc4324467985bdd5a3b5cdd61765621"
+    },
+    {
+      "id": "v01_01500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 15.005240549828178,
+      "image": "data\\cash_id\\frames\\v01_01500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            78,
+            415,
+            92,
+            424
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b31acc352710a3853ab990d54928b6721642fd9805e5f48441699f032cef1a81"
+    },
+    {
+      "id": "v01_01600",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 16.007817869415806,
+      "image": "data\\cash_id\\frames\\v01_01600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "1dbef81d0992a4c60d07a69b6c26d0e6731c8cf13982b1e8dd21ba98e52a078b"
+    },
+    {
+      "id": "v01_01700",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 17.010395189003436,
+      "image": "data\\cash_id\\frames\\v01_01700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ce1853f147029613b74bf4f27557f91f9c7f3993596cb987006af78e92059fa5"
+    },
+    {
+      "id": "v01_01800",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 18.012972508591066,
+      "image": "data\\cash_id\\frames\\v01_01800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            411,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "dc9fbecc40cdfa02f966b7be2822b32b525c10e7fa82327f74675db4ad500be5"
+    },
+    {
+      "id": "v01_01900",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 19.015549828178692,
+      "image": "data\\cash_id\\frames\\v01_01900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "a7fad4ce17a86165b43f6cfe009bae7baee82b1b37f495bb8e86298d983f9e5d"
+    },
+    {
+      "id": "v01_01950",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 19.483419243986255,
+      "image": "data\\cash_id\\frames\\v01_01950.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "2ffc25c7bea1ad8342e90fba279231f33270a9582370d5f2020d0e0188a345ee"
+    },
+    {
+      "id": "v01_02000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 19.984707903780066,
+      "image": "data\\cash_id\\frames\\v01_02000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended."
+    },
+    {
+      "id": "v01_02050",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 20.48599656357388,
+      "image": "data\\cash_id\\frames\\v01_02050.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            192,
+            424,
+            204,
+            434
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "aaa489022518516743a48718d0fbb93db30629cfcf9f990b792cd0f152155626"
+    },
+    {
+      "id": "v01_02100",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 20.987285223367696,
+      "image": "data\\cash_id\\frames\\v01_02100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            189,
+            424,
+            205,
+            449
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "d6f178fd0df42bdbfb64fdba58e3141f9c51849f07c51cf49885c89227b87dce"
+    },
+    {
+      "id": "v01_02150",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 21.48857388316151,
+      "image": "data\\cash_id\\frames\\v01_02150.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            186,
+            422,
+            210,
+            448
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "dc7e52838d09c503e3331dee6356c70f940a6ea73821e83b5e422f24543be0c9"
+    },
+    {
+      "id": "v01_02200",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 21.989862542955326,
+      "image": "data\\cash_id\\frames\\v01_02200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            181,
+            418,
+            199,
+            441
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "e21f17bf98bed03fb54230c7f9bb800f816ea1557d67696c906af50d1086727d"
+    },
+    {
+      "id": "v01_02250",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 22.49115120274914,
+      "image": "data\\cash_id\\frames\\v01_02250.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            158,
+            400,
+            174,
+            414
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "f07c09a12f9a3023d2aa6ab98d92e08e9278bc31e1a66b124036b4c9487958b4"
+    },
+    {
+      "id": "v01_02300",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 22.992439862542955,
+      "image": "data\\cash_id\\frames\\v01_02300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            152,
+            409,
+            169,
+            415
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "95f9745d510c617ebe6a2d69f9ea6a8d4bedd44128244a49e76802458f51c933"
+    },
+    {
+      "id": "v01_02350",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 23.493728522336767,
+      "image": "data\\cash_id\\frames\\v01_02350.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            166,
+            407,
+            178,
+            421
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "8868b3f9d84f78a9ef54c4bd693309362e433ddea3e2a4782ae1ba71a9d133f1"
+    },
+    {
+      "id": "v01_02400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 23.99501718213058,
+      "image": "data\\cash_id\\frames\\v01_02400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            170,
+            397,
+            181,
+            402
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "203b620ed5d43c0c68c0c972ad77b12465bb488b8f055b8f4126d86124b2d942"
+    },
+    {
+      "id": "v01_02450",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 24.496305841924396,
+      "image": "data\\cash_id\\frames\\v01_02450.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            444,
+            152,
+            454
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            157,
+            388,
+            166,
+            395
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "a240f9d4b0c4683d6faab7e4122ab67abf26ac1011b430eb1f8c08a2f6bb0ed2"
+    },
+    {
+      "id": "v01_02500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+      "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+      "timecode_sec": 24.99759450171821,
+      "image": "data\\cash_id\\frames\\v01_02500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "70777a27156c47a30f9f6a4ebc0fb803bdffba2670c8ae19ca47f0c6f2ae4535"
+    },
+    {
+      "id": "v04_00000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 0.0,
+      "image": "data\\cash_id\\frames\\v04_00000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "2ece7739c6ccdfa09e691457a3702c7e4d363d60707d22db81c9a0ecfe3f3c18"
+    },
+    {
+      "id": "v04_01000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 9.984979329352319,
+      "image": "data\\cash_id\\frames\\v04_01000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "3435b57c29d6f68f5c23f9d4eb33cecba2e69144e586e2d21ae8852ed26a4773"
+    },
+    {
+      "id": "v04_01200",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 11.988654111162148,
+      "image": "data\\cash_id\\frames\\v04_01200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "7b225fde7f8069ae183155b0826da699b0b9f057a6e00d9ef7fe89d6f3499b50"
+    },
+    {
+      "id": "v04_01300",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 12.990491502067064,
+      "image": "data\\cash_id\\frames\\v04_01300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            175,
+            436,
+            188,
+            443
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "58cf5e2529c5d82fcb4ee62bfacb6d96e8e0b90d868a87f8ea03a12623abf824"
+    },
+    {
+      "id": "v04_01400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 13.99232889297198,
+      "image": "data\\cash_id\\frames\\v04_01400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "0904b5f80fd2a5dd05b575bea9c6740a20c1f03832963e95e6d57bee4f0fc34d"
+    },
+    {
+      "id": "v04_01450",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 14.493247588424437,
+      "image": "data\\cash_id\\frames\\v04_01450.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            182,
+            409,
+            198,
+            423
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "cc00023a5c470b57656d138dc886f909e802821bc5188bdfd8fa339736dc96eb"
+    },
+    {
+      "id": "v04_01500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 14.994166283876893,
+      "image": "data\\cash_id\\frames\\v04_01500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            185,
+            405,
+            203,
+            420
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "793be2005f155b5d4d25534cd35bf0c31114bb7f3fb70560c5b2585c0321db46"
+    },
+    {
+      "id": "v04_01550",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 15.495084979329352,
+      "image": "data\\cash_id\\frames\\v04_01550.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            189,
+            419,
+            205,
+            433
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "9fbb3747dba604a59306f09065e14b631b0c2e5401ea9f78b970896b1ad9b9f2"
+    },
+    {
+      "id": "v04_01600",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 15.996003674781809,
+      "image": "data\\cash_id\\frames\\v04_01600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            188,
+            408,
+            204,
+            424
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ef0727e8d42838f4e115192589b3fc3ebe936575a1dece8be9cc1fb8257fc9b7"
+    },
+    {
+      "id": "v04_01700",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 16.997841065686725,
+      "image": "data\\cash_id\\frames\\v04_01700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            168,
+            411,
+            187,
+            430
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "98922cec14903c8898ddddfbff12b38e442af61b9ae3fae222a51a045d7bae07"
+    },
+    {
+      "id": "v04_01800",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 17.99967845659164,
+      "image": "data\\cash_id\\frames\\v04_01800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            163,
+            427,
+            180,
+            435
+          ],
+          "category": "id_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5c705782a85cdeec558c8f4741e21320301d479513f79fb5f3c451f6f3542e47"
+    },
+    {
+      "id": "v04_01900",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 19.001515847496552,
+      "image": "data\\cash_id\\frames\\v04_01900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            139,
+            439,
+            156,
+            447
+          ],
+          "category": "id_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "2f809e39d340140d78ace72d0520f7aede72aa6d105c73328bd61fd1d3126df7"
+    },
+    {
+      "id": "v04_02000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 20.00335323840147,
+      "image": "data\\cash_id\\frames\\v04_02000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            161,
+            413,
+            174,
+            425
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "24d6863e577a9ad3ee579c9832f649dbe25cbb95734252d077ab39cd4b2575b1"
+    },
+    {
+      "id": "v04_02100",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 21.005190629306384,
+      "image": "data\\cash_id\\frames\\v04_02100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            179,
+            423,
+            193,
+            428
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "9e32966097db7eefc5340625e42955e395cbe3b8d695247fa9a0d12f45fc04cb"
+    },
+    {
+      "id": "v04_02200",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 22.007028020211298,
+      "image": "data\\cash_id\\frames\\v04_02200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "e75046a736f1a8045ae845c03ee7981f8260bc84da95f82c806a5c19176f1c5b"
+    },
+    {
+      "id": "v04_02300",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 23.008865411116215,
+      "image": "data\\cash_id\\frames\\v04_02300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            202,
+            433,
+            213,
+            451
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "79dd20fbd9bb75902c6b999e3e278ce95958f540f4d8f1d7096c710f2b3c24e7"
+    },
+    {
+      "id": "v04_02350",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 23.50978410656867,
+      "image": "data\\cash_id\\frames\\v04_02350.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            189,
+            434,
+            205,
+            457
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "a9198a5f8b0ea79efd49acc547552f0b5c9f7c0114630b500c9b32813b4f1812"
+    },
+    {
+      "id": "v04_02400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 24.01070280202113,
+      "image": "data\\cash_id\\frames\\v04_02400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            178,
+            439,
+            207,
+            465
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "054b6a92cc71713e18e34678504cfa3bb017cecbb1b8e69beb5c6182da0f3063"
+    },
+    {
+      "id": "v04_02450",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 24.511621497473588,
+      "image": "data\\cash_id\\frames\\v04_02450.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            137,
+            420,
+            161,
+            440
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "719e0023c232e2849458be26fda4e949f2a744895efe037174bcc15d8cf1f36f"
+    },
+    {
+      "id": "v04_02500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 25.012540192926043,
+      "image": "data\\cash_id\\frames\\v04_02500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            77,
+            407,
+            98,
+            424
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "05de3440c3eb81037fc1bc12bef1b81cafeb7d86f9ebb03de373a8aa83c2dac8"
+    },
+    {
+      "id": "v04_02600",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 26.01437758383096,
+      "image": "data\\cash_id\\frames\\v04_02600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            77,
+            415,
+            97,
+            424
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "3087d13ccde151b7433e6ccd9374660c645c6ea6c10dc381bc1e897ba4a3912f"
+    },
+    {
+      "id": "v04_02700",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 27.016214974735874,
+      "image": "data\\cash_id\\frames\\v04_02700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            407,
+            95,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "29a000ec7e33741928d4bac1090a15ed3d54e3891d5df2a54059252f431ee441"
+    },
+    {
+      "id": "v04_02800",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 27.98465778594396,
+      "image": "data\\cash_id\\frames\\v04_02800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            408,
+            95,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "0e77231b8c1f0812c6c49363705d5e42238f6d95bd584ff327e29d46428ad0bb"
+    },
+    {
+      "id": "v04_02900",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 28.986495176848873,
+      "image": "data\\cash_id\\frames\\v04_02900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            408,
+            95,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "57d8dd0011817b99105fb3aca1f1daec27cb13053e89ba1b86febe76f68edee8"
+    },
+    {
+      "id": "v04_03000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 29.988332567753787,
+      "image": "data\\cash_id\\frames\\v04_03000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            408,
+            95,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "7ed50489467d4a03b2d3a98aa276990392c1c9bd60cf4ac7cd6a5cf3b5a14351"
+    },
+    {
+      "id": "v04_03100",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 30.990169958658704,
+      "image": "data\\cash_id\\frames\\v04_03100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "f2f5e58cd53d44221bdaa24b84d0a57ba83ce2eaf36ba5589c686093cd17e29c"
+    },
+    {
+      "id": "v04_03150",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 31.49108865411116,
+      "image": "data\\cash_id\\frames\\v04_03150.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "59d15c82982b6c7396833af2b71638134ce88720bf198319b3b0d60b0efacd7a"
+    },
+    {
+      "id": "v04_03200",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 31.992007349563618,
+      "image": "data\\cash_id\\frames\\v04_03200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "85c55bc473ed924eaf3bfef270e162be3249ceb17151471126084ace014d9b75"
+    },
+    {
+      "id": "v04_03250",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 32.49292604501608,
+      "image": "data\\cash_id\\frames\\v04_03250.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            174,
+            422,
+            183,
+            439
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "757c0d0838c7a8008f36d64f691f41c7bccf68575dda2425478f9bdcbe3a55fd"
+    },
+    {
+      "id": "v04_03300",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 32.99384474046853,
+      "image": "data\\cash_id\\frames\\v04_03300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            181,
+            443,
+            199,
+            459
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "418e4ad66718f9321ef812d0214dabb950f6f26ee7497c17551a3de3d02e56c6"
+    },
+    {
+      "id": "v04_03400",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 33.99568213137345,
+      "image": "data\\cash_id\\frames\\v04_03400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            177,
+            439,
+            208,
+            453
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "0ef8d96242774d2ec894221b033955b215d0931f6c55ba5426da461fe7070c30"
+    },
+    {
+      "id": "v04_03600",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 35.99935691318328,
+      "image": "data\\cash_id\\frames\\v04_03600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            140,
+            436,
+            157,
+            446
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            179,
+            436,
+            195,
+            450
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "f4479d13398ee937b33074db11d39ee7d156a48532abebd3b4d6421597b7c9fe"
+    },
+    {
+      "id": "v04_04000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 40.00670647680294,
+      "image": "data\\cash_id\\frames\\v04_04000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "8e563f00a69cdea5a4a2940f49314cebc373272ec70a804ecef066dc289ab003"
+    },
+    {
+      "id": "v04_04500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 45.01589343132751,
+      "image": "data\\cash_id\\frames\\v04_04500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            151,
+            429,
+            170,
+            438
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            436,
+            197,
+            449
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "fe57beec7adc8e25ffc712cc7e1bbbf0ca8685069a1ff6a2f29e1870f1ef930c"
+    },
+    {
+      "id": "v04_05000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 49.99168580615526,
+      "image": "data\\cash_id\\frames\\v04_05000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            435,
+            211,
+            447
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "4a652dd5c88a9345ac189153c5bbe89995f51a1c1bc324a55080f1a838613319"
+    },
+    {
+      "id": "v04_05500",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 55.00087276067983,
+      "image": "data\\cash_id\\frames\\v04_05500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            186,
+            428,
+            208,
+            442
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "4ca74b99dce5eba57ac8eb04f64eaa3ba9e482576e2fdf31b4cfa4ce9c19ca52"
+    },
+    {
+      "id": "v04_06000",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+      "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+      "timecode_sec": 60.010059715204406,
+      "image": "data\\cash_id\\frames\\v04_06000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            117,
+            393,
+            127,
+            399
+          ],
+          "category": "id_customer_hand"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            137,
+            439,
+            166,
+            453
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "c87d474563d7f6e80902916b5ab8011a430a507b930d6e9445793506d298ecde"
+    },
+    {
+      "id": "v03_00000",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 0.0,
+      "image": "data\\cash_id\\frames\\v03_00000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5da7f60d0f4f9e8b01ff415fcc0ef8b219a31a967355e4e280bfe9251d52a043"
+    },
+    {
+      "id": "v03_00400",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 4.013355592654424,
+      "image": "data\\cash_id\\frames\\v03_00400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "c23b72a784aa232104b74339729aaed874478ceb2301379b904a1749073d00ee"
+    },
+    {
+      "id": "v03_00600",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 5.986588759042849,
+      "image": "data\\cash_id\\frames\\v03_00600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            99,
+            403,
+            110,
+            413
+          ],
+          "category": "id_customer_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "a761ed984ce5ffe3858f6ef7359186d9b5397d9b63f41e5a0343f1c38189ec3f"
+    },
+    {
+      "id": "v03_00650",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 6.488258208124652,
+      "image": "data\\cash_id\\frames\\v03_00650.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "fa9ef2b3600897ca8e157f9628ca3ff87d1dc7a65c0c04bbc1accd523bc06898"
+    },
+    {
+      "id": "v03_00700",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 6.989927657206455,
+      "image": "data\\cash_id\\frames\\v03_00700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            139,
+            396,
+            149,
+            399
+          ],
+          "category": "id_customer_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "866eaed552ba823ca6f0687848630ccbd11d3b908f40fb77f80ad7fd41e490c9"
+    },
+    {
+      "id": "v03_00750",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 7.491597106288258,
+      "image": "data\\cash_id\\frames\\v03_00750.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            175,
+            413,
+            188,
+            425
+          ],
+          "category": "id_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ff116bf6217ede2fd4f4d6b042d84f3ddc1f06cb9974a7be1af84a63babe8be6"
+    },
+    {
+      "id": "v03_00800",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 7.993266555370061,
+      "image": "data\\cash_id\\frames\\v03_00800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            185,
+            409,
+            198,
+            427
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "813d44b04db66de71c92b9a6fe837894081d52cc7c220e876623dc7db77f4408"
+    },
+    {
+      "id": "v03_00900",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 8.996605453533666,
+      "image": "data\\cash_id\\frames\\v03_00900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            199,
+            419,
+            212,
+            433
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "de284f04821b0cf784860365d54981f39455cc076522ba202cd0a63b650026ad"
+    },
+    {
+      "id": "v03_01000",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 9.999944351697273,
+      "image": "data\\cash_id\\frames\\v03_01000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            200,
+            420,
+            213,
+            432
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "993db1766867353c78fdf65d819bb7524335841c9ef7a4d02c836f623a58c379"
+    },
+    {
+      "id": "v03_01100",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 11.003283249860878,
+      "image": "data\\cash_id\\frames\\v03_01100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            195,
+            418,
+            212,
+            434
+          ],
+          "category": "id_cashier_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash",
+        "id_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "e0468a59a9e3f8ca23ee90d7fd0d00f49568e357462d42ef0dceac83e16dbc4b"
+    },
+    {
+      "id": "v03_01150",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 11.504952698942683,
+      "image": "data\\cash_id\\frames\\v03_01150.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            160,
+            433,
+            171,
+            439
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            145,
+            396,
+            157,
+            401
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ad209a8aef69b61d45c583fc78871a902148ef2854d6a8bea4323bad4d466e7d"
+    },
+    {
+      "id": "v03_01200",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 12.006622148024485,
+      "image": "data\\cash_id\\frames\\v03_01200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            151,
+            434,
+            161,
+            440
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            156,
+            394,
+            169,
+            401
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ded058d4e4431d311c30fea7a2428cbaa06baaff632451df289816983c143144"
+    },
+    {
+      "id": "v03_01250",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 12.508291597106288,
+      "image": "data\\cash_id\\frames\\v03_01250.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            165,
+            412,
+            182,
+            424
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b735a9e90bee9533952ab0d484cf86b9ae17f74cd290e66b7f6971b74f76f080"
+    },
+    {
+      "id": "v03_01300",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 13.00996104618809,
+      "image": "data\\cash_id\\frames\\v03_01300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            165,
+            412,
+            184,
+            424
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "779df51498cdccbbf95a2007146332af8305a4c038fed1e7ff6fe46e96b3cdfc"
+    },
+    {
+      "id": "v03_01350",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 13.511630495269895,
+      "image": "data\\cash_id\\frames\\v03_01350.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            412,
+            201,
+            433
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "4f0e511525d330fe8a00eb34594682041db609e4419d6283bda5e9afbcbaaa34"
+    },
+    {
+      "id": "v03_01400",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 14.013299944351697,
+      "image": "data\\cash_id\\frames\\v03_01400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            191,
+            422,
+            202,
+            436
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "2600b87ecb1475465f065d4508bb1c9ba6dce9de4854d248603b8ece65b01a4f"
+    },
+    {
+      "id": "v03_01500",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 15.016638842515304,
+      "image": "data\\cash_id\\frames\\v03_01500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            424,
+            208,
+            449
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "3d818126ba82cb6a81d1959da21543d8e2e30bb1556c00741b2a75fd8e011c74"
+    },
+    {
+      "id": "v03_01600",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 15.986533110740123,
+      "image": "data\\cash_id\\frames\\v03_01600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            156,
+            439,
+            167,
+            451
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "6792bd2b788da34258cb91e03c02288949afcc4c8758be521a630d90860d953c"
+    },
+    {
+      "id": "v03_01650",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 16.488202559821925,
+      "image": "data\\cash_id\\frames\\v03_01650.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            123,
+            422,
+            143,
+            438
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "209138be97f843ff797efdd824fab93a8dfe5b9e8393fbd52ebea0c07c0a0144"
+    },
+    {
+      "id": "v03_01700",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 16.989872008903728,
+      "image": "data\\cash_id\\frames\\v03_01700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            79,
+            415,
+            99,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "d951b1e62cbde23ce54ee89d9b4ee3b840ff270c0f977dd12b3afa5ce74e0ff5"
+    },
+    {
+      "id": "v03_01750",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 17.49154145798553,
+      "image": "data\\cash_id\\frames\\v03_01750.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            77,
+            411,
+            98,
+            423
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5202c8a7a01eba8925fbd85cbebe96c13d67bdfefacd8fea45347c84e0c08c42"
+    },
+    {
+      "id": "v03_01800",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 17.993210907067333,
+      "image": "data\\cash_id\\frames\\v03_01800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            410,
+            94,
+            423
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5e20c6e93bdd81f84fbb150420a920c2a483df1d0cc2cf54e34227d3dffa6e47"
+    },
+    {
+      "id": "v03_01850",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 18.49488035614914,
+      "image": "data\\cash_id\\frames\\v03_01850.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "557cde263e25ec88b4f51437868c57067902a552ac3cb8e44f2613c604181cc5"
+    },
+    {
+      "id": "v03_01900",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 18.99654980523094,
+      "image": "data\\cash_id\\frames\\v03_01900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "29f0916f4207830cd244f648b904a3c95dd345449a2b2dbb78e9a6a714f580f1"
+    },
+    {
+      "id": "v03_01950",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+      "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+      "timecode_sec": 19.498219254312744,
+      "image": "data\\cash_id\\frames\\v03_01950.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "id_card",
+          "box_xyxy": [
+            144,
+            434,
+            160,
+            442
+          ],
+          "category": "id_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            75,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "841c1cd82c63f038623989c71bfca10a6d776c7de8264f8f74d73e03054a6d26"
+    },
+    {
+      "id": "v02_00000",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 0.0,
+      "image": "data\\cash_id\\frames\\v02_00000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "350cfb190730bf8004d9b017000b3ab23b2ef7518584df5f3ddde4076833c178"
+    },
+    {
+      "id": "v02_00500",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 4.986143790849673,
+      "image": "data\\cash_id\\frames\\v02_00500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b39a4bbec51a91d7fab633cbd3f22f369f5b9c7728986fdd648b7dced5ce0cd6"
+    },
+    {
+      "id": "v02_00700",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 6.993986928104575,
+      "image": "data\\cash_id\\frames\\v02_00700.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "16237a0bf81796369a9e0317cfa38dea47dc43aeb3868bdcffc8bdd14495301f"
+    },
+    {
+      "id": "v02_00800",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 7.997908496732026,
+      "image": "data\\cash_id\\frames\\v02_00800.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter",
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "5d8f700e5c48e2e2bd191da33bd7bb04bce42ca95be4eb3d6a8ac9e1fffde0cb"
+    },
+    {
+      "id": "v02_00850",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 8.499869281045752,
+      "image": "data\\cash_id\\frames\\v02_00850.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            385,
+            88,
+            397
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "264ec325507d9024941ab22509e76dd0090b5663bda4483602c8097a47ac486e"
+    },
+    {
+      "id": "v02_00900",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 9.001830065359478,
+      "image": "data\\cash_id\\frames\\v02_00900.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            122,
+            410,
+            138,
+            421
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b98c1be97d737ee480e199d0b16712413cb669dbe5faf8536d9cb5af20d71c1e"
+    },
+    {
+      "id": "v02_00950",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 9.503790849673203,
+      "image": "data\\cash_id\\frames\\v02_00950.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            147,
+            427,
+            170,
+            436
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "ad54fe471d1792565c074d927884eca2c8e1fed1d968c375aca722153d0bfef8"
+    },
+    {
+      "id": "v02_01000",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 10.005751633986929,
+      "image": "data\\cash_id\\frames\\v02_01000.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            149,
+            427,
+            174,
+            441
+          ],
+          "category": "cash_transfer"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "deb40c302ef432df5b6a56d7fc227ffd95c567aa65881c57f4c9285524ee9569"
+    },
+    {
+      "id": "v02_01050",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 10.507712418300654,
+      "image": "data\\cash_id\\frames\\v02_01050.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": null,
+      "review": "excluded_ambiguous",
+      "review_note": "Severe occlusion / unresolved visible boundary; not a negative.",
+      "image_sha256": "0cddd69fd9c844093845dc76087753eb52b8e32e30ed3bd25acc1aed47aeec07"
+    },
+    {
+      "id": "v02_01100",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 11.00967320261438,
+      "image": "data\\cash_id\\frames\\v02_01100.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            178,
+            427,
+            185,
+            437
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "084a4ad5c010da03953058b4669be2d24b2dd15cfd96e6273cbb033a1a0e24e5"
+    },
+    {
+      "id": "v02_01200",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 12.01359477124183,
+      "image": "data\\cash_id\\frames\\v02_01200.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            184,
+            425,
+            208,
+            446
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "b04a2c37d0fbbe5b6ee944cc339f5207a5ec7505f04578339354aa6941a9a332"
+    },
+    {
+      "id": "v02_01300",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 12.984052287581699,
+      "image": "data\\cash_id\\frames\\v02_01300.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            178,
+            429,
+            204,
+            453
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [
+        "empty_counter"
+      ],
+      "counter_roi": [
+        25,
+        398,
+        115,
+        495
+      ],
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "341c789286548d5792721b449a86af9b26994ef33e5602b9b764f949430dea6f"
+    },
+    {
+      "id": "v02_01350",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 13.486013071895425,
+      "image": "data\\cash_id\\frames\\v02_01350.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            153,
+            431,
+            173,
+            454
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "4bf119d970323de33466135d1ea4f75d6767c6921f9f36daed09ccc9f7fd3982"
+    },
+    {
+      "id": "v02_01400",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 13.98797385620915,
+      "image": "data\\cash_id\\frames\\v02_01400.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            84,
+            403,
+            99,
+            413
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "308c00c723536f1149251d8809dc482f2926566edb628649bda797bfc6df721a"
+    },
+    {
+      "id": "v02_01450",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 14.489934640522875,
+      "image": "data\\cash_id\\frames\\v02_01450.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            77,
+            409,
+            96,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "4bec3f2210b608e2b7b0c1a2d044405cb885e06414b336e463db50f23148aef4"
+    },
+    {
+      "id": "v02_01500",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 14.991895424836601,
+      "image": "data\\cash_id\\frames\\v02_01500.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            78,
+            416,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "6846023df58d405a2f6152da19762fa91269ac50d42c6d671f111c3bd4df685e"
+    },
+    {
+      "id": "v02_01550",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 15.493856209150326,
+      "image": "data\\cash_id\\frames\\v02_01550.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "d7876d67144c974c0b201af497c873519ad1f33f9e1b92c53928d5ff7c9b6306"
+    },
+    {
+      "id": "v02_01600",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 15.995816993464052,
+      "image": "data\\cash_id\\frames\\v02_01600.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "c5bc73873242bbdb18e91f04baf623d341db99792bb5c3e220078b04ff307f40"
+    },
+    {
+      "id": "v02_01650",
+      "split": "val",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+      "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+      "timecode_sec": 16.497777777777777,
+      "image": "data\\cash_id\\frames\\v02_01650.jpg",
+      "width": 464,
+      "height": 848,
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            76,
+            409,
+            94,
+            425
+          ],
+          "category": "cash_at_counter"
+        }
+      ],
+      "review": "reviewed_provisional",
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Assistant visual review of raw frame and neighboring samples. Human review still recommended.",
+      "image_sha256": "7e360d06f09c4dffc1f7a1f78d0a5cec589bd90bd2cda05a8cafc8518c0db2d7"
+    },
+    {
+      "id": "x13_030",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-13.mov",
+      "video_sha256": "a37930cf119bb691be77d8624b18333b04d9c67066a7f4627d63e3208dfa6057",
+      "timecode_sec": 30.01262781186094,
+      "image": "data\\cash\\frames\\x13_030.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            149,
+            383,
+            165,
+            396
+          ],
+          "category": "cash_on_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            167,
+            380,
+            182,
+            393
+          ],
+          "category": "cash_on_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            183,
+            372,
+            201,
+            386
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "80ec8046d6de7ab5ad42fc25c58b646f546eb831261ba49a1dede1fccfc133f3"
+    },
+    {
+      "id": "x13_045",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-13.mov",
+      "video_sha256": "a37930cf119bb691be77d8624b18333b04d9c67066a7f4627d63e3208dfa6057",
+      "timecode_sec": 45.002249488752554,
+      "image": "data\\cash\\frames\\x13_045.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            199,
+            321,
+            219,
+            334
+          ],
+          "category": "cash_in_hand"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            161,
+            377,
+            175,
+            388
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "87fa1985055e0feceeee991fb6dc9ce9b95f3905db21fda17fcb981fa32dd935"
+    },
+    {
+      "id": "x14_055",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-14.mov",
+      "video_sha256": "7d6890ecb4a2b28bbdd3b61b6711566eee84a53ab3439c40cd9b6a3a6714c681",
+      "timecode_sec": 55.00525782042281,
+      "image": "data\\cash\\frames\\x14_055.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            183,
+            427,
+            199,
+            438
+          ],
+          "category": "cash_on_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            199,
+            415,
+            233,
+            433
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "9aa6792aaa3b3829a2617e106bca87880d3774aa825a47794713a70492319b11"
+    },
+    {
+      "id": "x14_085",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-14.mov",
+      "video_sha256": "7d6890ecb4a2b28bbdd3b61b6711566eee84a53ab3439c40cd9b6a3a6714c681",
+      "timecode_sec": 84.99296356970122,
+      "image": "data\\cash\\frames\\x14_085.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            139,
+            418,
+            158,
+            427
+          ],
+          "category": "cash_on_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            161,
+            420,
+            184,
+            447
+          ],
+          "category": "cash_on_table"
+        },
+        {
+          "label": "cash",
+          "box_xyxy": [
+            188,
+            429,
+            204,
+            439
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "142dc0b5818d73a92375c78310acbcb9cdfdba9f39b9f6ea66d32f7aa5ff1495"
+    },
+    {
+      "id": "x20_005",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-20.mov",
+      "video_sha256": "7e585e33517f7258bd2d1ed3e139556609bc997bb07b78355555060ef193b77a",
+      "timecode_sec": 5.0,
+      "image": "data\\cash\\frames\\x20_005.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            206,
+            330,
+            220,
+            338
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "6de8c4278063cf3c6574ccfe49ccdcb5659cfb658499b1b5622f43d67efb0c00"
+    },
+    {
+      "id": "x26_003",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-26.mov",
+      "video_sha256": "e3a00b6e0f38b1d9b5498140f14906c71e204359262a90ce7a9974d64bf081e9",
+      "timecode_sec": 3.010135135135135,
+      "image": "data\\cash\\frames\\x26_003.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            200,
+            364,
+            218,
+            376
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "aa5a558bacea5a60edc4f6fa1ce0aced8700d50e8086a96f713a2174d66f503d"
+    },
+    {
+      "id": "x26_006",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-26.mov",
+      "video_sha256": "e3a00b6e0f38b1d9b5498140f14906c71e204359262a90ce7a9974d64bf081e9",
+      "timecode_sec": 5.986824324324324,
+      "image": "data\\cash\\frames\\x26_006.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            207,
+            371,
+            221,
+            382
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "91b7ce269f981dd1a7b886171d9559baf2af0ce0bdc5fbd91b3708fe75b0bbc8"
+    },
+    {
+      "id": "x26_009",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-26.mov",
+      "video_sha256": "e3a00b6e0f38b1d9b5498140f14906c71e204359262a90ce7a9974d64bf081e9",
+      "timecode_sec": 8.99695945945946,
+      "image": "data\\cash\\frames\\x26_009.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            210,
+            398,
+            235,
+            408
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "6d481ff1490da735171496e96f7d000920ba0920dd7f2d5691297bbfae88edf1"
+    },
+    {
+      "id": "x35_015",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-35.mov",
+      "video_sha256": "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+      "timecode_sec": 14.99307843137255,
+      "image": "data\\cash\\frames\\x35_015.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [],
+      "categories": [
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "d25458a2b00bf76c091e40415e1b07435d82bce2ebac5e285ba72210aafc33b3"
+    },
+    {
+      "id": "x35_030",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-35.mov",
+      "video_sha256": "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+      "timecode_sec": 29.9861568627451,
+      "image": "data\\cash\\frames\\x35_030.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            180,
+            371,
+            199,
+            398
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "f48756e0b1670b9098c6b9e6e8f7e2191b06a92ffa97cf7b0cdb018944be9d2f"
+    },
+    {
+      "id": "x35_045",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-35.mov",
+      "video_sha256": "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+      "timecode_sec": 45.012627450980396,
+      "image": "data\\cash\\frames\\x35_045.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [],
+      "categories": [
+        "hands_without_cash",
+        "table_without_cash"
+      ],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "f6f1ce2b17b2c39b157660902defb4b7b3480d019713dddaed4edc26d88d5f1e"
+    },
+    {
+      "id": "x43_010",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-43.mov",
+      "video_sha256": "39e28d7be01cdb090ede1881ce3ef704fa413271deb69d6735c1953f340d6069",
+      "timecode_sec": 9.99518359561278,
+      "image": "data\\cash\\frames\\x43_010.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            169,
+            381,
+            183,
+            393
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "2ea8f0002c404ee6a6a860bae76f6132d2d0a1cf7a172150d8b1c75044b74e17"
+    },
+    {
+      "id": "x43_018",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-43.mov",
+      "video_sha256": "39e28d7be01cdb090ede1881ce3ef704fa413271deb69d6735c1953f340d6069",
+      "timecode_sec": 17.984644730567478,
+      "image": "data\\cash\\frames\\x43_018.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            139,
+            390,
+            160,
+            399
+          ],
+          "category": "cash_in_hand"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "8120f9d1d6a7fb4cbf835a2a108401aa1e3f586ab23904aa5a5ed78091679084"
+    },
+    {
+      "id": "x46_010",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-46.mov",
+      "video_sha256": "66fc5d28c2371592f9260305589bdc86636fdd2ebe7a7ec976eec00a23d43df4",
+      "timecode_sec": 10.001515151515152,
+      "image": "data\\cash\\frames\\x46_010.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            152,
+            400,
+            177,
+            411
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "b11f5bf3e89c4ae91bdadff8e8fefedbdd06c9a2ca8f74947c107da307ee4090"
+    },
+    {
+      "id": "x46_015",
+      "split": "train",
+      "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-46.mov",
+      "video_sha256": "66fc5d28c2371592f9260305589bdc86636fdd2ebe7a7ec976eec00a23d43df4",
+      "timecode_sec": 14.985547785547785,
+      "image": "data\\cash\\frames\\x46_015.jpg",
+      "width": 464,
+      "height": 848,
+      "review": "reviewed_provisional",
+      "objects": [
+        {
+          "label": "cash",
+          "box_xyxy": [
+            147,
+            405,
+            174,
+            417
+          ],
+          "category": "cash_on_table"
+        }
+      ],
+      "categories": [],
+      "counter_roi": null,
+      "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+      "image_sha256": "6ad221cbba7a1ef1c3c3ad9ae9747ee7928eacdf343f47066a19381e5da98b90"
+    }
+  ],
+  "schema_version": 1,
+  "annotation_provenance": "Assistant visual annotations; provisional, not independent human ground truth.",
+  "audit_complete": true,
+  "baseline_training_video_sha256": [
+    "1f5840bff58f298e89c4afa00cb1c18f6dafc5c4096c251d9b507604ebefe906",
+    "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+    "39e28d7be01cdb090ede1881ce3ef704fa413271deb69d6735c1953f340d6069",
+    "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+    "66fc5d28c2371592f9260305589bdc86636fdd2ebe7a7ec976eec00a23d43df4",
+    "7d6890ecb4a2b28bbdd3b61b6711566eee84a53ab3439c40cd9b6a3a6714c681",
+    "7e585e33517f7258bd2d1ed3e139556609bc997bb07b78355555060ef193b77a",
+    "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+    "955755baf54418b48ea645dcd98e7e8dcca1d1e227e9b286a9427062db304fd4",
+    "a37930cf119bb691be77d8624b18333b04d9c67066a7f4627d63e3208dfa6057",
+    "d15ef04bcfae571bd2d7fc4e4d709ba595ae19f44136a43e7277f17e7b6e5b6d",
+    "e3a00b6e0f38b1d9b5498140f14906c71e204359262a90ce7a9974d64bf081e9"
+  ],
+  "annotation_policy": "Visible extent only; one box per contiguous stack/fan. Severe unresolved occlusion excluded, never converted to negatives. Diagnostic categories are not YOLO classes.",
+  "validation_sha256": "8318b4378a45fa6b4154f627d9cdc976257fc8285d350d02355481f4dcce4c28"
+}

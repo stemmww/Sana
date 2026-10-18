@@ -6,6 +6,8 @@ from uuid import UUID
 from fastapi import APIRouter, Depends, File, HTTPException, Request, UploadFile, status
 
 from app.core.security import require_api_key
+from app.rules.cash_security import evaluate_cash_security
+from app.rules.cash_security_schemas import CashSecurityReport, CashSecurityRequest
 from app.rules.engine import evaluate
 from app.rules.schemas import RuleReport, RuleRequest
 from app.schemas import JobCreated, JobResponse
@@ -29,6 +31,21 @@ router = APIRouter(prefix="/api/v1", dependencies=[Depends(require_api_key)])
 )
 def evaluate_rules(timeline: RuleRequest) -> RuleReport:
     return evaluate(timeline)
+
+
+@router.post(
+    "/rules/cash-security/evaluate",
+    response_model=CashSecurityReport,
+    tags=["rules"],
+    summary="Evaluate R05 and the separate cash-to-safe workflow",
+    description=(
+        "Opt-in event evaluation. Requires positive same-money observations at the next "
+        "customer boundary. Uncertain events never establish a violation. "
+        "SAFE_LOCKED_VISUAL describes visible key/lock action only. R01-R04 are unchanged."
+    ),
+)
+def evaluate_cash_security_rules(timeline: CashSecurityRequest) -> CashSecurityReport:
+    return evaluate_cash_security(timeline)
 
 
 @router.post(

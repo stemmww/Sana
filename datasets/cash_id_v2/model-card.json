@@ -1,0 +1,33 @@
+{
+  "model": "data\\cash\\runs\\cash_id_v2_counter_gpu\\weights\\last.pt",
+  "model_sha256": "6ede596b2f3e7c6b2c713dc33181db26b8d497eb9cb8485383d1dcedff8b3df1",
+  "classes": [
+    "cash",
+    "id_card"
+  ],
+  "annotation_sha256": "75005d6ec3cce909f580a32644648f9899cd65c20dd91d69cab8ac0bbbcbe7b4",
+  "validation_sha256": "8318b4378a45fa6b4154f627d9cdc976257fc8285d350d02355481f4dcce4c28",
+  "cpu_completed_epochs": 5,
+  "gpu_completed_epochs": 15,
+  "cpu_training_seconds": 418.364,
+  "gpu_training_seconds": 174.804,
+  "cpu_average_epoch_seconds": 83.6728,
+  "gpu_average_epoch_seconds": 11.6536,
+  "epoch_speedup": 7.179995881101118,
+  "speed_caveat": "Different epochs, not a controlled hardware benchmark; excludes one-time CUDA installation and setup.",
+  "candidate_checkpoint_rule": "Fixed final epoch 20, not best on validation.",
+  "production_weights_unchanged": true,
+  "business_layers_unchanged": true,
+  "full_pipeline_run": false,
+  "environment": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "cuda_build": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "memory_bytes": 4294443008,
+    "matmul_device": "cuda:0",
+    "cuda_nms_result": [
+      0
+    ]
+  }
+}

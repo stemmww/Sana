@@ -1,0 +1,105 @@
+Sana: аудит пропущенных R04 / R05 / R03
+====================================
+
+Ветка: fix/real-event-detection-audit
+Эксперимент: experiments/real_event_audit.py
+Отчёт: data/real_event_audit_v1/report.html
+
+Production не изменён. Проверены два варианта только слоя cash inference:
+1. Полный кадр, imgsz 1280 вместо 768, прежние веса и confidence .25.
+2. Дополнительный crop существующей COUNTER_ZONE с контекстом, imgsz 768;
+   принимаются только новые предсказания с центром внутри counter polygon.
+   Все исходные предсказания сохраняются. Подавляются только дубли добавлений.
+
+Первый вариант прогнан через cash inference -> штатные tracking / Event Detector /
+Rule Engine / API на всех семи видео. Person и pose observations взяты из проверенных
+SHA кешей для изоляции изменения. Это не замер повторной person/pose inference.
+Второй вариант не допущен к pipeline: нет прироста counter recall на 42 кадрах.
+
+Никакие ожидаемые метки или временные интервалы не передаются в inference.
+ground-truth.json используется только командой review для кадров ручного аудита.
+Нет обучения, подмены весов, изменения порогов событий или правил.
+
+Оба варианта отклонены. Реальная цель обнаружения нарушений пока не достигнута.
+213 существующих тестов прошли, 1 предупреждение Starlette/httpx.
+Первый sandbox запуск pytest завершился WinError 5; повтор вне sandbox успешен.
+
+R04 / X-1
+---------
+Первый неподтверждённый переход — MONEY_TO_COUNTER, а не MONEY_FROM_COUNTER.
+В baseline 28 наблюдений cash, ноль в COUNTER_ZONE. После 1280 — 12, тоже ноль
+в COUNTER_ZONE. Все наблюдения: x1/baseline-cash-observations.json в каталоге отчёта.
+В кадрах загрузка видна, но модель её не обнаруживает. Гипотеза pose:
+19.383–19.851 контакт; 19.985 отход; cash-10 появляется 20.118;
+cash-11 наблюдается 20.352–23.393. Это временная связь, не доказанная идентичность
+денег до/после счётчика.
+
+cash-11: 2 cashier observations с промежутком .234 s; затем association=table,
+хотя деньги видны в руках. Далее customer в 22.224 и 23.393, разрыв 1.170 s
+превышает max_observation_gap_sec=.8. Нет стабильного cashier -> customer перехода.
+Следовательно, автоматической MONEY_TRANSFER_TO_CUSTOMER и полной цепочки R04 нет.
+Понижение temporal thresholds не выполнено.
+
+R05 / X-4
+---------
+Сессии: 9.818–53.532 и 60.311–конец записи. Старые cash IDs принадлежат baseline.
+cash-20 -> cash-22: разрыв 2.338 s, IoU=0, смещение центра 32.54 px,
+appearance score .730, но forward flow не достигает цели (IoU .028).
+Руки перекрывают стопку; в конце она видна левее. Пространственная и временная
+связь правдоподобна, но принадлежность service-1 не подтверждена.
+Есть ещё незакрытая связь cash-11 -> cash-15 и неподтверждённое извлечение.
+Наличие cash-22 при второй сессии не устраняет эти пробелы.
+
+Контроль X-5: две сессии, R05 нет. Прежний cash-20 похож на статический фон
+около ноутбука: высокая appearance similarity сама по себе создаёт риск ложного
+сохранения денег. Помещение в сейф тоже не подтверждено — не заявляем полное
+соблюдение процедуры на основании отсутствия нарушения.
+
+Старые диагностические table/safe/pose события сохранены в
+diagnostics.prior_observation_diagnostics, явно помечены baseline only.
+Они не присоединяются к перенумерованным новым cash tracks.
+Текущий API R05 вычисляется штатным адаптером новых semantic events.
+Это исключает ложное наследование происхождения при сравнении детекторов.
+
+R03 / ID
+--------
+Production: data/cash/models/cash.pt, единственный класс cash.
+Изолированно проверен cash_id_v1_run2/weights/best.pt: cash + id_card.
+X-3: 50/86 кадров имеют ID prediction. В реальной передаче карточка обнаружена,
+но ownership скачет между customer/table/cashier. Устойчивая последовательность
+ID_TRANSFER_TO_CASHIER -> ID_CHECK -> ID_ON_TABLE не получается.
+ID, оставленный на столе, часто ошибочно ассоциируется с customer.
+X-2: 2/73 кадра с ID prediction (11.244, 11.478); визуально это деньги в руках,
+не подтверждённая передача ID. Отсутствие других ID detections не доказывает
+пропуск проверки документа. Полнота id_actions coverage не подтверждена.
+ID_CHECK в существующем коде означает длительное удержание ID после передачи;
+детектор взгляда / фактической проверки документа здесь отсутствует.
+
+Кандидат не включён в production. id_detector_validated не переключался.
+В v1 обучении были 29 кадров X-1 и 31 X-4. В v2 — 30 X-1, 34 X-4 и 8 X-5.
+X-2/X-3 исключены из обучения, но уже многократно использовались для validation.
+Ни эти ролики, ни результаты этого эксперимента не являются новой независимой оценкой.
+
+Следующий минимальный шаг
+------------------------
+Не менять правила и не возвращать неудачные варианты inference в production.
+Для R04 следующий изолированный эксперимент — pose-backed ownership cash bbox:
+проверить cashier/customer/unknown по запястьям на исходных наблюдениях, особенно
+cash-11. Это может восстановить владение и передачу, но само по себе НЕ восстановит
+первое MONEY_TO_COUNTER. Для полного R04 затем требуется отдельное положительное
+наблюдение загрузки и её связи с извлечением (рука с видимыми деньгами -> зона
+входа аппарата -> наблюдаемое освобождение руки), с отрицательными касаниями.
+Исчезновение YOLO bbox не подходит для этого доказательства.
+Для R05 необходима непрерывная подтверждаемая траектория стопки через перекрытие;
+общий timeout не увеличивать. Для R03 сначала исправить/проверить ownership ID,
+а не объявлять весь интервал надёжно наблюдаемым из-за двухклассовой модели.
+
+Воспроизведение из корня Sana:
+.venv\Scripts\python.exe -m experiments.real_event_audit prepare
+.venv\Scripts\python.exe -m experiments.real_event_audit review
+.venv\Scripts\python.exe -m experiments.real_event_audit pipeline
+.venv\Scripts\python.exe -m experiments.real_event_audit validation
+.venv\Scripts\python.exe -m experiments.real_event_audit counter_crop
+.venv\Scripts\python.exe -m experiments.real_event_audit candidate_id
+.venv\Scripts\python.exe -m pytest -q -p no:cacheprovider --basetemp data/real_event_audit_v1/pytest-regression --junitxml=data/real_event_audit_v1/tests.xml
+.venv\Scripts\python.exe -m experiments.real_event_audit report

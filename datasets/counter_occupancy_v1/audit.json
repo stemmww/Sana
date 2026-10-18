@@ -1,0 +1,20 @@
+{
+  "protected_files_verified": 59,
+  "protected_changed": [],
+  "fixed_validation_original_pixels_verified": 42,
+  "source_leakage": false,
+  "counts": {
+    "train/EMPTY/selected=True": 9,
+    "train/EMPTY/selected=False": 13,
+    "train/UNCERTAIN/selected=False": 5,
+    "train/CASH_PRESENT/selected=True": 6,
+    "dev/EMPTY/selected=True": 10,
+    "dev/UNCERTAIN/selected=False": 3,
+    "dev/CASH_PRESENT/selected=True": 3
+  },
+  "validation_labels": {
+    "EMPTY": 30,
+    "UNCERTAIN": 6,
+    "CASH_PRESENT": 6
+  }
+}

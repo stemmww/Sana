@@ -22,6 +22,8 @@ class PersonObservation(Detection):
     track_id: str = Field(min_length=1)
     role: Literal["cashier", "customer", "unknown"]
     identity_reliable: bool = True
+    customer_id: str | None = None
+    service_region: str | None = None
 
 
 class ObjectObservation(Detection):

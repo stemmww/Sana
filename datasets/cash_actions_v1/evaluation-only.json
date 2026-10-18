@@ -1,0 +1,55 @@
+{
+  "provenance": "Assistant visual review of original and debug frames; provisional, not independent human gold labels. Intervals describe visible actions, not exact financial transaction boundaries.",
+  "limitations": [
+    "Repeated development clips, not independent action validation",
+    "No verified empty lower-tray touch video; user confirmed unavailable",
+    "Unknown actions outside reviewed targets require visual review before counting as false"
+  ],
+  "videos": {
+    "x3": {
+      "actions": [
+        {
+          "type": "CASH_LOADING_ACTION",
+          "start_sec": 16.6,
+          "end_sec": 18.6
+        }
+      ],
+      "duration_note": "Cash remains in counter at clip end. No withdrawal shown."
+    },
+    "x1": {
+      "actions": [
+        {
+          "type": "CASH_LOADING_ACTION",
+          "start_sec": 14.1,
+          "end_sec": 15.6
+        },
+        {
+          "type": "CASH_EXTRACTION_ACTION",
+          "start_sec": 19.3,
+          "end_sec": 20.2
+        },
+        {
+          "type": "CASH_HANDOVER_TO_CUSTOMER",
+          "start_sec": 22,
+          "end_sec": 24.8
+        }
+      ],
+      "duration_note": "One loading, one removal; later cash moves toward customer. Split identity/amount are not labelled."
+    },
+    "x5": {
+      "actions": [
+        {
+          "type": "CASH_LOADING_ACTION",
+          "start_sec": 25.6,
+          "end_sec": 27.6
+        },
+        {
+          "type": "CASH_EXTRACTION_ACTION",
+          "start_sec": 31.7,
+          "end_sec": 32.7
+        }
+      ],
+      "duration_note": "Negative intervals include ID/wallet handling, cash handling away from counter, waiting, customer departure/arrival and later ID. Whole X5 is NOT labelled negative."
+    }
+  }
+}

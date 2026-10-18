@@ -1,0 +1,2156 @@
+{
+  "selected_model": "color_texture_ridge_10",
+  "evaluations": [
+    {
+      "model": "absolute_difference",
+      "threshold": 12.367032231490063,
+      "metrics": {
+        "all_clear": {
+          "tp": 0,
+          "fn": 6,
+          "fp": 0,
+          "tn": 30,
+          "precision": null,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "errors": [
+            "v03_01850",
+            "v03_01900",
+            "v03_01950",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "six_counter_without_hand": {
+          "tp": 0,
+          "fn": 6,
+          "fp": 0,
+          "tn": 0,
+          "precision": null,
+          "recall": 0.0,
+          "specificity": null,
+          "balanced_accuracy": null,
+          "errors": [
+            "v03_01850",
+            "v03_01900",
+            "v03_01950",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "empty_counter_28": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 28,
+          "precision": null,
+          "recall": null,
+          "specificity": 1.0,
+          "balanced_accuracy": null,
+          "errors": []
+        }
+      },
+      "rows": [
+        {
+          "id": "v03_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 4.3436309339923795,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00400",
+          "timecode_sec": 4.013355592654424,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 8.317269076305221,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00600",
+          "timecode_sec": 5.986588759042849,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 9.68401812377716,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00700",
+          "timecode_sec": 6.989927657206455,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 11.7116671815467,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00750",
+          "timecode_sec": 7.491597106288258,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 11.421944187004428,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00800",
+          "timecode_sec": 7.993266555370061,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 10.055349603542375,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00900",
+          "timecode_sec": 8.996605453533666,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 8.022191329420245,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01000",
+          "timecode_sec": 9.999944351697273,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.753269488209248,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01100",
+          "timecode_sec": 11.003283249860878,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.365410359386263,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01150",
+          "timecode_sec": 11.504952698942683,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.371537431778395,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01200",
+          "timecode_sec": 12.006622148024485,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.570281124497992,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01250",
+          "timecode_sec": 12.508291597106288,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 7.015755329008341,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01300",
+          "timecode_sec": 13.00996104618809,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.9568015652353,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01350",
+          "timecode_sec": 13.511630495269895,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.9152507465760475,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01400",
+          "timecode_sec": 14.013299944351697,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.7937390587993,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01500",
+          "timecode_sec": 15.016638842515304,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.296210482957471,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01600",
+          "timecode_sec": 15.986533110740123,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.091236741839151,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01650",
+          "timecode_sec": 16.488202559821925,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 5.814385748120688,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01700",
+          "timecode_sec": 16.989872008903728,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 6.795386674904747,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01750",
+          "timecode_sec": 17.49154145798553,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 7.787663474410462,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01800",
+          "timecode_sec": 17.993210907067333,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 6.533827618164968,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01850",
+          "timecode_sec": 18.49488035614914,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 5.376840696117805,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01900",
+          "timecode_sec": 18.99654980523094,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 6.443620636391721,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01950",
+          "timecode_sec": 19.498219254312744,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 6.388888888888889,
+          "result": "FN"
+        },
+        {
+          "id": "v02_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 10.003089280197713,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00500",
+          "timecode_sec": 4.986143790849673,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 7.880959736381423,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00700",
+          "timecode_sec": 6.993986928104575,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 8.81845330038101,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00800",
+          "timecode_sec": 7.997908496732026,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 6.84373390999897,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00850",
+          "timecode_sec": 8.499869281045752,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 4.938883740088559,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00900",
+          "timecode_sec": 9.001830065359478,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 4.1535372258263825,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00950",
+          "timecode_sec": 9.503790849673203,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 4.675728555246628,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01000",
+          "timecode_sec": 10.005751633986929,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 4.110132839048502,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01100",
+          "timecode_sec": 11.00967320261438,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 5.189939244156111,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01200",
+          "timecode_sec": 12.01359477124183,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 5.684275563793636,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01300",
+          "timecode_sec": 12.984052287581699,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 5.718515085984966,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01350",
+          "timecode_sec": 13.486013071895425,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 5.8111934919163835,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01400",
+          "timecode_sec": 13.98797385620915,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 5.811708371949336,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01450",
+          "timecode_sec": 14.489934640522875,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 7.356399958809598,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01500",
+          "timecode_sec": 14.991895424836601,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 7.555658531562146,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01550",
+          "timecode_sec": 15.493856209150326,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 5.502831840181238,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01600",
+          "timecode_sec": 15.995816993464052,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 5.6451961692925545,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01650",
+          "timecode_sec": 16.497777777777777,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 6.424261147152714,
+          "result": "FN"
+        }
+      ]
+    },
+    {
+      "model": "compensated_difference_p98",
+      "threshold": 42.72836875915527,
+      "metrics": {
+        "all_clear": {
+          "tp": 0,
+          "fn": 6,
+          "fp": 0,
+          "tn": 30,
+          "precision": null,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "errors": [
+            "v03_01850",
+            "v03_01900",
+            "v03_01950",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "six_counter_without_hand": {
+          "tp": 0,
+          "fn": 6,
+          "fp": 0,
+          "tn": 0,
+          "precision": null,
+          "recall": 0.0,
+          "specificity": null,
+          "balanced_accuracy": null,
+          "errors": [
+            "v03_01850",
+            "v03_01900",
+            "v03_01950",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "empty_counter_28": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 28,
+          "precision": null,
+          "recall": null,
+          "specificity": 1.0,
+          "balanced_accuracy": null,
+          "errors": []
+        }
+      },
+      "rows": [
+        {
+          "id": "v03_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 14.456831932067871,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00400",
+          "timecode_sec": 4.013355592654424,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 29.517107009887695,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00600",
+          "timecode_sec": 5.986588759042849,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 19.09624671936035,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00700",
+          "timecode_sec": 6.989927657206455,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 14.375941276550293,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00750",
+          "timecode_sec": 7.491597106288258,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.952300071716309,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00800",
+          "timecode_sec": 7.993266555370061,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.995464324951172,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00900",
+          "timecode_sec": 8.996605453533666,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 14.094916343688965,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01000",
+          "timecode_sec": 9.999944351697273,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.910905838012695,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01100",
+          "timecode_sec": 11.003283249860878,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.868429183959961,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01150",
+          "timecode_sec": 11.504952698942683,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.916417121887207,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01200",
+          "timecode_sec": 12.006622148024485,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.67389965057373,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01250",
+          "timecode_sec": 12.508291597106288,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.874916076660156,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01300",
+          "timecode_sec": 13.00996104618809,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.856406211853027,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01350",
+          "timecode_sec": 13.511630495269895,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.874916076660156,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01400",
+          "timecode_sec": 14.013299944351697,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.880441665649414,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01500",
+          "timecode_sec": 15.016638842515304,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.34166431427002,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01600",
+          "timecode_sec": 15.986533110740123,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 13.510624885559082,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01650",
+          "timecode_sec": 16.488202559821925,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 14.245935440063477,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01700",
+          "timecode_sec": 16.989872008903728,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 21.463844299316406,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01750",
+          "timecode_sec": 17.49154145798553,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 32.01645278930664,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01800",
+          "timecode_sec": 17.993210907067333,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 23.54102897644043,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01850",
+          "timecode_sec": 18.49488035614914,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 14.652412414550781,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01900",
+          "timecode_sec": 18.99654980523094,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 19.13582992553711,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01950",
+          "timecode_sec": 19.498219254312744,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 18.666513442993164,
+          "result": "FN"
+        },
+        {
+          "id": "v02_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 21.369760513305664,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00500",
+          "timecode_sec": 4.986143790849673,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 33.610511779785156,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00700",
+          "timecode_sec": 6.993986928104575,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 21.373971939086914,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00800",
+          "timecode_sec": 7.997908496732026,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 23.706539154052734,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00850",
+          "timecode_sec": 8.499869281045752,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 20.928449630737305,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00900",
+          "timecode_sec": 9.001830065359478,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 18.48909568786621,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00950",
+          "timecode_sec": 9.503790849673203,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.355300903320312,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01000",
+          "timecode_sec": 10.005751633986929,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.330127716064453,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01100",
+          "timecode_sec": 11.00967320261438,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.330127716064453,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01200",
+          "timecode_sec": 12.01359477124183,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.368553161621094,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01300",
+          "timecode_sec": 12.984052287581699,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.330127716064453,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01350",
+          "timecode_sec": 13.486013071895425,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": 17.330127716064453,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01400",
+          "timecode_sec": 13.98797385620915,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 17.907167434692383,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01450",
+          "timecode_sec": 14.489934640522875,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 29.533594131469727,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01500",
+          "timecode_sec": 14.991895424836601,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 36.18230438232422,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01550",
+          "timecode_sec": 15.493856209150326,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 17.926513671875,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01600",
+          "timecode_sec": 15.995816993464052,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 18.484947204589844,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01650",
+          "timecode_sec": 16.497777777777777,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 20.841938018798828,
+          "result": "FN"
+        }
+      ]
+    },
+    {
+      "model": "color_texture_ridge_1",
+      "threshold": 0.0617951401115128,
+      "metrics": {
+        "all_clear": {
+          "tp": 3,
+          "fn": 3,
+          "fp": 0,
+          "tn": 30,
+          "precision": 1.0,
+          "recall": 0.5,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.75,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600"
+          ]
+        },
+        "six_counter_without_hand": {
+          "tp": 3,
+          "fn": 3,
+          "fp": 0,
+          "tn": 0,
+          "precision": 1.0,
+          "recall": 0.5,
+          "specificity": null,
+          "balanced_accuracy": null,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600"
+          ]
+        },
+        "empty_counter_28": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 28,
+          "precision": null,
+          "recall": null,
+          "specificity": 1.0,
+          "balanced_accuracy": null,
+          "errors": []
+        }
+      },
+      "rows": [
+        {
+          "id": "v03_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4926255062040889,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00400",
+          "timecode_sec": 4.013355592654424,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.117881563802503,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00600",
+          "timecode_sec": 5.986588759042849,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.215035769856154,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00700",
+          "timecode_sec": 6.989927657206455,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0110271322489484,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00750",
+          "timecode_sec": 7.491597106288258,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.3505686829861534,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00800",
+          "timecode_sec": 7.993266555370061,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.3964076036076132,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00900",
+          "timecode_sec": 8.996605453533666,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.2555453620176977,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01000",
+          "timecode_sec": 9.999944351697273,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.533373479361281,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01100",
+          "timecode_sec": 11.003283249860878,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.2817053408375523,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01150",
+          "timecode_sec": 11.504952698942683,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0626249373603573,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01200",
+          "timecode_sec": 12.006622148024485,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.389317554499128,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01250",
+          "timecode_sec": 12.508291597106288,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.439610227420601,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01300",
+          "timecode_sec": 13.00996104618809,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.7043061674479525,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01350",
+          "timecode_sec": 13.511630495269895,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.47979797921857,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01400",
+          "timecode_sec": 14.013299944351697,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.4909981686871332,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01500",
+          "timecode_sec": 15.016638842515304,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.5279023953985202,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01600",
+          "timecode_sec": 15.986533110740123,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.5136217795119535,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01650",
+          "timecode_sec": 16.488202559821925,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.3995902694902203,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01700",
+          "timecode_sec": 16.989872008903728,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -1.301198238702628,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01750",
+          "timecode_sec": 17.49154145798553,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "CASH_PRESENT",
+          "score": 0.12601918075918989,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01800",
+          "timecode_sec": 17.993210907067333,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.7808999632105456,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01850",
+          "timecode_sec": 18.49488035614914,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -1.5989838748408503,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01900",
+          "timecode_sec": 18.99654980523094,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.412351742856847,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01950",
+          "timecode_sec": 19.498219254312744,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.64799963114081,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.7759434687472404,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00500",
+          "timecode_sec": 4.986143790849673,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.6871038723972787,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00700",
+          "timecode_sec": 6.993986928104575,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.3868144126550404,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00800",
+          "timecode_sec": 7.997908496732026,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.244673528167922,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00850",
+          "timecode_sec": 8.499869281045752,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.8962844252437232,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00900",
+          "timecode_sec": 9.001830065359478,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1550322341093315,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00950",
+          "timecode_sec": 9.503790849673203,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.6478077536189324,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01000",
+          "timecode_sec": 10.005751633986929,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.6200321047866302,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01100",
+          "timecode_sec": 11.00967320261438,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.5449573729552173,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01200",
+          "timecode_sec": 12.01359477124183,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.37249650666358863,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01300",
+          "timecode_sec": 12.984052287581699,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0306275993352323,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01350",
+          "timecode_sec": 13.486013071895425,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1939159220076376,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01400",
+          "timecode_sec": 13.98797385620915,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -1.2977035156930508,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01450",
+          "timecode_sec": 14.489934640522875,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.05482449548494139,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01500",
+          "timecode_sec": 14.991895424836601,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "CASH_PRESENT",
+          "score": 0.2066130225005668,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01550",
+          "timecode_sec": 15.493856209150326,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.7365610914119789,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01600",
+          "timecode_sec": 15.995816993464052,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -1.3063619657156669,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01650",
+          "timecode_sec": 16.497777777777777,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.06902145028228546,
+          "result": "OK"
+        }
+      ]
+    },
+    {
+      "model": "color_texture_ridge_10",
+      "threshold": 0.5739836360229456,
+      "metrics": {
+        "all_clear": {
+          "tp": 2,
+          "fn": 4,
+          "fp": 0,
+          "tn": 30,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.6666666666666666,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "six_counter_without_hand": {
+          "tp": 2,
+          "fn": 4,
+          "fp": 0,
+          "tn": 0,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "specificity": null,
+          "balanced_accuracy": null,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "empty_counter_28": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 28,
+          "precision": null,
+          "recall": null,
+          "specificity": 1.0,
+          "balanced_accuracy": null,
+          "errors": []
+        }
+      },
+      "rows": [
+        {
+          "id": "v03_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.7162353402917417,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00400",
+          "timecode_sec": 4.013355592654424,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.9460568015539721,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00600",
+          "timecode_sec": 5.986588759042849,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.015021562108356,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00700",
+          "timecode_sec": 6.989927657206455,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.8110314405166218,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00750",
+          "timecode_sec": 7.491597106288258,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.998332189123788,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00800",
+          "timecode_sec": 7.993266555370061,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0138718954171975,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00900",
+          "timecode_sec": 8.996605453533666,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.965762381899149,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01000",
+          "timecode_sec": 9.999944351697273,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1725216894345323,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01100",
+          "timecode_sec": 11.003283249860878,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.9759246908022211,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01150",
+          "timecode_sec": 11.504952698942683,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.8948419891373436,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01200",
+          "timecode_sec": 12.006622148024485,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0806700469573918,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01250",
+          "timecode_sec": 12.508291597106288,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1025072634833977,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01300",
+          "timecode_sec": 13.00996104618809,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.2066635348920365,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01350",
+          "timecode_sec": 13.511630495269895,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.0784883019728833,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01400",
+          "timecode_sec": 14.013299944351697,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.08345944044809,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01500",
+          "timecode_sec": 15.016638842515304,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1302702695939073,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01600",
+          "timecode_sec": 15.986533110740123,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1146165607623248,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01650",
+          "timecode_sec": 16.488202559821925,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1793884227848073,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01700",
+          "timecode_sec": 16.989872008903728,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.5222706672262784,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01750",
+          "timecode_sec": 17.49154145798553,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 0.28035197057651673,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01800",
+          "timecode_sec": 17.993210907067333,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.22429031416070558,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01850",
+          "timecode_sec": 18.49488035614914,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -1.0563431719193188,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01900",
+          "timecode_sec": 18.99654980523094,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.65638185516434,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01950",
+          "timecode_sec": 19.498219254312744,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.7792123549533425,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.3057047577146925,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00500",
+          "timecode_sec": 4.986143790849673,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.6478404002186015,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00700",
+          "timecode_sec": 6.993986928104575,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.9494533373159446,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00800",
+          "timecode_sec": 7.997908496732026,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.9227815985406361,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00850",
+          "timecode_sec": 8.499869281045752,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.8564049153918732,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00900",
+          "timecode_sec": 9.001830065359478,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.9919399426064993,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00950",
+          "timecode_sec": 9.503790849673203,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1466117653127306,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01000",
+          "timecode_sec": 10.005751633986929,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.1698399962644144,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01100",
+          "timecode_sec": 11.00967320261438,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -1.143465601666855,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01200",
+          "timecode_sec": 12.01359477124183,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5257342575156421,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01300",
+          "timecode_sec": 12.984052287581699,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.8963951043827809,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01350",
+          "timecode_sec": 13.486013071895425,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.985780492151607,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01400",
+          "timecode_sec": 13.98797385620915,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.7571001933417179,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01450",
+          "timecode_sec": 14.489934640522875,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 0.35263902096162036,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01500",
+          "timecode_sec": 14.991895424836601,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "CASH_PRESENT",
+          "score": 0.8088452400668615,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01550",
+          "timecode_sec": 15.493856209150326,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.6360358052215289,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01600",
+          "timecode_sec": 15.995816993464052,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.9238607055825137,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01650",
+          "timecode_sec": 16.497777777777777,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 0.17787482840842164,
+          "result": "FN"
+        }
+      ]
+    },
+    {
+      "model": "color_texture_ridge_100",
+      "threshold": 0.5503936921410549,
+      "metrics": {
+        "all_clear": {
+          "tp": 2,
+          "fn": 4,
+          "fp": 0,
+          "tn": 30,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.6666666666666666,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "six_counter_without_hand": {
+          "tp": 2,
+          "fn": 4,
+          "fp": 0,
+          "tn": 0,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "specificity": null,
+          "balanced_accuracy": null,
+          "errors": [
+            "v03_01850",
+            "v02_01550",
+            "v02_01600",
+            "v02_01650"
+          ]
+        },
+        "empty_counter_28": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 28,
+          "precision": null,
+          "recall": null,
+          "specificity": 1.0,
+          "balanced_accuracy": null,
+          "errors": []
+        }
+      },
+      "rows": [
+        {
+          "id": "v03_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5198862590464091,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00400",
+          "timecode_sec": 4.013355592654424,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.6044493102453862,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00600",
+          "timecode_sec": 5.986588759042849,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.676614675050941,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00700",
+          "timecode_sec": 6.989927657206455,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.36520228642760894,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00750",
+          "timecode_sec": 7.491597106288258,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.3905648666117872,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00800",
+          "timecode_sec": 7.993266555370061,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.37468791336953955,
+          "result": "OK"
+        },
+        {
+          "id": "v03_00900",
+          "timecode_sec": 8.996605453533666,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.38429983730690626,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01000",
+          "timecode_sec": 9.999944351697273,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5028730360904818,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01100",
+          "timecode_sec": 11.003283249860878,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.3928989977857446,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01150",
+          "timecode_sec": 11.504952698942683,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4054097385347268,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01200",
+          "timecode_sec": 12.006622148024485,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.45449841330929935,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01250",
+          "timecode_sec": 12.508291597106288,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.46430746652349636,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01300",
+          "timecode_sec": 13.00996104618809,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.476466559640316,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01350",
+          "timecode_sec": 13.511630495269895,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4186757029316632,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01400",
+          "timecode_sec": 14.013299944351697,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4154646948248925,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01500",
+          "timecode_sec": 15.016638842515304,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.45262633125277,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01600",
+          "timecode_sec": 15.986533110740123,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.45006221689407117,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01650",
+          "timecode_sec": 16.488202559821925,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.563389955733668,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01700",
+          "timecode_sec": 16.989872008903728,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.10766284181046624,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01750",
+          "timecode_sec": 17.49154145798553,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 0.22952305685902147,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01800",
+          "timecode_sec": 17.993210907067333,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.00718029248453074,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v03_01850",
+          "timecode_sec": 18.49488035614914,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.41843043973394006,
+          "result": "FN"
+        },
+        {
+          "id": "v03_01900",
+          "timecode_sec": 18.99654980523094,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.623614783371891,
+          "result": "OK"
+        },
+        {
+          "id": "v03_01950",
+          "timecode_sec": 19.498219254312744,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "CASH_PRESENT",
+          "score": 0.6097057956130063,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00000",
+          "timecode_sec": 0.0,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5258692710711372,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00500",
+          "timecode_sec": 4.986143790849673,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5998968737253088,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00700",
+          "timecode_sec": 6.993986928104575,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.36800012554541606,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00800",
+          "timecode_sec": 7.997908496732026,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5441241765408915,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00850",
+          "timecode_sec": 8.499869281045752,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5169273052315092,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00900",
+          "timecode_sec": 9.001830065359478,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.5515460757157341,
+          "result": "OK"
+        },
+        {
+          "id": "v02_00950",
+          "timecode_sec": 9.503790849673203,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.49766950036652136,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01000",
+          "timecode_sec": 10.005751633986929,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4696393861010764,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01100",
+          "timecode_sec": 11.00967320261438,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.4634516280662872,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01200",
+          "timecode_sec": 12.01359477124183,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.362976950483528,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01300",
+          "timecode_sec": 12.984052287581699,
+          "subset": "empty_counter_28",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.42396075057277555,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01350",
+          "timecode_sec": 13.486013071895425,
+          "subset": "other_eight",
+          "label": "EMPTY",
+          "prediction": "EMPTY",
+          "score": -0.41798561567347403,
+          "result": "OK"
+        },
+        {
+          "id": "v02_01400",
+          "timecode_sec": 13.98797385620915,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": -0.25993132290166643,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01450",
+          "timecode_sec": 14.489934640522875,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 0.25184502578307727,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01500",
+          "timecode_sec": 14.991895424836601,
+          "subset": "other_eight",
+          "label": "UNCERTAIN",
+          "prediction": "EMPTY",
+          "score": 0.5272867364318918,
+          "result": "UNSCORED"
+        },
+        {
+          "id": "v02_01550",
+          "timecode_sec": 15.493856209150326,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.3623899608215842,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01600",
+          "timecode_sec": 15.995816993464052,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": -0.3660299762194628,
+          "result": "FN"
+        },
+        {
+          "id": "v02_01650",
+          "timecode_sec": 16.497777777777777,
+          "subset": "six_counter_without_hand",
+          "label": "CASH_PRESENT",
+          "prediction": "EMPTY",
+          "score": 0.2349160635012722,
+          "result": "FN"
+        }
+      ]
+    }
+  ]
+}

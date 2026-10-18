@@ -1,0 +1,29 @@
+{
+  "source": "user description; evaluation metadata only, not detector input",
+  "scenarios": [
+    {
+      "id": "x8",
+      "expected_label": "NORMAL",
+      "customer_required": false,
+      "expected_actions": [
+        "cash placed in counter",
+        "counted cash retrieved",
+        "cash placed in safe",
+        "notebook taken",
+        "writing in notebook"
+      ]
+    },
+    {
+      "id": "x10",
+      "expected_label": "NORMAL",
+      "customer_required": false,
+      "expected_actions": [
+        "cash stack on table",
+        "one stack placed in counter",
+        "counted cash retrieved",
+        "counted cash placed on table"
+      ]
+    }
+  ],
+  "interpretation": "Returning cash to the table during an operation does not alone satisfy R05."
+}

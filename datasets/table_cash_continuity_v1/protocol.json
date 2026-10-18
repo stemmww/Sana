@@ -1,0 +1,24 @@
+{
+  "candidate_max_gap_sec": 5.0,
+  "candidate_max_center_distance_normalized": 0.18,
+  "minimum_track_observations": 3,
+  "flow_min_points": 5,
+  "flow_min_survival": 0.5,
+  "flow_max_fb_error_px": 1.5,
+  "flow_max_endpoint_error_box_diagonals": 0.5,
+  "flow_min_endpoint_iou": 0.3,
+  "template_min_ncc": 0.8,
+  "template_min_std": 8,
+  "appearance_min_similarity": 0.7,
+  "fixed_roi_min_match_fraction": 0.9,
+  "maximum_fixed_roi_unknown_sec": 0.25,
+  "wrist_guard_px": 25,
+  "sample_review_interval_sec": 0.2,
+  "notes": [
+    "Exploratory thresholds frozen before measurement; no calibration to a desired R05 outcome.",
+    "Similarity scores/confidence are heuristic, not calibrated probabilities.",
+    "Fixed-ROI match is appearance persistence, not proof of cash or identity.",
+    "Native video FPS for optical flow; no reseeding during gaps.",
+    "All table-related fragment pairs within the diagnostic horizon are inspected."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "baseline_files": 374,
+  "existing_files_changed": [
+    "app/api/routes.py"
+  ],
+  "unchanged_files": 373,
+  "verified_evidence_references": 72,
+  "tests_passed": 82,
+  "tests_by_module": {
+    "tests.test_cash_security": 23,
+    "tests.test_sequence_rules": 32,
+    "tests.test_event_detector": 21,
+    "tests.test_rules_api": 6
+  },
+  "production_weights_unchanged": true,
+  "legacy_rule_engine_unchanged": true,
+  "legacy_event_detector_unchanged": true,
+  "legacy_tracking_unchanged": true,
+  "new_source_sha256": {
+    "app\\rules\\cash_security.py": "736da831bd198d365274762117489722dac7525b6f98b2d2609751a33ced562d",
+    "app\\rules\\cash_security_schemas.py": "d89077323ebefce2bbaa4dd9b93cc25096f23717946feaa69a303217177fba00",
+    "app\\events\\cash_security.py": "9c06ac0ec5ad8596da8fe1c459d83b5a060011345300fc71aa62853f024c482b",
+    "config\\cash_security_camera.json": "a03750c9dec75d7d18b32dc7f056bae210a374c5775cdd28a29118ae5f58da98"
+  }
+}

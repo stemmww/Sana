@@ -1,0 +1,26 @@
+{
+  "source": "User scenario labels and assistant visual review of original video frames. Review annotations are excluded from inference and rule decisions.",
+  "videos": {
+    "x5": {
+      "user_expected": "normal",
+      "visual_review": "A lower-output withdrawal is visible near 32 seconds. The safe door is visibly open near 48-50 seconds and closed near 51 seconds. A hand reaches into the safe, but continuous visible placement of the same cash bundle is occluded. A later hand action near the lock is visible; a key turn and physical locking are not reliably resolved. The first client leaves and another enters around 63-67 seconds.",
+      "automatic_result": "insufficient_evidence",
+      "note": "No R05 alert is not confirmation of NORMAL. Production tracking retains person-1 across the customer change and produces one session."
+    },
+    "x4": {
+      "user_expected": "violation",
+      "visual_review": "After the lower-output withdrawal near 32 seconds, a stack is left on the desk and remains visible while the next client comes in around 56-60 seconds. The safe remains visibly closed in the reviewed intervals.",
+      "automatic_result": "insufficient_evidence",
+      "note": "The expected R05 is not confirmed. The stationary stack is detected, but its lineage to the earlier counter withdrawal is not established. Production tracking retains person-3 across the customer change and produces one session. Absence of MONEY_TO_SAFE is not used as evidence of violation."
+    }
+  },
+  "id_pipeline_findings": [
+    "Production model data/cash/models/cash.pt has names {0: cash}; it cannot output id_card.",
+    "CashDetector selects only cash class IDs and returns label cash. Merely substituting a two-class checkpoint would still suppress ID in this adapter.",
+    "config/event_camera.json has id_detector_validated=false; EventDetector filters ID observations and does not add ID coverage.",
+    "The video adapter explicitly rejects id_detector_validated=true because no validated ID integration is installed.",
+    "ID_TRANSFER_TO_CASHIER and ID_CHECK exist in the old semantic detector; the old ID_CHECK is a sustained-hold proxy, not proof of gaze or document reading.",
+    "ID_RETURNED_TO_CUSTOMER is now supported in the separate evidence-gated module. It requires a matching original ID transfer and positive cashier-to-customer evidence.",
+    "Existing two-class candidates were not promoted or loaded as production weights. No new classes or models were trained."
+  ]
+}

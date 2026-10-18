@@ -1,0 +1,22 @@
+{
+  "provenance": "Assistant visual review of diagnostic marker evidence; evaluation only, not inference input.",
+  "scope": "Non-PROBABLE markers are not counted as separate physical counter interactions.",
+  "videos": {
+    "x3": {
+      "supported_markers": ["CASH_APPROACHED_COUNTER", "CASH_DISAPPEARED_NEAR_COUNTER"],
+      "false_markers": [{"type":"CASH_REAPPEARED_NEAR_COUNTER","timestamp_sec_rounded":18.73,"reason":"Enlarged evidence shows cash bbox covers the cashier's EMPTY HAND, not the ID (ID is elsewhere on table). Cash remains in the machine. No actual cash reappearance near cashier."}]
+    },
+    "x2": {
+      "supported_markers": ["CASH_APPROACHED_COUNTER", "CASH_DISAPPEARED_NEAR_COUNTER"],
+      "false_markers": []
+    },
+    "x1": {
+      "supported_markers": ["CASH_APPROACHED_COUNTER", "CASH_DISAPPEARED_NEAR_COUNTER", "CASH_REAPPEARED_NEAR_COUNTER"],
+      "false_markers": []
+    },
+    "x5": {
+      "supported_markers": ["CASH_APPROACHED_COUNTER", "CASH_DISAPPEARED_NEAR_COUNTER", "CASH_REAPPEARED_NEAR_COUNTER"],
+      "false_markers": []
+    }
+  }
+}

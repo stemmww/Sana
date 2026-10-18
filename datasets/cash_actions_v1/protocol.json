@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "zones": {
+    "counter": [
+      [
+        0.07,
+        0.48
+      ],
+      [
+        0.2,
+        0.47
+      ],
+      [
+        0.25,
+        0.56
+      ],
+      [
+        0.07,
+        0.59
+      ]
+    ],
+    "input": [
+      [
+        0.07,
+        0.48
+      ],
+      [
+        0.2,
+        0.47
+      ],
+      [
+        0.23,
+        0.524
+      ],
+      [
+        0.07,
+        0.524
+      ]
+    ],
+    "output": [
+      [
+        0.21336206896551724,
+        0.5165094339622641
+      ],
+      [
+        0.27801724137931033,
+        0.5165094339622641
+      ],
+      [
+        0.2952586206896552,
+        0.5648584905660378
+      ],
+      [
+        0.22413793103448276,
+        0.5766509433962265
+      ]
+    ]
+  },
+  "dimensions": [
+    464,
+    848
+  ],
+  "input_zone_provenance": "upper 45% of existing counter polygon, static geometry only",
+  "window_sec": 3.0,
+  "window_before_sec": 1.0,
+  "hand_gap_sec": 0.35,
+  "approach_delta_widths": 0.2,
+  "leave_delta_widths": 0.18,
+  "input_wrist_allowance_widths": 0.18,
+  "cash_pose_time_tolerance_sec": 0.1,
+  "cash_confidence": 0.25,
+  "cash_wrist_distance_widths": 0.6,
+  "cash_owner_margin_widths": 0.1,
+  "cash_min_samples": 2,
+  "handover_contact_widths": 0.6,
+  "handover_leave_widths": 0.8,
+  "roi_min_unmasked_fraction": 0.4,
+  "roi_pixel_delta": 20.0,
+  "roi_change_fraction": 0.05,
+  "hand_mask_radius_widths": 0.3,
+  "confirmed_event_gate": "independent validation required",
+  "no_training": true,
+  "new_model_inference": false,
+  "production_integration": false
+}

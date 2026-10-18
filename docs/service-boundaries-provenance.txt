@@ -1,0 +1,122 @@
+Sana: service boundaries and cash provenance
+Branch: fix/service-boundaries-cash-provenance
+
+Scope
+The new calibrated profile is config/event_camera_service.json. It enables
+service_boundary and cash_provenance_enabled. The existing event_camera.json
+profile and R01-R05 implementations remain unchanged. No weights or ID detector
+were replaced. No video names or scenario timestamps are used in decisions.
+
+Root cause established before editing
+1. GeometricRoleTracker accepts IoU >= .15 OR centre distance <= .08 and retains
+   the matched role. It tracks bodies geometrically, not customer visits.
+2. EventDetector keyed presence by that raw ID. A bbox centre inside the broad
+   room polygon prevented exit even after the person crossed behind the glass.
+3. During short missing intervals people_observable became false, resetting
+   absence evidence. The next person inherited the old geometric ID.
+4. X-5 reused person-1; X-4 reused person-3. Both previously had one open service.
+5. ObjectState was recreated whenever active_session changed, incorrectly
+   discarding an already observed cash object's original service.
+
+Boundary implementation
+Raw track_id is retained. customer_id identifies a visit; the unchanged engine
+allocates service-N session_id. Reused raw IDs receive a new visit only after
+positive departure evidence. New raw IDs can recover the same visit using
+bounded spatial and temporal continuity. Unexplained jumps remain uncertain.
+Departure requires an interior -> portal -> exterior sequence, including three
+positive exterior observations spanning at least .4 s. Missing detections alone
+never close a service. These are crossing confirmation parameters, not new
+absence thresholds. Cashier tracking remains unchanged.
+
+Calibration
+Three polygons apply to the upper body anchor (bbox centre x, y1 + .2 * height).
+Feet are occluded by the desk and body centres overlap the glass partition.
+The geometry is specific to this fixed camera and must be recalibrated if the
+camera moves. The interior polygon is conservative: reported service start is
+confirmed presence in the service area, later than the actual doorway crossing.
+No claim of exact physical entrance time is made.
+
+Cash implementation
+Each logical cash observation group stores source_session_id, first_seen,
+last_seen, last_known_zone, associated_person_role, counter_interaction_history,
+table_presence_history, observation_confidence and provenance_confidence.
+Frame histories preserve source_session_id across service changes.
+The additional provenance pass preserves original tracking output. It reconnects
+fragments only with >=3 observations on both sides, compatible visible size,
+spatial/trajectory agreement and a unique predecessor. Existing limits are used:
+maximum gap 1.25 s; maximum normalized distance .045; maximum area ratio 2.5.
+Concurrent objects are not merged. Sparse, ambiguous or longer gaps are rejected.
+Shared TABLE_ZONE alone never establishes identity. Confirmed safe placement
+blocks reconnection to a new table object. Session context is only possible
+origin until positive transfer evidence confirms it. Recovery runs after a
+short incoming observation window; confirmed_at_sec records this delay.
+bind_cash_event supplies original operation/customer identity to unchanged R05;
+it never upgrades uncertain observations.
+
+Real validation (cached production detections + original video evidence)
+X-5: service-1 5.140513..60.517855; service-2 67.761305..end unobserved.
+X-4: service-1 9.818006..53.531511; service-2 60.310611..end unobserved.
+Both: two visits, same reused raw customer ID, zero R02 violations.
+
+X-4 cash:
+cash-10 -> cash-11 reconnects over .467524 s (32.49..38.57 s overall).
+cash-15 -> cash-16 -> cash-20 reconnects over 1.168810 and .467524 s
+(41.14..53.06 s overall), possible source service-1.
+cash-22 is observed 55.40..72.47 s and is positively localized on the table at
+the second service start, but source_session_id stays null. The prior group
+ends at 53.064 s: the 2.338 s gap exceeds the recovery limit, with a position
+change. It is not automatically attached to service-1 or service-2.
+There is also no confirmed bridge from the withdrawal-associated observations
+ending 38.571 s to cash-15 starting 41.142 s (2.571 s gap).
+cash-27 -> cash-28 belongs only contextually to service-2; it is kept separate
+from the concurrently visible cash-22. Groups are observations, not a reliable
+count of physical money stacks; some detections may be ID/hand false positives.
+
+X-5 cash:
+24 observation groups; 23 have possible service-1 context, one service-2.
+No cash table observation brackets the second service start. Withdrawal remains
+an unapproved wrist hypothesis (31.51..32.31). Safe opening (47.20..47.90) and
+closing (50.94..51.64) remain image-change candidates. MONEY_TO_SAFE and visual
+locking are not confirmed. Absence of a table detection does not prove security.
+
+R05 result
+Both videos: insufficient_evidence; zero fabricated violations.
+X-4: positive table observation + new service are available, but confirmed
+withdrawal and same-stack provenance across the above gaps are missing.
+X-5: confirmed withdrawal/same-money safe placement are missing. It must not be
+labelled automatically NORMAL merely because the second service is now found.
+Existing wrist/safe/table candidates retain original uncertainty and evidence.
+
+Artifacts
+data/service_boundaries_v1/report.html
+data/service_boundaries_v1/{x5,x4}/summary.json
+data/service_boundaries_v1/{x5,x4}/timeline.txt
+data/service_boundaries_v1/{x5,x4}/provenance.json
+data/service_boundaries_v1/{x5,x4}/legacy/{events.json,track_history.json,debug.mp4}
+data/service_boundaries_v1/{x5,x4}/{boundary-evidence.jpg,cash-evidence.jpg}
+data/service_boundaries_v1/protected-check.json
+data/service_boundaries_v1/tests.xml
+
+Reproduce from the Sana directory (PowerShell)
+.\.venv\Scripts\python.exe -m experiments.service_cash_validation --sources datasets/service_boundaries_v1/sources.json --output data/service_boundaries_v1 --config config/event_camera_service.json --replay
+
+Single video with the calibrated profile
+.\.venv\Scripts\python.exe -m app.cv.analyze_events "PATH_TO_VIDEO" --config config/event_camera_service.json --replay "PATH_TO_DETECTIONS_JSON" --output-dir "OUTPUT_DIRECTORY"
+
+The replay uses verified video SHA-256 and measured original detections, with
+no new inference, training or synthetic events. The diagnostic runner reuses
+the previously generated wrist/safe/table observations without promotion.
+
+Tests
+19 new tests cover confirmed exit, sequential visits, ID reuse, fragmentation,
+short gaps, cashier persistence, simultaneous customers/R02, bounded cash
+recovery, unrelated/concurrent bundles, ambiguous history, safe placement and
+retained previous-operation identity through unchanged R05. Full suite: 187
+tests. Windows sandbox blocked temporary pytest directories (WinError 5);
+the full suite was run with approved filesystem access. No dependencies changed.
+
+Next evidence needed
+Inspect the occluded cash intervals using denser existing-video observations
+and hand motion/appearance continuity. Validate the wrist withdrawal producer
+against empty touches before promoting hypotheses. Do not widen recovery gaps
+or approve R05 just to fit these scenarios.

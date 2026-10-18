@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "model": "YOLO11s Pose official COCO pretrained, no training",
+  "weights_sha256": "1060bda4a27012060eca246f9b2adeea22eabb045a1e58f8d229be29b7ebc2ba",
+  "model_url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s-pose.pt",
+  "documentation": "https://docs.ultralytics.com/tasks/pose/",
+  "device": 0,
+  "imgsz": 1280,
+  "target_fps": 15,
+  "person_confidence": 0.25,
+  "wrist_confidence": 0.35,
+  "joint_confidence": 0.35,
+  "counter_zone": [
+    [
+      0.07,
+      0.48
+    ],
+    [
+      0.2,
+      0.47
+    ],
+    [
+      0.25,
+      0.56
+    ],
+    [
+      0.07,
+      0.59
+    ]
+  ],
+  "output_core": [
+    [
+      0.22198275862068967,
+      0.5259433962264151
+    ],
+    [
+      0.24568965517241378,
+      0.5224056603773585
+    ],
+    [
+      0.2607758620689655,
+      0.5589622641509434
+    ],
+    [
+      0.23060344827586207,
+      0.5648584905660378
+    ]
+  ],
+  "counter_output_zone": [
+    [
+      0.21336206896551724,
+      0.5165094339622641
+    ],
+    [
+      0.27801724137931033,
+      0.5165094339622641
+    ],
+    [
+      0.2952586206896552,
+      0.5648584905660378
+    ],
+    [
+      0.22413793103448276,
+      0.5766509433962265
+    ]
+  ],
+  "zone_provenance": "Fixed from empty static X4 first frame apparatus geometry before any pose inference. Output zone includes wrist/palm allowance around visible lower mouth; not proof of physical contact. Same camera only.",
+  "reference_dimensions": [
+    464,
+    848
+  ],
+  "role_cache_max_age_sec": 0.35,
+  "pose_role_min_iou": 0.3,
+  "pose_role_margin": 0.15,
+  "owner_min_samples": 3,
+  "owner_min_span_sec": 0.12,
+  "hand_track_max_gap_sec": 0.35,
+  "hand_track_max_step_widths": 0.8,
+  "hand_track_ambiguity_widths": 0.1,
+  "approach_history_sec": 1.5,
+  "approach_delta_widths": 0.2,
+  "contact_min_samples": 2,
+  "contact_min_sec": 0.05,
+  "leave_distance_widths": 0.18,
+  "leave_max_gap_sec": 0.35,
+  "cash_followup_sec": 2.0,
+  "cash_min_confidence": 0.25,
+  "cash_min_samples": 2,
+  "cash_wrist_distance_widths": 0.6,
+  "cash_existing_before_sec": 0.5,
+  "cash_new_min_gap_sec": 0.35,
+  "duplicate_contact_sec": 0.4,
+  "confidence_semantics": "Heuristic evidence score, not calibrated probability. Wrist model confidence is retained separately.",
+  "decision_inputs": "Relative time, skeleton arms/torso, cached geometric person roles, cash observations, camera polygons. No names, action annotations or known times.",
+  "face_policy": "Facial keypoints discarded immediately; no recognition or identity embeddings.",
+  "no_training": true,
+  "production_integration": false
+}

@@ -246,6 +246,12 @@ def analyze_video(
                     if p["counted"]
                 ]
                 visible = {p["track_id"] for p in normalized if p["identity_reliable"]}
+                if detector.service_boundary:
+                    visible.update(
+                        v.customer_id
+                        for v in detector.service_boundary.visits.values()
+                        if not v.retired and v.raw_ids and v.raw_ids[-1] in visible
+                    )
                 missing_interior = any(
                     s.inside and key not in visible and not detector.in_zone(s.last_point, "exit")
                     for key, s in detector.people.items()

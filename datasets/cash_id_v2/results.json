@@ -1,0 +1,430 @@
+{
+  "policy": {
+    "validation_sha256": "8318b4378a45fa6b4154f627d9cdc976257fc8285d350d02355481f4dcce4c28",
+    "confidence": 0.25,
+    "match_iou": 0.5,
+    "imgsz": 768,
+    "metrics_version": 2,
+    "subsets": {
+      "counter_without_hand": [
+        "v03_01850",
+        "v03_01900",
+        "v03_01950",
+        "v02_01550",
+        "v02_01600",
+        "v02_01650"
+      ]
+    },
+    "purpose": "Evaluation metadata only; never passed to detector, training sampler, tracking or events.",
+    "decision_policy": {
+      "counter_without_hand": "TP must exceed both baselines on the fixed six frames",
+      "cash_in_hand": "TP must be at least both baselines (strict no-loss guard; one target = 10 percentage points)",
+      "cash_precision": "At least both baselines",
+      "cash_recall": "At least both baselines",
+      "total_cash_false_positives": "No higher than either baseline",
+      "empty_counter_false_positives": "Zero preferred; report both baseline comparisons",
+      "id_to_cash": "No higher than either baseline; zero preferred",
+      "production_promotion": "Never automatic. No full pipeline in this experiment."
+    },
+    "limitations": [
+      "42 frames from only two correlated video sequences; not an independent new test set.",
+      "Annotations are provisional assistant visual review, not independent human ground truth.",
+      "Previous candidate was selected with these validation sources; new candidate uses a fixed final epoch without held-out checkpoint selection."
+    ]
+  },
+  "models": {
+    "old": {
+      "model": "C:\\Users\\dilda\\OneDrive\\Desktop\\Sana_datathon\\Sana\\data\\cash\\models\\cash.pt",
+      "model_sha256": "642c2c6d7d2db563d05afc04cff32f09a6371067633639e238cf64f7e34839b7",
+      "supported_classes": [
+        "cash"
+      ],
+      "classes": {
+        "cash": {
+          "tp": 9,
+          "fp": 8,
+          "fn": 20,
+          "precision": 0.5294117647058824,
+          "recall": 0.3103448275862069
+        },
+        "id_card": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 22,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "cash_categories": {
+        "cash_at_counter": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 13,
+          "precision": 0.5,
+          "recall": 0.07142857142857142,
+          "frames": 14
+        },
+        "cash_in_hand": {
+          "tp": 4,
+          "fp": 3,
+          "fn": 6,
+          "precision": 0.5714285714285714,
+          "recall": 0.4,
+          "frames": 10
+        },
+        "cash_on_table": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "frames": 0
+        },
+        "cash_transfer": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "frames": 5
+        }
+      },
+      "false_positives": {
+        "id_to_cash_predictions": 3,
+        "id_to_cash_iou50_predictions": 2,
+        "id_to_cash_frames": 2,
+        "id_frames": 22,
+        "id_objects": 22,
+        "empty_counter_frames": 28,
+        "empty_counter_fp": 0,
+        "empty_counter_fp_frames": 0,
+        "hands_without_cash_frames": 13,
+        "hands_without_cash_cash_fp": 3,
+        "table_without_cash_frames": 13,
+        "table_without_cash_cash_fp": 3,
+        "id_without_cash_frames": 7,
+        "id_without_cash_cash_fp": 3
+      },
+      "counter_without_hand": {
+        "frames": 6,
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "precision": null,
+        "recall": 0.0,
+        "details": [
+          {
+            "id": "v03_01850",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v03_01900",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v03_01950",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01550",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01600",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01650",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          }
+        ]
+      }
+    },
+    "previous": {
+      "model": "C:\\Users\\dilda\\OneDrive\\Desktop\\Sana_datathon\\Sana\\data\\cash\\runs\\cash_id_v1_run2\\weights\\best.pt",
+      "model_sha256": "7f509e62f491c79c0f297e2c4acc4c580f7c72486aa6c56c00303e332d5444fd",
+      "supported_classes": [
+        "cash",
+        "id_card"
+      ],
+      "classes": {
+        "cash": {
+          "tp": 14,
+          "fp": 10,
+          "fn": 15,
+          "precision": 0.5833333333333334,
+          "recall": 0.4827586206896552
+        },
+        "id_card": {
+          "tp": 16,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.64,
+          "recall": 0.7272727272727273
+        }
+      },
+      "cash_categories": {
+        "cash_at_counter": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.875,
+          "recall": 0.5,
+          "frames": 14
+        },
+        "cash_in_hand": {
+          "tp": 3,
+          "fp": 7,
+          "fn": 7,
+          "precision": 0.3,
+          "recall": 0.3,
+          "frames": 10
+        },
+        "cash_on_table": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "frames": 0
+        },
+        "cash_transfer": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "frames": 5
+        }
+      },
+      "false_positives": {
+        "id_to_cash_predictions": 2,
+        "id_to_cash_iou50_predictions": 0,
+        "id_to_cash_frames": 2,
+        "id_frames": 22,
+        "id_objects": 22,
+        "empty_counter_frames": 28,
+        "empty_counter_fp": 1,
+        "empty_counter_fp_frames": 1,
+        "hands_without_cash_frames": 13,
+        "hands_without_cash_cash_fp": 1,
+        "table_without_cash_frames": 13,
+        "table_without_cash_cash_fp": 1,
+        "id_without_cash_frames": 7,
+        "id_without_cash_cash_fp": 1
+      },
+      "counter_without_hand": {
+        "frames": 6,
+        "tp": 0,
+        "fp": 1,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "details": [
+          {
+            "id": "v03_01850",
+            "cash_tp": 0,
+            "best_cash_iou": 0.0,
+            "cash_predictions": [
+              {
+                "label": "cash",
+                "box_xyxy": [
+                  100.7000961303711,
+                  398.76373291015625,
+                  116.12846374511719,
+                  411.5247497558594
+                ],
+                "confidence": 0.5664659142494202
+              }
+            ]
+          },
+          {
+            "id": "v03_01900",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v03_01950",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01550",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01600",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01650",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          }
+        ]
+      }
+    },
+    "candidate": {
+      "model": "C:\\Users\\dilda\\OneDrive\\Desktop\\Sana_datathon\\Sana\\data\\cash\\runs\\cash_id_v2_counter_gpu\\weights\\last.pt",
+      "model_sha256": "6ede596b2f3e7c6b2c713dc33181db26b8d497eb9cb8485383d1dcedff8b3df1",
+      "supported_classes": [
+        "cash",
+        "id_card"
+      ],
+      "classes": {
+        "cash": {
+          "tp": 13,
+          "fp": 9,
+          "fn": 16,
+          "precision": 0.5909090909090909,
+          "recall": 0.4482758620689655
+        },
+        "id_card": {
+          "tp": 17,
+          "fp": 10,
+          "fn": 5,
+          "precision": 0.6296296296296297,
+          "recall": 0.7727272727272727
+        }
+      },
+      "cash_categories": {
+        "cash_at_counter": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 8,
+          "precision": 0.75,
+          "recall": 0.42857142857142855,
+          "frames": 14
+        },
+        "cash_in_hand": {
+          "tp": 3,
+          "fp": 7,
+          "fn": 7,
+          "precision": 0.3,
+          "recall": 0.3,
+          "frames": 10
+        },
+        "cash_on_table": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "frames": 0
+        },
+        "cash_transfer": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "frames": 5
+        }
+      },
+      "false_positives": {
+        "id_to_cash_predictions": 0,
+        "id_to_cash_iou50_predictions": 0,
+        "id_to_cash_frames": 0,
+        "id_frames": 22,
+        "id_objects": 22,
+        "empty_counter_frames": 28,
+        "empty_counter_fp": 0,
+        "empty_counter_fp_frames": 0,
+        "hands_without_cash_frames": 13,
+        "hands_without_cash_cash_fp": 0,
+        "table_without_cash_frames": 13,
+        "table_without_cash_cash_fp": 0,
+        "id_without_cash_frames": 7,
+        "id_without_cash_cash_fp": 0
+      },
+      "counter_without_hand": {
+        "frames": 6,
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "precision": null,
+        "recall": 0.0,
+        "details": [
+          {
+            "id": "v03_01850",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v03_01900",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v03_01950",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01550",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01600",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          },
+          {
+            "id": "v02_01650",
+            "cash_tp": 0,
+            "best_cash_iou": 0,
+            "cash_predictions": []
+          }
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "old": {
+      "counter_without_hand_improved": false,
+      "cash_in_hand_no_loss": false,
+      "cash_precision_no_loss": true,
+      "cash_recall_no_loss": true,
+      "cash_false_positives_not_increased": false,
+      "empty_counter_false_positives_not_increased": true,
+      "id_to_cash_not_increased": true
+    },
+    "previous": {
+      "counter_without_hand_improved": false,
+      "cash_in_hand_no_loss": true,
+      "cash_precision_no_loss": true,
+      "cash_recall_no_loss": false,
+      "cash_false_positives_not_increased": true,
+      "empty_counter_false_positives_not_increased": true,
+      "id_to_cash_not_increased": true
+    }
+  },
+  "all_strict_guards_pass": false,
+  "production_replaced": false,
+  "full_pipeline_run": false
+}

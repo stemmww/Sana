@@ -1,0 +1,33 @@
+{
+  "validation_sha256": "8318b4378a45fa6b4154f627d9cdc976257fc8285d350d02355481f4dcce4c28",
+  "confidence": 0.25,
+  "match_iou": 0.5,
+  "imgsz": 768,
+  "metrics_version": 2,
+  "subsets": {
+    "counter_without_hand": [
+      "v03_01850",
+      "v03_01900",
+      "v03_01950",
+      "v02_01550",
+      "v02_01600",
+      "v02_01650"
+    ]
+  },
+  "purpose": "Evaluation metadata only; never passed to detector, training sampler, tracking or events.",
+  "decision_policy": {
+    "counter_without_hand": "TP must exceed both baselines on the fixed six frames",
+    "cash_in_hand": "TP must be at least both baselines (strict no-loss guard; one target = 10 percentage points)",
+    "cash_precision": "At least both baselines",
+    "cash_recall": "At least both baselines",
+    "total_cash_false_positives": "No higher than either baseline",
+    "empty_counter_false_positives": "Zero preferred; report both baseline comparisons",
+    "id_to_cash": "No higher than either baseline; zero preferred",
+    "production_promotion": "Never automatic. No full pipeline in this experiment."
+  },
+  "limitations": [
+    "42 frames from only two correlated video sequences; not an independent new test set.",
+    "Annotations are provisional assistant visual review, not independent human ground truth.",
+    "Previous candidate was selected with these validation sources; new candidate uses a fixed final epoch without held-out checkpoint selection."
+  ]
+}

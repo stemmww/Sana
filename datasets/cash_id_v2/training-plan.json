@@ -1,0 +1,24 @@
+{
+  "base": "data/cash/runs/cash_id_v1_run2/weights/best.pt",
+  "base_sha256": "7f509e62f491c79c0f297e2c4acc4c580f7c72486aa6c56c00303e332d5444fd",
+  "data": "data/cash_id_v2/dataset/train_only.yaml",
+  "annotation_sha256": "75005d6ec3cce909f580a32644648f9899cd65c20dd91d69cab8ac0bbbcbe7b4",
+  "epochs": 20,
+  "imgsz": 768,
+  "batch": 4,
+  "device": "cpu",
+  "seed": 42,
+  "freeze": 10,
+  "optimizer": "AdamW",
+  "lr0": 0.001,
+  "checkpoint_rule": "Use last.pt after fixed 20 epochs, declared before looking at validation predictions. No checkpoint or hyperparameter selection on 42 held-out frames. Ultralytics internal validation uses training images only and must not be reported as held-out accuracy.",
+  "production_replacement": false,
+  "full_pipeline": false,
+  "validation_protocol": {
+    "frames": 42,
+    "confidence": 0.25,
+    "match_iou": 0.5,
+    "imgsz": 768,
+    "validation_sha256": "8318b4378a45fa6b4154f627d9cdc976257fc8285d350d02355481f4dcce4c28"
+  }
+}

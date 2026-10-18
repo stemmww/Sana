@@ -3,9 +3,11 @@
 from dataclasses import dataclass, field
 from statistics import mean
 
+from app.events.cash_provenance import analyze_cash_provenance
 from app.events.config import EventConfig
 from app.events.observations import suppress_object_duplicates
 from app.events.schemas import FrameObservation
+from app.events.service_boundary import ServiceBoundaryTracker, person_key
 from app.events.tracking import LogicalObjectTracker, area, center, distance
 from app.rules.engine import evaluate
 from app.rules.schemas import Coverage, RuleRequest, SemanticEvent, Span
@@ -73,6 +75,9 @@ class EventDetector:
         self.active_session = None
         self.cashier_id = None
         self.warnings: set[str] = set()
+        self.service_boundary = (
+            ServiceBoundaryTracker(config.service_boundary) if config.service_boundary else None
+        )
 
     def in_zone(self, point, zone):
         return point_in_polygon(point, self.config.zones[zone])
@@ -119,11 +124,12 @@ class EventDetector:
     def person_events(self, frame):
         cfg, t = self.config, frame.timestamp_sec
         visible = {
-            p.track_id: p
+            person_key(p): p
             for p in frame.people
             if p.identity_reliable
             and p.role != "unknown"
             and p.confidence >= cfg.minimum_detection_confidence
+            and (not self.service_boundary or p.role != "customer" or p.customer_id is not None)
         }
         for key, person in visible.items():
             point = center(person.bbox)
@@ -132,7 +138,11 @@ class EventDetector:
                 self.warnings.add("person_role_changed")
                 continue
             zone = "room" if person.role == "cashier" else "customer"
-            inside = self.in_zone(point, zone)
+            inside = (
+                person.service_region == "interior"
+                if self.service_boundary and person.role == "customer"
+                else self.in_zone(point, zone)
+            )
             if t - state.last_seen > cfg.max_observation_gap_sec:
                 state.samples = []
             if inside or state.inside and self.in_zone(point, "room"):
@@ -187,6 +197,8 @@ class EventDetector:
                 state.last_seen, state.last_point = t, point
 
         for key, state in self.people.items():
+            if self.service_boundary and state.role == "customer":
+                continue  # Positive doorway crossing handled separately; no exit from absence.
             person = visible.get(key)
             if not state.inside or person and self.in_zone(center(person.bbox), "room"):
                 continue
@@ -239,7 +251,7 @@ class EventDetector:
         ]
         distances.sort(key=lambda pair: pair[0])
         nearest = distances[0][1] if distances else None
-        by_id = {p.track_id: d for d, p in distances}
+        by_id = {person_key(p): d for d, p in distances}
         zone = next(
             (
                 z
@@ -257,7 +269,7 @@ class EventDetector:
             if d <= cfg.association_radius and margin >= cfg.association_margin:
                 if nearest.track_id == self.cashier_id:
                     owner = "cashier"
-                elif nearest.track_id == self.active_customer:
+                elif person_key(nearest) == self.active_customer:
                     owner = "customer"
                 quality = max(0, 1 - d / (2 * cfg.association_radius))
                 if owner in {"cashier", "customer"} and self.in_zone(point, owner):
@@ -320,6 +332,13 @@ class EventDetector:
     def object_event(self, kind, obs, state, samples, old_samples=None):
         if not self.active_customer:
             return None
+        if (
+            self.config.cash_provenance_enabled
+            and obs["label"] == "cash"
+            and state.session != self.active_session
+        ):
+            self.warnings.add("old_cash_must_not_be_reassigned_to_current_service")
+            return None
         spatial = mean(s["spatial_quality"] for s in samples)
         score = event_score(samples, self.config.object_min_frames, spatial, obs["reconnects"])
         if old_samples:
@@ -358,7 +377,8 @@ class EventDetector:
             obs.update(self.association(obs, frame))
             key = obs["logical_object_id"]
             state = self.objects.get(key)
-            if state is None or state.session != self.active_session:
+            preserve_origin = cfg.cash_provenance_enabled and obs["label"] == "cash"
+            if state is None or state.session != self.active_session and not preserve_origin:
                 state = ObjectState(self.active_session, f"{self.active_session}:{key}")
                 self.objects[key] = state
             self.consider_part_link(obs, state, current_ids)
@@ -370,6 +390,7 @@ class EventDetector:
                     zones.append(zone)
             obs.update(
                 money_group_id=state.group_id,
+                source_session_id=state.session,
                 current_customer_id=self.active_customer,
                 was_in_counter=state.counter_confirmed,
                 previous_zones=zones[-10:],
@@ -526,6 +547,21 @@ class EventDetector:
         if self.first_timestamp is None:
             self.first_timestamp = frame.timestamp_sec
         self.timestamp = frame.timestamp_sec
+        if self.service_boundary:
+            frame, exits = self.service_boundary.update(frame)
+            for crossing in exits:
+                key = crossing["customer_id"]
+                state = self.people.get(key)
+                if state and state.inside:
+                    event = self.emit(
+                        "CUSTOMER_EXIT",
+                        crossing["samples"],
+                        customer=key,
+                        exit_basis=crossing["basis"],
+                    )
+                    if event and event.confidence >= self.config.minimum_event_confidence:
+                        state.inside, state.samples, state.missing = False, [], []
+            self.synchronize_service()
         self.add_coverage(frame)
         self.person_events(frame)
         live_report = self.synchronize_service()
@@ -551,7 +587,7 @@ class EventDetector:
             "active_session": self.active_session,
             "current_customer": self.active_customer,
             "current_customer_visible": any(
-                p.track_id == self.active_customer and p.identity_reliable for p in frame.people
+                person_key(p) == self.active_customer and p.identity_reliable for p in frame.people
             ),
             "recent_events": sorted(
                 self.debug_events
@@ -582,6 +618,14 @@ class EventDetector:
             for d in report.derived_events
         ]
         timeline = sorted(self.debug_events + derived, key=lambda e: e["timestamp_sec"])
+        provenance = None
+        if self.config.cash_provenance_enabled:
+            provenance = analyze_cash_provenance(
+                [{"objects": self.history}],
+                report.sessions,
+                [e.model_dump() for e in request.events],
+                self.config,
+            )
         return {
             "events": timeline,
             "rule_request": request.model_dump(),
@@ -590,4 +634,12 @@ class EventDetector:
             "track_reconnections": self.tracker.links,
             "lineage_links": self.lineage_links,
             "track_history": self.history,
+            "cash_provenance": provenance,
+            "service_boundary": {
+                "crossings": self.service_boundary.transitions,
+                "track_changes": self.service_boundary.track_changes,
+                "uncertainties": self.service_boundary.uncertainties,
+            }
+            if self.service_boundary
+            else None,
         }

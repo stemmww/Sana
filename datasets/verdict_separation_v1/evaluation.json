@@ -1,0 +1,89 @@
+[
+  {
+    "id": "x3",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+    "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+    "cache": "data/events/audit/after/x3",
+    "older_debug": "data/events/x3/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x3",
+    "mode": "legacy",
+    "config": "config/event_camera.json",
+    "detections": "data/events/audit/after/x3/detections.json",
+    "baseline": "data/events/audit/after/x3"
+  },
+  {
+    "id": "x2",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+    "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+    "cache": "data/events/audit/after/x2",
+    "older_debug": "data/events/x2/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x2",
+    "mode": "legacy",
+    "config": "config/event_camera.json",
+    "detections": "data/events/audit/after/x2/detections.json",
+    "baseline": "data/events/audit/after/x2"
+  },
+  {
+    "id": "x1",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+    "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+    "cache": "data/events/audit/after/x1",
+    "older_debug": "data/events/x1/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x1",
+    "mode": "legacy",
+    "config": "config/event_camera.json",
+    "detections": "data/events/audit/after/x1/detections.json",
+    "baseline": "data/events/audit/after/x1"
+  },
+  {
+    "id": "x5",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-5.mov",
+    "video_sha256": "1f5840bff58f298e89c4afa00cb1c18f6dafc5c4096c251d9b507604ebefe906",
+    "cache": "data/counter_sequence_v1/x5",
+    "detections": "data/cash_security_v1/x5/input-detections.json",
+    "auxiliary": "data/cash_security_v1/x5",
+    "mode": "service",
+    "config": "config/event_camera_service.json",
+    "baseline": "data/service_boundaries_v1/x5"
+  },
+  {
+    "id": "x4",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+    "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+    "detections": "data/cash_security_v1/x4/input-detections.json",
+    "auxiliary": "data/cash_security_v1/x4",
+    "mode": "service",
+    "config": "config/event_camera_service.json",
+    "baseline": "data/service_boundaries_v1/x4"
+  },
+  {
+    "id": "x8",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-8.mov",
+    "video_sha256": "6a53e10acdcf52396ad5b1697eead32d8322c0911d792523a5c33fe5b388f4e7",
+    "fps": 29.97370727432077,
+    "frame_count": 1140.0,
+    "dimensions": [
+      464.0,
+      848.0
+    ],
+    "profile": "config/camera_profiles/desk-wide-a.json",
+    "observations": "data/normal_cash_operations_v1/x8",
+    "mode": "cash_operation",
+    "baseline": "data/cash_operations_v1/x8"
+  },
+  {
+    "id": "x10",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-10.mov",
+    "video_sha256": "57a0e46c7a45f0e831f61d9c80722fefe4b74dbcfe1d3031ff58307d481f9a5c",
+    "fps": 30.0,
+    "frame_count": 467.0,
+    "dimensions": [
+      464.0,
+      848.0
+    ],
+    "profile": "config/camera_profiles/desk-wide-b.json",
+    "observations": "data/normal_cash_operations_v1/x10",
+    "mode": "cash_operation",
+    "baseline": "data/cash_operations_v1/x10"
+  }
+]

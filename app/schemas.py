@@ -38,6 +38,8 @@ class AnalysisResult(BaseModel):
 
     verdict: Literal["no_violation", "violation"]
     violations: list[Violation]
+    # Optional for existing analyzer callables and stored jobs. Present for composed results.
+    diagnostics: dict | None = Field(default=None, exclude_if=lambda value: value is None)
 
     @model_validator(mode="after")
     def validate_verdict(self) -> Self:

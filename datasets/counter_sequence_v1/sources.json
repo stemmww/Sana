@@ -1,0 +1,32 @@
+[
+  {
+    "id": "x3",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-3.mov",
+    "video_sha256": "21468fcef4ea5f45ce7d465e620f84e09c8b50314f4ecdc06f69224c701b3a5b",
+    "cache": "data/events/audit/after/x3",
+    "older_debug": "data/events/x3/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x3"
+  },
+  {
+    "id": "x2",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-2.mov",
+    "video_sha256": "9932ae0a10d3b9371bf52ea558dc19092fcf47adcd275a73a52a56b95464bca6",
+    "cache": "data/events/audit/after/x2",
+    "older_debug": "data/events/x2/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x2"
+  },
+  {
+    "id": "x1",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\X-1.mov",
+    "video_sha256": "8911a9219b9433091824e553a70bb80335f075fd8ac982d2062d2ecf023c16bc",
+    "cache": "data/events/audit/after/x1",
+    "older_debug": "data/events/x1/debug.mp4",
+    "rejected_candidate_cache": "data/events/audit/candidate/x1"
+  },
+  {
+    "id": "x5",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-5.mov",
+    "video_sha256": "1f5840bff58f298e89c4afa00cb1c18f6dafc5c4096c251d9b507604ebefe906",
+    "cache": "data/counter_sequence_v1/x5"
+  }
+]

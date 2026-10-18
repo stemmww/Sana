@@ -1,0 +1,137 @@
+CashOperation без обязательного клиента
+======================================
+
+Новая возможность включается явно через app.cv.analyze_cash_operations.
+Существующие API, EventDetector, ServiceSession, R01–R05, tracking и веса не менялись.
+Новый модуль повторно использует существующий video adapter и tracker, сохраняет
+их вывод в legacy/, а независимую денежную историю — в cash-operations.json.
+События CashOperation не пересылаются в старые правила и не создают клиента.
+
+CashOperation хранит operation_id, start_time, end_time, associated_session_id
+(может быть null), cashier_track_id, logical_cash_ids, events,
+completion_status, evidence_confidence и uncertainty.
+
+Семантика
+---------
+Начало требует нескольких положительных наблюдений перемещаемых денег возле
+кисти кассира. Одной близости кисти к неподвижной стопке недостаточно.
+Положительный переход между состояниями того же logical_cash_id создаёт:
+MONEY_FROM_TABLE, MONEY_TO_TABLE, MONEY_TO_COUNTER, MONEY_FROM_COUNTER.
+Сохраняются evidence times/frames, confidence и причины неопределённости.
+Confidence является эвристической оценкой доказательств, не вероятностью истины.
+
+Подтверждённый цикл счётчика может завершиться как MONEY_TO_TABLE, так и
+MONEY_TO_SAFE. Сейф не является обязательным конечным состоянием.
+CASH_OPERATION_COMPLETED означает наблюдённое завершение денежного цикла;
+оно не удостоверяет все бизнес-процедуры, корректность записи или физический замок.
+NOTEBOOK_WRITING отложен по приоритету пользователя и не влияет на нарушения.
+
+MONEY_TO_SAFE допускается только при положительных наблюдениях открытого сейфа,
+пересечения проёма и видимых денег внутри, от проверенного источника наблюдений.
+Текущий видеоадаптер такого доказательства не выдаёт: попадание bbox в SAFE_ZONE
+или исчезновение detection недостаточно. Это ограничение не скрывается.
+
+Разные logical IDs автоматически не объединяются. Пропуски/неоднозначность
+разрывают подтверждаемую последовательность; end_time остаётся null, если конец
+не виден. Несколько незавершённых записей могут быть фрагментами одной реальной
+операции, поэтому их количество нельзя выдавать за число операций человека.
+Связь с ServiceSession фиксируется при старте и не меняется на следующую сессию.
+
+Профили камеры
+--------------
+config/camera_profiles/desk-wide-a.json и desk-wide-b.json — два разных ракурса.
+Для каждого сохранён эталон JPG и ручная геометрическая калибровка:
+cashier, customer (видимая полоса сбоку от стола), counter, counter_output,
+table, safe. Полная граница входа клиента здесь не калибровалась: это не замена
+service camera profile для X-4/X-5.
+
+Пользователь явно выбирает --profile после сравнения эталонного изображения
+с новой камерой. Имя видео не участвует в runtime-выборе.
+До применения зон проверяются все кадры cache: минимум 3 из 4 неподвижных
+текстурных ориентиров, NCC >= 0.85, смещение <= 4 px в радиусе поиска 6 px.
+Проверяются размер кадра и SHA эталона. Если геометрия не подтверждена хотя бы
+на одном используемом кадре, обработка с этим профилем отклоняется.
+Для другой камеры необходима новая калибровка. Программного переноса старых зон нет.
+
+Запуск из корня Sana
+-------------------
+Нужны существующие person/cash detections и pose cache именно этого видео.
+Их SHA проверяется. В этой проверке использованы ранее полученные на RTX 3050
+наблюдения; новые модели и обучение не запускались. Replay/OpenCV работают на CPU.
+
+.\.venv\Scripts\python.exe -m app.cv.analyze_cash_operations "путь\видео.mov" --profile config/camera_profiles/desk-wide-a.json --replay "путь\input-detections.json" --poses "путь\poses.json" --output data/cash_operations_new
+
+Вывод:
+camera-validation.json — проверка геометрии каждого кадра;
+zones.jpg — наложение зон;
+cash-observations.json — местоположение/кисти/наблюдения денег;
+cash-operations.json — независимые операции;
+api-result.json — внешний verdict/violations и полная диагностика;
+timeline.txt и debug.mp4 — события и визуальное доказательство;
+evidence/ — оригинальные кадры;
+legacy/ — неизменённый прежний Event Detector и Rule Engine.
+
+Повторить текущую проверку X-8/X-10:
+.\.venv\Scripts\python.exe -m experiments.validate_cash_operations evaluate
+.\.venv\Scripts\python.exe -m experiments.validate_cash_operations report
+
+datasets/cash_operations_v1/evaluation.json содержит явно выбранные профили
+и пути тестовых видео. Это протокол оценки, не правило принятия решений.
+Отдельная wrist-диагностика использует существующий алгоритм с новыми зонами;
+гипотезы контакта/извлечения не повышаются до подтверждённых денежных событий.
+
+Регрессия:
+.\.venv\Scripts\python.exe -m pytest -q -p no:cacheprovider
+
+Результаты реальных видео и тестов: data/cash_operations_v1/report.html.
+Нормальные сценарии пока не распознаются целиком: money tracking фрагментируется,
+наблюдения внутри счётчика недостаточны, помещение за дверцу сейфа не подтверждено.
+R05 остаётся отдельным правилом с положительным доказательством денег предыдущей
+операции на столе при следующем клиенте. Отсутствие MONEY_TO_SAFE не используется
+как нарушение. No violation для самостоятельного возврата на стол в unit tests
+означает отсутствие созданной тревоги; прежний R05 может возвращать
+insufficient_evidence при отсутствии клиентского сценария.
+
+Разделение результатов (обновление)
+---------------------------------
+CashOperationDetector.finish() теперь возвращает status, а не verdict.
+Это статус распознавания: completed либо insufficient_evidence. Поля
+completion_status и end_time каждой операции сохраняются без искусственного завершения.
+
+app.services.analysis_result.compose_analysis_result() формирует внешний AnalysisResult:
+- есть подтверждённое нарушение в результате Rule Engine -> violation;
+- нет подтверждённых нарушений -> no_violation, violations = [].
+
+no_violation означает только отсутствие обнаруженных подтверждённых нарушений.
+Полное соблюдение кассовых процедур этим не устанавливается.
+CashOperation не создаёт и не подавляет нарушения правил. Прежний R05 продолжает
+требовать положительного доказательства денег предыдущей операции и нового клиента.
+
+diagnostics сохраняет:
+- analysis_status (complete/incomplete);
+- cash_operation_status и весь cash_operation, включая end_time=null;
+- rule_reports: неизменённые verdict/violations/uncertainties R01–R04 и R05;
+- insufficient_evidence_reasons;
+- semantic_events;
+- full_procedural_compliance=not_established.
+
+Низкоуровневые /api/v1/rules/evaluate и /api/v1/rules/cash-security/evaluate по-прежнему
+возвращают исходный трёхзначный результат правил. Итог /api/v1/jobs/{job_id} остаётся
+двухзначным и теперь может сохранять diagnostics. Старые результаты без diagnostics
+совместимы. Исключения декодирования/обработки остаются ошибками jobs, а не нормой.
+
+app.cv.analyze_cash_operations.run() возвращает API-совместимый результат;
+сырой статус распознавания сохранён отдельно в cash-operations.json.
+При сборке подтверждённой тревоги JPEG evidence извлекается из исходного видео.
+Ошибка получения доказательства не превращает подтверждённую тревогу в no_violation.
+
+Проверка семи реальных видео по сохранённым detections/pose с проверкой SHA:
+.\.venv\Scripts\python.exe -m experiments.validate_verdict_separation evaluate
+.\.venv\Scripts\python.exe -m experiments.validate_verdict_separation report
+
+Отчёт: data/verdict_separation_v1/report.html.
+В текущем прогоне X-8/X-10: внешний no_violation, violations=[], CashOperation
+insufficient_evidence, конец не подтверждён. X-1/X-2/X-3/X-4/X-5: прежние события
+и rule reports не изменились; CashOperation для этих ракурсов не запускалась
+(not_evaluated). Отсутствие подтверждённых тревог на X-1/X-2/X-4 является текущим
+ограничением распознавания, а не доказательством нормальности этих сценариев.

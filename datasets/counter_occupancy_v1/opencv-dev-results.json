@@ -1,0 +1,169 @@
+{
+  "selected_model": "color_texture_ridge_10",
+  "models": [
+    {
+      "name": "absolute_difference",
+      "type": "difference",
+      "score_index": 0,
+      "threshold": 12.367032231490063,
+      "train": {
+        "tp": 0,
+        "fn": 6,
+        "fp": 0,
+        "tn": 9,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5,
+        "errors": [
+          "c01_01600",
+          "c01_01800",
+          "c01_01900",
+          "c04_02700",
+          "c04_02950",
+          "c04_03100"
+        ]
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 1,
+        "tn": 9,
+        "precision": 0.75,
+        "recall": 1.0,
+        "specificity": 0.9,
+        "balanced_accuracy": 0.95,
+        "errors": [
+          "c05_00000"
+        ]
+      }
+    },
+    {
+      "name": "compensated_difference_p98",
+      "type": "difference",
+      "score_index": 1,
+      "threshold": 42.72836875915527,
+      "train": {
+        "tp": 0,
+        "fn": 6,
+        "fp": 0,
+        "tn": 9,
+        "precision": null,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5,
+        "errors": [
+          "c01_01600",
+          "c01_01800",
+          "c01_01900",
+          "c04_02700",
+          "c04_02950",
+          "c04_03100"
+        ]
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 1,
+        "tn": 9,
+        "precision": 0.75,
+        "recall": 1.0,
+        "specificity": 0.9,
+        "balanced_accuracy": 0.95,
+        "errors": [
+          "c05_00000"
+        ]
+      }
+    },
+    {
+      "name": "color_texture_ridge_1",
+      "type": "ridge",
+      "alpha": 1.0,
+      "threshold": 0.0617951401115128,
+      "train": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 1,
+        "tn": 9,
+        "precision": 0.75,
+        "recall": 1.0,
+        "specificity": 0.9,
+        "balanced_accuracy": 0.95,
+        "errors": [
+          "c05_00000"
+        ]
+      }
+    },
+    {
+      "name": "color_texture_ridge_10",
+      "type": "ridge",
+      "alpha": 10.0,
+      "threshold": 0.5739836360229456,
+      "train": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      }
+    },
+    {
+      "name": "color_texture_ridge_100",
+      "type": "ridge",
+      "alpha": 100.0,
+      "threshold": 0.5503936921410549,
+      "train": {
+        "tp": 3,
+        "fn": 3,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 0.5,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.75,
+        "errors": [
+          "c01_01900",
+          "c04_02700",
+          "c04_03100"
+        ]
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      }
+    }
+  ]
+}

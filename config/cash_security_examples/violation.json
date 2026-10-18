@@ -1,0 +1,347 @@
+{
+  "duration_sec": 20,
+  "events": [
+    {
+      "event_id": "CASHIER_PRESENT-0",
+      "type": "CASHIER_PRESENT",
+      "start_sec": 0,
+      "end_sec": 0.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        0,
+        0.25,
+        0.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "SERVICE_STARTED-1",
+      "type": "SERVICE_STARTED",
+      "start_sec": 1,
+      "end_sec": 1.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        1,
+        1.25,
+        1.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "ID_TRANSFER_TO_CASHIER-2",
+      "type": "ID_TRANSFER_TO_CASHIER",
+      "start_sec": 2,
+      "end_sec": 2.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "id-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        2,
+        2.25,
+        2.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "ID_CHECK-3",
+      "type": "ID_CHECK",
+      "start_sec": 3,
+      "end_sec": 3.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "id-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        3,
+        3.25,
+        3.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "ID_ON_TABLE-4",
+      "type": "ID_ON_TABLE",
+      "start_sec": 4,
+      "end_sec": 4.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "id-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        4,
+        4.25,
+        4.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "MONEY_TRANSFER_TO_CASHIER-5",
+      "type": "MONEY_TRANSFER_TO_CASHIER",
+      "start_sec": 5,
+      "end_sec": 5.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        5,
+        5.25,
+        5.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "MONEY_TO_COUNTER-6",
+      "type": "MONEY_TO_COUNTER",
+      "start_sec": 6,
+      "end_sec": 6.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        6,
+        6.25,
+        6.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "MONEY_FROM_COUNTER-7",
+      "type": "MONEY_FROM_COUNTER",
+      "start_sec": 7,
+      "end_sec": 7.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        7,
+        7.25,
+        7.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "MONEY_HELD_BY_CASHIER-8",
+      "type": "MONEY_HELD_BY_CASHIER",
+      "start_sec": 8,
+      "end_sec": 8.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        8,
+        8.25,
+        8.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "CUSTOMER_EXIT-14",
+      "type": "CUSTOMER_EXIT",
+      "start_sec": 14,
+      "end_sec": 14.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        14,
+        14.25,
+        14.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "CUSTOMER_ENTER-16",
+      "type": "CUSTOMER_ENTER",
+      "start_sec": 16,
+      "end_sec": 16.5,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 3,
+      "confidence": 0.98,
+      "customer_id": "customer-b",
+      "operation_id": "operation-b",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        16,
+        16.25,
+        16.5
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    },
+    {
+      "event_id": "MONEY_LEFT_ON_TABLE-9",
+      "type": "MONEY_LEFT_ON_TABLE",
+      "start_sec": 9,
+      "end_sec": 17,
+      "source": "synthetic_example",
+      "status": "confirmed",
+      "sample_count": 33,
+      "confidence": 0.98,
+      "customer_id": "customer-a",
+      "operation_id": "operation-a",
+      "person_id": "cashier-a",
+      "object_id": "cash-a",
+      "money_group_id": "deposit-a",
+      "safe_id": "safe-a",
+      "evidence_times": [
+        9.0,
+        9.25,
+        9.5,
+        9.75,
+        10.0,
+        10.25,
+        10.5,
+        10.75,
+        11.0,
+        11.25,
+        11.5,
+        11.75,
+        12.0,
+        12.25,
+        12.5,
+        12.75,
+        13.0,
+        13.25,
+        13.5,
+        13.75,
+        14.0,
+        14.25,
+        14.5,
+        14.75,
+        15.0,
+        15.25,
+        15.5,
+        15.75,
+        16.0,
+        16.25,
+        16.5,
+        16.75,
+        17.0
+      ],
+      "evidence_frames": [
+        "synthetic-frame-1",
+        "synthetic-frame-2",
+        "synthetic-frame-3"
+      ]
+    }
+  ]
+}

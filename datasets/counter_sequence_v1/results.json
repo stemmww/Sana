@@ -1,0 +1,229 @@
+{
+  "protocol_sha256": "c8e40d001c337c023b364663c5c9e04321677c4cc3f4db70b1116709cafa6fea",
+  "ground_truth_sha256": "f421416ab7bc499088aabebecb404eae767ab2d2bed2e29ed02904a86d566e85",
+  "results": [
+    {
+      "video": "x3",
+      "mode": "body_box_reach",
+      "true_interactions": 1,
+      "detected": 0,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 17.3,
+      "negative_false_events": 0,
+      "matched_events": [],
+      "missed_action_ids": [
+        "deposit"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": [
+        {
+          "type": "CASH_REAPPEARED_NEAR_COUNTER",
+          "timestamp_sec_rounded": 18.73,
+          "reason": "Enlarged evidence shows cash bbox covers the cashier's EMPTY HAND, not the ID (ID is elsewhere on table). Cash remains in the machine. No actual cash reappearance near cashier."
+        }
+      ]
+    },
+    {
+      "video": "x3",
+      "mode": "zone_motion_only",
+      "true_interactions": 1,
+      "detected": 0,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 17.3,
+      "negative_false_events": 0,
+      "matched_events": [],
+      "missed_action_ids": [
+        "deposit"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": [
+        {
+          "type": "CASH_REAPPEARED_NEAR_COUNTER",
+          "timestamp_sec_rounded": 18.73,
+          "reason": "Enlarged evidence shows cash bbox covers the cashier's EMPTY HAND, not the ID (ID is elsewhere on table). Cash remains in the machine. No actual cash reappearance near cashier."
+        }
+      ]
+    },
+    {
+      "video": "x2",
+      "mode": "body_box_reach",
+      "true_interactions": 1,
+      "detected": 0,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 14.4,
+      "negative_false_events": 0,
+      "matched_events": [],
+      "missed_action_ids": [
+        "deposit"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": []
+    },
+    {
+      "video": "x2",
+      "mode": "zone_motion_only",
+      "true_interactions": 1,
+      "detected": 1,
+      "missed": 0,
+      "false_events": 0,
+      "negative_duration_sec": 14.4,
+      "negative_false_events": 0,
+      "matched_events": [
+        {
+          "event_id": "diagnostic-3",
+          "timestamp_sec": 14.523398692810458,
+          "hypothesis": "possible_deposit",
+          "result": "TP",
+          "matched_action": "deposit",
+          "in_reviewed_negative": false,
+          "confidence": 0.55
+        }
+      ],
+      "missed_action_ids": [],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "PROBABLE_COUNTER_INTERACTION": 1
+      },
+      "false_auxiliary_markers": []
+    },
+    {
+      "video": "x1",
+      "mode": "body_box_reach",
+      "true_interactions": 2,
+      "detected": 1,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 22.099999999999998,
+      "negative_false_events": 0,
+      "matched_events": [
+        {
+          "event_id": "diagnostic-3",
+          "timestamp_sec": 14.270017182130584,
+          "hypothesis": "possible_deposit",
+          "result": "TP",
+          "matched_action": "deposit",
+          "in_reviewed_negative": false,
+          "confidence": 0.65
+        }
+      ],
+      "missed_action_ids": [
+        "withdrawal"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "PROBABLE_COUNTER_INTERACTION": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": []
+    },
+    {
+      "video": "x1",
+      "mode": "zone_motion_only",
+      "true_interactions": 2,
+      "detected": 1,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 22.099999999999998,
+      "negative_false_events": 0,
+      "matched_events": [
+        {
+          "event_id": "diagnostic-3",
+          "timestamp_sec": 14.270017182130584,
+          "hypothesis": "possible_deposit",
+          "result": "TP",
+          "matched_action": "deposit",
+          "in_reviewed_negative": false,
+          "confidence": 0.55
+        }
+      ],
+      "missed_action_ids": [
+        "withdrawal"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "PROBABLE_COUNTER_INTERACTION": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": []
+    },
+    {
+      "video": "x5",
+      "mode": "body_box_reach",
+      "true_interactions": 2,
+      "detected": 1,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 67.19999999999999,
+      "negative_false_events": 0,
+      "matched_events": [
+        {
+          "event_id": "diagnostic-3",
+          "timestamp_sec": 25.936223776223777,
+          "hypothesis": "possible_deposit",
+          "result": "TP",
+          "matched_action": "deposit",
+          "in_reviewed_negative": false,
+          "confidence": 0.65
+        }
+      ],
+      "missed_action_ids": [
+        "withdrawal"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "PROBABLE_COUNTER_INTERACTION": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": []
+    },
+    {
+      "video": "x5",
+      "mode": "zone_motion_only",
+      "true_interactions": 2,
+      "detected": 1,
+      "missed": 1,
+      "false_events": 0,
+      "negative_duration_sec": 67.19999999999999,
+      "negative_false_events": 0,
+      "matched_events": [
+        {
+          "event_id": "diagnostic-3",
+          "timestamp_sec": 25.936223776223777,
+          "hypothesis": "possible_deposit",
+          "result": "TP",
+          "matched_action": "deposit",
+          "in_reviewed_negative": false,
+          "confidence": 0.55
+        }
+      ],
+      "missed_action_ids": [
+        "withdrawal"
+      ],
+      "diagnostic_marker_counts": {
+        "CASH_APPROACHED_COUNTER": 1,
+        "PROBABLE_COUNTER_INTERACTION": 1,
+        "CASH_DISAPPEARED_NEAR_COUNTER": 1,
+        "CASH_REAPPEARED_NEAR_COUNTER": 1
+      },
+      "false_auxiliary_markers": []
+    }
+  ]
+}

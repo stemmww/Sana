@@ -1,0 +1,193 @@
+{
+  "parent_annotation_sha256": "834dcfae83aa927c6fa8edd7398b1e9899cb492b1f0cef46d196eb5d6932097a",
+  "new_ids": [
+    "v2_14_05100",
+    "v2_14_06200",
+    "v2_14_06800",
+    "v2_14_07800",
+    "v2_14_09000",
+    "v2_43_00300",
+    "v2_43_00600",
+    "v2_43_02100",
+    "v2_46_00200",
+    "v2_46_00500",
+    "v2_05_02800",
+    "v2_05_03100",
+    "v2_04_06100",
+    "v2_04_06500",
+    "v2_04_06700",
+    "v2_20_01040",
+    "v2_26_00000",
+    "v2_12_01150",
+    "v2_12_03800",
+    "v2_13_05800",
+    "v2_05_00800",
+    "v2_05_01000",
+    "v2_05_06900",
+    "v2_05_07000",
+    "v2_01_00500",
+    "v2_05_02100",
+    "v2_05_02300"
+  ],
+  "corrections": [
+    {
+      "id": "x14_055",
+      "before": {
+        "id": "x14_055",
+        "split": "train",
+        "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\\u0425-14.mov",
+        "video_sha256": "7d6890ecb4a2b28bbdd3b61b6711566eee84a53ab3439c40cd9b6a3a6714c681",
+        "timecode_sec": 55.00525782042281,
+        "image": "data\\cash\\frames\\x14_055.jpg",
+        "width": 464,
+        "height": 848,
+        "review": "reviewed_provisional",
+        "objects": [
+          {
+            "label": "cash",
+            "box_xyxy": [
+              183,
+              427,
+              199,
+              438
+            ],
+            "category": "cash_on_table"
+          },
+          {
+            "label": "cash",
+            "box_xyxy": [
+              199,
+              415,
+              233,
+              433
+            ],
+            "category": "cash_on_table"
+          }
+        ],
+        "categories": [],
+        "counter_roi": null,
+        "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+        "image_sha256": "9aa6792aaa3b3829a2617e106bca87880d3774aa825a47794713a70492319b11"
+      },
+      "after": {
+        "id": "x14_055",
+        "split": "train",
+        "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\\u0425-14.mov",
+        "video_sha256": "7d6890ecb4a2b28bbdd3b61b6711566eee84a53ab3439c40cd9b6a3a6714c681",
+        "timecode_sec": 55.00525782042281,
+        "image": "data\\cash\\frames\\x14_055.jpg",
+        "width": 464,
+        "height": 848,
+        "review": "reviewed_provisional",
+        "objects": [
+          {
+            "label": "cash",
+            "box_xyxy": [
+              183,
+              427,
+              199,
+              438
+            ],
+            "category": "cash_on_table"
+          },
+          {
+            "label": "cash",
+            "box_xyxy": [
+              199,
+              415,
+              233,
+              433
+            ],
+            "category": "cash_on_table"
+          },
+          {
+            "label": "cash",
+            "box_xyxy": [
+              83,
+              381,
+              96,
+              394
+            ],
+            "category": "cash_at_counter"
+          }
+        ],
+        "categories": [],
+        "counter_roi": null,
+        "review_note": "Counter re-audit: add previously omitted visible blue notes in input hopper; housing excluded. Neighboring training frames confirm placement and removal.",
+        "image_sha256": "9aa6792aaa3b3829a2617e106bca87880d3774aa825a47794713a70492319b11",
+        "counter_state": "cash_without_hand"
+      }
+    },
+    {
+      "id": "x35_015",
+      "before": {
+        "id": "x35_015",
+        "split": "train",
+        "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\\u0425-35.mov",
+        "video_sha256": "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+        "timecode_sec": 14.99307843137255,
+        "image": "data\\cash\\frames\\x35_015.jpg",
+        "width": 464,
+        "height": 848,
+        "review": "reviewed_provisional",
+        "objects": [],
+        "categories": [
+          "hands_without_cash",
+          "table_without_cash"
+        ],
+        "counter_roi": null,
+        "review_note": "Rechecked in legacy audit contact sheet; retained visible cash boxes; no visible ID.",
+        "image_sha256": "d25458a2b00bf76c091e40415e1b07435d82bce2ebac5e285ba72210aafc33b3"
+      },
+      "after": {
+        "id": "x35_015",
+        "split": "train",
+        "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\\u0425-35.mov",
+        "video_sha256": "26430119e074d6f0eb5dbc7ec3e26bbc31cf18903265bb4372bd7d7104908640",
+        "timecode_sec": 14.99307843137255,
+        "image": "data\\cash\\frames\\x35_015.jpg",
+        "width": 464,
+        "height": 848,
+        "review": "reviewed_provisional",
+        "objects": [
+          {
+            "label": "cash",
+            "box_xyxy": [
+              277,
+              347,
+              291,
+              356
+            ],
+            "category": "cash_at_counter"
+          },
+          {
+            "label": "cash",
+            "box_xyxy": [
+              260,
+              378,
+              282,
+              394
+            ],
+            "category": "cash_at_counter"
+          }
+        ],
+        "categories": [],
+        "counter_roi": null,
+        "review_note": "Counter re-audit: incorrect negative corrected. Blue banknotes visible in upper hopper and lower output; verified against empty state in same training source.",
+        "image_sha256": "d25458a2b00bf76c091e40415e1b07435d82bce2ebac5e285ba72210aafc33b3",
+        "counter_state": "cash_without_hand"
+      }
+    }
+  ],
+  "new_counter_without_hand_ids": [
+    "v2_14_06800",
+    "v2_14_07800",
+    "v2_43_00300",
+    "v2_43_00600",
+    "v2_46_00200",
+    "v2_46_00500",
+    "v2_05_02800",
+    "v2_05_03100"
+  ],
+  "review_policy": "No synthetic labels. Closely spaced samples retained only for distinct object state, color, input/output hopper, ID orientation or visible hand pose. Old training samples retained for rehearsal. V2_14_05400 not added because x14_055 already covers that state; corrected that existing frame instead. Ambiguous X5 19s and occluded X35 12s not added."
+}

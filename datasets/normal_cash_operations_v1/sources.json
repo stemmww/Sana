@@ -1,0 +1,24 @@
+[
+  {
+    "id": "x8",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-8.mov",
+    "video_sha256": "6a53e10acdcf52396ad5b1697eead32d8322c0911d792523a5c33fe5b388f4e7",
+    "fps": 29.97370727432077,
+    "frame_count": 1140.0,
+    "dimensions": [
+      464.0,
+      848.0
+    ]
+  },
+  {
+    "id": "x10",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-10.mov",
+    "video_sha256": "57a0e46c7a45f0e831f61d9c80722fefe4b74dbcfe1d3031ff58307d481f9a5c",
+    "fps": 30.0,
+    "frame_count": 467.0,
+    "dimensions": [
+      464.0,
+      848.0
+    ]
+  }
+]

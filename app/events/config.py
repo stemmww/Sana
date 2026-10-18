@@ -3,9 +3,34 @@ import math
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
+class ServiceBoundaryConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    zones: dict[str, list[tuple[float, float]]]
+    anchor_height: float = Field(default=0.2, ge=0, le=1)
+    minimum_confidence: float = Field(default=0.5, ge=0, le=1)
+    minimum_frames: int = Field(default=3, ge=2)
+    confirm_sec: float = Field(default=0.4, gt=0)
+    sample_gap_sec: float = Field(default=0.8, gt=0)
+    crossing_max_sec: float = Field(default=2, gt=0)
+    fragment_gap_sec: float = Field(default=2, gt=0)
+    fragment_distance: float = Field(default=0.12, gt=0, le=1)
+    ambiguity_margin: float = Field(default=0.025, gt=0, le=1)
+
+    @model_validator(mode="after")
+    def polygons(self):
+        if set(self.zones) != {"interior", "portal", "exterior"}:
+            raise ValueError("Boundary requires interior, portal and exterior polygons")
+        for poly in self.zones.values():
+            if len(poly) < 3 or any(not 0 <= v <= 1 for p in poly for v in p):
+                raise ValueError("Invalid boundary polygon")
+        return self
+
+
 class EventConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
     zones: dict[str, list[tuple[float, float]]]
+    service_boundary: ServiceBoundaryConfig | None = None
+    cash_provenance_enabled: bool = False
     reflection_regions: list[list[tuple[float, float]]] = Field(default_factory=list)
     cashier_anchor: tuple[float, float] = (0.48, 0.57)
     sample_fps: float = Field(default=4, gt=0, le=30)

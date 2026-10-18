@@ -1,0 +1,93 @@
+{
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "elapsed_sec": 2.7154428999929223,
+  "selected_model": "mobilenet_v3_small_frozen_ridge_10",
+  "models": [
+    {
+      "name": "mobilenet_v3_small_frozen_ridge_1",
+      "type": "ridge",
+      "alpha": 1.0,
+      "threshold": 0.5010482898384331,
+      "train": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      }
+    },
+    {
+      "name": "mobilenet_v3_small_frozen_ridge_10",
+      "type": "ridge",
+      "alpha": 10.0,
+      "threshold": 0.45886583401049486,
+      "train": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      }
+    },
+    {
+      "name": "mobilenet_v3_small_frozen_ridge_100",
+      "type": "ridge",
+      "alpha": 100.0,
+      "threshold": 0.30049326151536127,
+      "train": {
+        "tp": 5,
+        "fn": 1,
+        "fp": 0,
+        "tn": 9,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.9166666666666667,
+        "errors": [
+          "c01_01900"
+        ]
+      },
+      "dev": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "errors": []
+      }
+    }
+  ]
+}

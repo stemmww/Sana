@@ -1,0 +1,6 @@
+{
+  "window_observations": 9,
+  "minimum_confidence": 0.7,
+  "maximum_center_spread_normalized": 0.008,
+  "notes": "Post-diagnostic sensitivity check on unobscured stable tracks; not independent validation or threshold tuning."
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "x5",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-5.mov",
+    "video_sha256": "1f5840bff58f298e89c4afa00cb1c18f6dafc5c4096c251d9b507604ebefe906",
+    "cache": "data/counter_sequence_v1/x5",
+    "detections": "data/cash_security_v1/x5/input-detections.json",
+    "auxiliary": "data/cash_security_v1/x5"
+  },
+  {
+    "id": "x4",
+    "video": "C:\\Users\\dilda\\Downloads\\open\\open\\videos\\Х-4.mov",
+    "video_sha256": "5385be9420e6a70547d6bcfd0b13d60f9c0738877645afa277d09550a96b8445",
+    "detections": "data/cash_security_v1/x4/input-detections.json",
+    "auxiliary": "data/cash_security_v1/x4"
+  }
+]

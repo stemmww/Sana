@@ -1,0 +1,89 @@
+{
+  "results": [
+    {
+      "video": "x3",
+      "real_withdrawals": 0,
+      "detected": 0,
+      "missed": 0,
+      "false_withdrawals": 0,
+      "decisions": [],
+      "cash_linked_contacts": 0,
+      "negative_duration_sec": 17.3,
+      "hand_tracks": 46,
+      "wrist_observations": 1505,
+      "unknown_wrist_observations": 467,
+      "output_contacts": 0,
+      "unknown_owner_contacts": 0,
+      "complete_sequences": 0,
+      "withdrawal_hypotheses": 0
+    },
+    {
+      "video": "x2",
+      "real_withdrawals": 0,
+      "detected": 0,
+      "missed": 0,
+      "false_withdrawals": 0,
+      "decisions": [],
+      "cash_linked_contacts": 0,
+      "negative_duration_sec": 14.4,
+      "hand_tracks": 22,
+      "wrist_observations": 1107,
+      "unknown_wrist_observations": 363,
+      "output_contacts": 0,
+      "unknown_owner_contacts": 0,
+      "complete_sequences": 0,
+      "withdrawal_hypotheses": 0
+    },
+    {
+      "video": "x1",
+      "real_withdrawals": 1,
+      "detected": 1,
+      "missed": 0,
+      "false_withdrawals": 0,
+      "decisions": [
+        {
+          "contact_id": "contact-1",
+          "result": "TP",
+          "timestamp_sec": 19.383161512027492,
+          "leave_sec": 19.984707903780066
+        }
+      ],
+      "cash_linked_contacts": 1,
+      "negative_duration_sec": 22.099999999999998,
+      "hand_tracks": 182,
+      "wrist_observations": 1998,
+      "unknown_wrist_observations": 683,
+      "output_contacts": 1,
+      "unknown_owner_contacts": 0,
+      "complete_sequences": 1,
+      "withdrawal_hypotheses": 1
+    },
+    {
+      "video": "x5",
+      "real_withdrawals": 1,
+      "detected": 1,
+      "missed": 0,
+      "false_withdrawals": 0,
+      "decisions": [
+        {
+          "contact_id": "contact-1",
+          "result": "TP",
+          "timestamp_sec": 31.71095571095571,
+          "leave_sec": 32.31179487179487
+        }
+      ],
+      "cash_linked_contacts": 1,
+      "negative_duration_sec": 67.19999999999999,
+      "hand_tracks": 1726,
+      "wrist_observations": 6127,
+      "unknown_wrist_observations": 2273,
+      "output_contacts": 1,
+      "unknown_owner_contacts": 0,
+      "complete_sequences": 1,
+      "withdrawal_hypotheses": 1
+    }
+  ],
+  "protocol_sha256": "80ba277c4e1347eaf0c6aaa05807b32c5e1e8535aacd211647f87d0bc5b4e395",
+  "ground_truth_sha256": "f421416ab7bc499088aabebecb404eae767ab2d2bed2e29ed02904a86d566e85",
+  "reference_labels": "Previous assistant visual review, not independent human gold labels"
+}

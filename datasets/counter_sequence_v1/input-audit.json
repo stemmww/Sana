@@ -1,0 +1,50 @@
+[
+  {
+    "video": "x3",
+    "sampled_frames": 86,
+    "sample_fps": 4.271452341335869,
+    "raw_cash_detections": 29,
+    "retained_cash_detections": 23,
+    "logical_tracks": 7,
+    "inside_counter_cash_detections": 0,
+    "prior_money_events": [],
+    "prior_pipeline_executed_for_this_task": false,
+    "cash_weights_sha256": "642c2c6d7d2db563d05afc04cff32f09a6371067633639e238cf64f7e34839b7"
+  },
+  {
+    "video": "x2",
+    "sampled_frames": 73,
+    "sample_fps": 4.268973214285714,
+    "raw_cash_detections": 13,
+    "retained_cash_detections": 11,
+    "logical_tracks": 5,
+    "inside_counter_cash_detections": 0,
+    "prior_money_events": [],
+    "prior_pipeline_executed_for_this_task": false,
+    "cash_weights_sha256": "642c2c6d7d2db563d05afc04cff32f09a6371067633639e238cf64f7e34839b7"
+  },
+  {
+    "video": "x1",
+    "sampled_frames": 111,
+    "sample_fps": 4.274697025339699,
+    "raw_cash_detections": 37,
+    "retained_cash_detections": 28,
+    "logical_tracks": 12,
+    "inside_counter_cash_detections": 0,
+    "prior_money_events": [],
+    "prior_pipeline_executed_for_this_task": false,
+    "cash_weights_sha256": "642c2c6d7d2db563d05afc04cff32f09a6371067633639e238cf64f7e34839b7"
+  },
+  {
+    "video": "x5",
+    "sampled_frames": 307,
+    "sample_fps": 4.279728651237031,
+    "raw_cash_detections": 86,
+    "retained_cash_detections": 80,
+    "logical_tracks": 25,
+    "inside_counter_cash_detections": 0,
+    "prior_money_events": [],
+    "prior_pipeline_executed_for_this_task": false,
+    "cash_weights_sha256": "642c2c6d7d2db563d05afc04cff32f09a6371067633639e238cf64f7e34839b7"
+  }
+]

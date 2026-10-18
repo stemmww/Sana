@@ -1,0 +1,195 @@
+[
+  {
+    "video": "x5",
+    "verdict": "insufficient_evidence",
+    "violations": 0,
+    "confirmed_events": {
+      "CASHIER_PRESENT": 1,
+      "CUSTOMER_PRESENT": 1,
+      "SERVICE_STARTED": 1
+    },
+    "id_detections": 0,
+    "id_tracks": 0,
+    "id_event_counts": {
+      "ID_TRANSFER_TO_CASHIER": 0,
+      "ID_CHECK": 0,
+      "ID_RETURNED_TO_CUSTOMER": 0
+    },
+    "wrist_withdrawal_hypotheses": 1,
+    "table_candidates": [
+      {
+        "event_id": "security-5",
+        "logical_track": "cash-4",
+        "start_sec": 12.15030303030303,
+        "end_sec": 12.851282051282052,
+        "samples": 3,
+        "hand_clear_proxy": true,
+        "mean_cash_confidence": 0.3458333333333334
+      },
+      {
+        "event_id": "security-6",
+        "logical_track": "cash-5",
+        "start_sec": 13.785920745920746,
+        "end_sec": 16.356177156177157,
+        "samples": 12,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.567875
+      },
+      {
+        "event_id": "security-7",
+        "logical_track": "cash-5",
+        "start_sec": 16.58983682983683,
+        "end_sec": 18.225454545454546,
+        "samples": 8,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.7487999999999999
+      },
+      {
+        "event_id": "security-8",
+        "logical_track": "cash-8",
+        "start_sec": 20.795710955710955,
+        "end_sec": 23.365967365967364,
+        "samples": 10,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.49021
+      },
+      {
+        "event_id": "security-9",
+        "logical_track": "cash-11",
+        "start_sec": 23.833286713286714,
+        "end_sec": 24.534265734265734,
+        "samples": 4,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.6032
+      },
+      {
+        "event_id": "security-10",
+        "logical_track": "cash-20",
+        "start_sec": 42.29240093240093,
+        "end_sec": 45.32997668997669,
+        "samples": 14,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.6097
+      }
+    ],
+    "safe_candidate_counts": {
+      "SAFE_OPENED": 1,
+      "SAFE_CLOSED": 1
+    },
+    "second_service_confirmed": false,
+    "first_customer_id": "person-1"
+  },
+  {
+    "video": "x4",
+    "verdict": "insufficient_evidence",
+    "violations": 0,
+    "confirmed_events": {
+      "CASHIER_PRESENT": 1,
+      "CUSTOMER_ENTER": 1,
+      "SERVICE_STARTED": 1
+    },
+    "id_detections": 0,
+    "id_tracks": 0,
+    "id_event_counts": {
+      "ID_TRANSFER_TO_CASHIER": 0,
+      "ID_CHECK": 0,
+      "ID_RETURNED_TO_CUSTOMER": 0
+    },
+    "wrist_withdrawal_hypotheses": 1,
+    "table_candidates": [
+      {
+        "event_id": "security-5",
+        "logical_track": "cash-10",
+        "start_sec": 33.19421221864952,
+        "end_sec": 34.36302250803858,
+        "samples": 6,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.5959166666666668
+      },
+      {
+        "event_id": "security-6",
+        "logical_track": "cash-11",
+        "start_sec": 35.531832797427654,
+        "end_sec": 37.63569131832797,
+        "samples": 10,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.7293800000000001
+      },
+      {
+        "event_id": "security-7",
+        "logical_track": "cash-11",
+        "start_sec": 37.86945337620578,
+        "end_sec": 38.570739549839224,
+        "samples": 4,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.6368750000000001
+      },
+      {
+        "event_id": "security-8",
+        "logical_track": "cash-15",
+        "start_sec": 41.14212218649517,
+        "end_sec": 42.31093247588424,
+        "samples": 6,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.6424500000000001
+      },
+      {
+        "event_id": "security-9",
+        "logical_track": "cash-16",
+        "start_sec": 43.47974276527331,
+        "end_sec": 47.45369774919614,
+        "samples": 16,
+        "hand_clear_proxy": true,
+        "mean_cash_confidence": 0.61825625
+      },
+      {
+        "event_id": "security-10",
+        "logical_track": "cash-20",
+        "start_sec": 47.92122186495177,
+        "end_sec": 53.06398713826366,
+        "samples": 23,
+        "hand_clear_proxy": true,
+        "mean_cash_confidence": 0.6109695652173913
+      },
+      {
+        "event_id": "security-11",
+        "logical_track": "cash-22",
+        "start_sec": 55.63536977491961,
+        "end_sec": 68.72604501607717,
+        "samples": 57,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.7788070175438596
+      },
+      {
+        "event_id": "security-12",
+        "logical_track": "cash-22",
+        "start_sec": 69.66109324758843,
+        "end_sec": 72.46623794212218,
+        "samples": 13,
+        "hand_clear_proxy": true,
+        "mean_cash_confidence": 0.7967846153846152
+      },
+      {
+        "event_id": "security-13",
+        "logical_track": "cash-27",
+        "start_sec": 65.68713826366559,
+        "end_sec": 66.62218649517685,
+        "samples": 5,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.67306
+      },
+      {
+        "event_id": "security-14",
+        "logical_track": "cash-28",
+        "start_sec": 68.95980707395498,
+        "end_sec": 69.66109324758843,
+        "samples": 4,
+        "hand_clear_proxy": false,
+        "mean_cash_confidence": 0.487375
+      }
+    ],
+    "safe_candidate_counts": {},
+    "second_service_confirmed": false,
+    "first_customer_id": "person-3"
+  }
+]

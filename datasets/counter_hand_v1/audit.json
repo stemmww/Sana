@@ -1,0 +1,70 @@
+{
+  "protected_files": 374,
+  "changed": [],
+  "verified_evidence_references": 42,
+  "decision_equivalence_after_formatting": true,
+  "protocol_sha256": "80ba277c4e1347eaf0c6aaa05807b32c5e1e8535aacd211647f87d0bc5b4e395",
+  "ownership_detail": [
+    {
+      "video": "x3",
+      "near_output_owner_observations": {
+        "customer": 361,
+        "cashier": 197
+      },
+      "inside_owner_observations": {},
+      "unknown_reasons": {
+        "Insufficient consistent temporal ownership evidence.": 467,
+        "No unique torso-to-cached-role geometric match.": 431,
+        "Competing wrist tracks; started a new track.": 27,
+        "Shoulder/elbow confidence insufficient to establish acting arm.": 1
+      }
+    },
+    {
+      "video": "x2",
+      "near_output_owner_observations": {
+        "cashier": 138,
+        "customer": 232
+      },
+      "inside_owner_observations": {},
+      "unknown_reasons": {
+        "Insufficient consistent temporal ownership evidence.": 363,
+        "No unique torso-to-cached-role geometric match.": 329,
+        "Competing wrist tracks; started a new track.": 6
+      }
+    },
+    {
+      "video": "x1",
+      "near_output_owner_observations": {
+        "cashier": 319,
+        "customer": 492,
+        "unknown": 42
+      },
+      "inside_owner_observations": {
+        "cashier": 8
+      },
+      "unknown_reasons": {
+        "No unique torso-to-cached-role geometric match.": 602,
+        "Insufficient consistent temporal ownership evidence.": 683,
+        "Competing wrist tracks; started a new track.": 154,
+        "Shoulder/elbow confidence insufficient to establish acting arm.": 1
+      }
+    },
+    {
+      "video": "x5",
+      "near_output_owner_observations": {
+        "customer": 1431,
+        "unknown": 3,
+        "cashier": 519
+      },
+      "inside_owner_observations": {
+        "cashier": 8
+      },
+      "unknown_reasons": {
+        "Insufficient consistent temporal ownership evidence.": 2273,
+        "No unique torso-to-cached-role geometric match.": 2163,
+        "Shoulder/elbow confidence insufficient to establish acting arm.": 6,
+        "Competing wrist tracks; started a new track.": 1667
+      }
+    }
+  ]
+}

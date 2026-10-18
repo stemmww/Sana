@@ -1,0 +1,49 @@
+{
+  "reviewer": "assistant_visual_review",
+  "scope": "Targeted visual review, not exhaustive ground truth for 99 candidate pairs. These annotations are used only for reporting, never for algorithm decisions.",
+  "conclusion": "Связь cash-20 → cash-22 в X-4 остаётся insufficient_evidence. Неподвижное присутствие cash-22 после её появления подтверждается локально. На X-5 выявлено ложное совпадение с краем стола: fixed ROI нельзя самостоятельно использовать для R05. Production не изменён.",
+  "items": [
+    {
+      "video": "x4",
+      "subject": "cash-20 → cash-22, 53.064–55.402 с",
+      "status": "insufficient_evidence",
+      "finding": "ROI стопки смещается на 32.54 px, IoU исходного и конечного bbox = 0. В начале разрыва светлая стопка видна возле кассира; затем объект перестаёт отчётливо прослеживаться в исходном ROI. Ближе к концу виден предмет в руке и перемещение влево, к конечному ROI. Непрерывную идентичность через промежуточные кадры подтвердить нельзя. Другой явно наблюдаемый ввод стопки в этом промежутке не найден, но перекрытие не позволяет исключить замену. Внешнее сходство 0.730 не доказывает происхождение. Прямой flow не попадает в целевой bbox (IoU 0.028), обратный — частично попадает (0.471); вдоль пути внешний вид не сохраняется. Возможная связь с service-1 сохраняется только как гипотеза.",
+      "evidence": ["data/table_cash_continuity_v1/x4/review/cash-20--cash-22.jpg"]
+    },
+    {
+      "video": "x4",
+      "subject": "cash-16 → cash-20, 47.454–47.921 с",
+      "status": "visual_review_supports_local_stack_continuity; automatic_gate_abstains",
+      "finding": "Светлая стопка остаётся на том же участке стола, пока кассир отдельно возвращает клиенту карточку. Исходный bbox включает часть движущейся руки ниже стопки. Это объясняет отказ оптического потока: он теряет признаки руки, хотя локальная стопка остаётся видимой. Проверка поддерживает прежнюю короткую связь, но не подтверждает полную историю через счётчик и разрыв 53–55 с.",
+      "evidence": ["data/table_cash_continuity_v1/x4/review/cash-16--cash-20.jpg"]
+    },
+    {
+      "video": "x4",
+      "subject": "cash-11 → cash-15, 38.571–41.142 с",
+      "status": "insufficient_evidence",
+      "finding": "Деньги и кисти перекрываются; bbox захватывают различную долю рук. Сходство концов 0.443, оба направления flow теряют признаки. Даже восстановление более поздней связи cash-20 → cash-22 не устранило бы этот отдельный разрыв происхождения.",
+      "evidence": ["data/table_cash_continuity_v1/x4/review/cash-11--cash-15.jpg"]
+    },
+    {
+      "video": "x4",
+      "subject": "cash-22 при начале service-2",
+      "status": "local_table_presence_supported; source_session_unknown",
+      "finding": "Стопка видна на столе в момент 60.311 с. Её позднее присутствие подтверждается, но source_session_id от этого не становится известным. В шести выбранных стабильных окнах реальные кадры сохраняют объект при скрытии промежуточных YOLO-наблюдений; это проверка чувствительности на одном track, а не независимая оценка качества.",
+      "evidence": ["data/table_cash_continuity_v1/x4/boundary-evidence/cash-22--service-2.jpg", "data/table_cash_continuity_v1/x4/controls/evidence/cash-22-window-4-A--cash-22-window-4-B.jpg"]
+    },
+    {
+      "video": "x4",
+      "subject": "cash-25 → cash-27, отрицательный пример",
+      "status": "not_confirmed_same_cash; do_not_merge",
+      "finding": "В начале наблюдается маленькая карточка возле поднятой руки кассира; позже клиент достаёт и передаёт другой предмет/стопку. Старая стопка cash-22 одновременно остаётся на столе слева. Нельзя объединять эти наблюдения с cash-22 или наследовать старую операцию по общей TABLE_ZONE.",
+      "evidence": ["data/table_cash_continuity_v1/x4/review/cash-25--cash-27.jpg"]
+    },
+    {
+      "video": "x5",
+      "subject": "cash-20 и неподвижный край стола",
+      "status": "false_cash_seed_and_false_appearance_presence",
+      "finding": "Конечный bbox cash-20 в 46.031 с содержит край стола у ноутбука. В 67.761 с тот же фон даёт NCC 0.904, хотя в ROI нет подтверждённой стопки. До первого наблюдения этого track фон совпадает ещё сильнее: NCC 0.994–0.996. Это явный отрицательный пример для прямой интеграции fixed-ROI occupancy. Сейф и факт помещения денег этим экспериментом не подтверждаются; отсутствие MONEY_TO_SAFE не использовано как нарушение.",
+      "evidence": ["data/table_cash_continuity_v1/x5/boundary-evidence/cash-20--service-2.jpg"]
+    }
+  ]
+}

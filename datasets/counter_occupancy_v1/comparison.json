@@ -1,0 +1,107 @@
+{
+  "decision": "Do not integrate: required positive recall insufficient.",
+  "fixed_validation_frames": 42,
+  "scored_clear_frames": 36,
+  "uncertain_unscored_frames": 6,
+  "annotation_provenance": "Provisional assistant visual review, not independent human ground truth.",
+  "selected_opencv": "color_texture_ridge_10",
+  "selected_cnn": "mobilenet_v3_small_frozen_ridge_10",
+  "models": [
+    {
+      "model": "absolute_difference",
+      "selected_on_dev": false,
+      "counter_cash_detected": 0,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": null,
+      "all_clear_recall": 0.0,
+      "all_clear_balanced_accuracy": 0.5,
+      "threshold": 12.367032231490063
+    },
+    {
+      "model": "compensated_difference_p98",
+      "selected_on_dev": false,
+      "counter_cash_detected": 0,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": null,
+      "all_clear_recall": 0.0,
+      "all_clear_balanced_accuracy": 0.5,
+      "threshold": 42.72836875915527
+    },
+    {
+      "model": "color_texture_ridge_1",
+      "selected_on_dev": false,
+      "counter_cash_detected": 3,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": 1.0,
+      "all_clear_recall": 0.5,
+      "all_clear_balanced_accuracy": 0.75,
+      "threshold": 0.0617951401115128
+    },
+    {
+      "model": "color_texture_ridge_10",
+      "selected_on_dev": true,
+      "counter_cash_detected": 2,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": 1.0,
+      "all_clear_recall": 0.3333333333333333,
+      "all_clear_balanced_accuracy": 0.6666666666666666,
+      "threshold": 0.5739836360229456
+    },
+    {
+      "model": "color_texture_ridge_100",
+      "selected_on_dev": false,
+      "counter_cash_detected": 2,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": 1.0,
+      "all_clear_recall": 0.3333333333333333,
+      "all_clear_balanced_accuracy": 0.6666666666666666,
+      "threshold": 0.5503936921410549
+    },
+    {
+      "model": "mobilenet_v3_small_frozen_ridge_1",
+      "selected_on_dev": false,
+      "counter_cash_detected": 0,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": null,
+      "all_clear_recall": 0.0,
+      "all_clear_balanced_accuracy": 0.5,
+      "threshold": 0.5010482898384331
+    },
+    {
+      "model": "mobilenet_v3_small_frozen_ridge_10",
+      "selected_on_dev": true,
+      "counter_cash_detected": 0,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": null,
+      "all_clear_recall": 0.0,
+      "all_clear_balanced_accuracy": 0.5,
+      "threshold": 0.45886583401049486
+    },
+    {
+      "model": "mobilenet_v3_small_frozen_ridge_100",
+      "selected_on_dev": false,
+      "counter_cash_detected": 0,
+      "counter_cash_total": 6,
+      "false_cash_empty_counter": 0,
+      "empty_total": 28,
+      "all_clear_precision": null,
+      "all_clear_recall": 0.0,
+      "all_clear_balanced_accuracy": 0.5,
+      "threshold": 0.30049326151536127
+    }
+  ]
+}

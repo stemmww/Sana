@@ -1,0 +1,21 @@
+{
+  "reason": "User identified available RTX 3050; original environment contained CPU-only torch.",
+  "cpu_completed_epochs": 5,
+  "cpu_checkpoint": "data/cash_id_v2/cpu-resume.pt",
+  "cpu_checkpoint_sha256": "4c8a4779061931eaf8b5ef281e3c9ae7530bffbf82bab416c5d56f47bc9a6d8a",
+  "old_torch": "2.14.1+cpu",
+  "new_torch_requested": "2.14.1+cu130",
+  "torchvision_requested": "0.29.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_vram_mib": 4096,
+  "driver": "595.97",
+  "resume_device": 0,
+  "fixed_total_epochs": 20,
+  "checkpoint_selection_unchanged": "last epoch, no held-out selection",
+  "data_or_threshold_changes": false,
+  "reference": "https://pytorch.org/get-started/locally/",
+  "gpu_run": "data/cash/runs/cash_id_v2_counter_gpu",
+  "resumed_from_epoch": 6,
+  "cuda_smoke_test": "passed: CUDA matmul and torchvision NMS",
+  "training_default": "auto CUDA, otherwise CPU"
+}
