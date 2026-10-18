@@ -113,6 +113,7 @@ def analyze_video(
     person_weights=Path("yolo11n.pt"),
     cash_weights=DEFAULT_MODEL,
     replay=None,
+    device="cpu",
 ):
     import cv2
 
@@ -153,7 +154,7 @@ def analyze_video(
         person_model = local_yolo()(str(person_weights))
         if person_model.names.get(0) != "person":
             raise ValueError("Person weights must have person at class 0")
-        cash_model = CashDetector(cash_weights, cfg.minimum_detection_confidence)
+        cash_model = CashDetector(cash_weights, cfg.minimum_detection_confidence, device=device)
     detector = EventDetector(cfg)
     roles = GeometricRoleTracker(max_gap_sec=cfg.person_track_gap_sec)
     cap = cv2.VideoCapture(str(video))
@@ -185,7 +186,7 @@ def analyze_video(
                         frame,
                         classes=[0],
                         conf=cfg.minimum_detection_confidence,
-                        device="cpu",
+                        device=device,
                         verbose=False,
                     )[0]
                     raw_people = [
@@ -309,6 +310,7 @@ def analyze_video(
         final["config"] = cfg.model_dump()
         final["elapsed_seconds"] = round(time.perf_counter() - started, 3)
         final["processing_mode"] = "replay_cached_detections" if cached else "video_inference"
+        final["inference_device"] = None if cached else str(device)
         final["sampled_frames"] = len(states)
         history = final.pop("track_history")
         metadata = {
@@ -365,6 +367,7 @@ def main():
     parser.add_argument("--cash-model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--output-dir", type=Path)
     parser.add_argument("--replay", type=Path, help="Replay cached detections for this exact video")
+    parser.add_argument("--device", default="cpu", help="cpu or CUDA device index, e.g. 0")
     args = parser.parse_args()
     result = analyze_video(
         args.video,
@@ -373,6 +376,7 @@ def main():
         args.person_model,
         args.cash_model,
         args.replay,
+        device=args.device,
     )
     print(json.dumps(result, ensure_ascii=True, indent=2))
 

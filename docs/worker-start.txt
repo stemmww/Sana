@@ -1,0 +1,58 @@
+Локальный запуск Sana: frontend + API + worker
+===========================================
+
+npm run dev и uvicorn запускают интерфейс и HTTP API.
+Видео обрабатывает отдельный процесс app.worker. Без него accepted upload
+останется в очереди и завершится JOB_TIMEOUT через TOTAL_JOB_TIMEOUT_SECONDS.
+
+В корневом .env (не frontend/.env.local):
+ANALYZER_CALLABLE=app.cv.worker_adapter:analyze_video
+SANA_DEVICE=auto
+SANA_EVENT_CONFIG=config/event_camera_service.json
+
+Три терминала, команды из корня Sana:
+1. .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+2. .\.venv\Scripts\python.exe -m app.worker
+3. cd frontend
+   npm.cmd run dev
+
+SANA_DEVICE=auto использует CUDA GPU при наличии, иначе CPU.
+Можно явно указать SANA_DEVICE=0 или cpu.
+Основные веса cash.pt и yolo11n.pt не заменяются. Пороги событий и R01–R05
+сохранены. worker_adapter запускает реальное inference, передаёт результат
+существующему assemble_video_result и сохраняет diagnostics недостатка данных.
+
+Это подключение существующего Event Detector к очереди, не улучшение recall.
+Экспериментальные action-based гипотезы и CashOperation с replay/pose не
+интегрируются автоматически. ID detector по-прежнему недоступен.
+Используется явно настроенная калибровка камеры; для иного ракурса нужны
+соответствующие polygon zones. По имени загруженного видео конфигурация не выбирается.
+
+Артефакты анализа находятся в STORAGE_DIR/analysis/<job-id>-<run-id>/:
+events.json, detections.json, track_history.json, debug.mp4, api-result.json.
+Эти диагностические каталоги не входят в существующую автоматическую очистку
+uploads/work; удалять их можно после проверки результатов.
+
+Истёкшие задачи не переводятся обратно в processing и не получают продлённый
+дедлайн. Для повторной проверки нужно заново загрузить видео и получить новый UUID.
+Если у failed задачи started_at=null, она не была взята worker в обработку.
+Если started_at заполнен, проверять логи worker и время реального inference.
+
+Проверка подключения 18.10.2026
+-----------------------------
+Исходная задача c1e711a8-394c-4110-9c15-79d4860b85fd истекла в очереди:
+started_at=null, expires_at-created_at=300 секунд, ANALYZER_CALLABLE не задан,
+процесс worker отсутствовал. Увеличение лимита не требовалось.
+
+После подключения адаптера и запуска worker тот же файл повторно загружен
+через POST /api/v1/analyze. Новая задача:
+2ce0570c-1890-4a91-9dc3-576dd961813c.
+GET /api/v1/jobs/<uuid> вернул done. CUDA device 0 (RTX 3050), 111 sampled frames,
+22.42 с внутри анализатора, 26.78 с загрузка+очередь+обработка+опрос API.
+Ответ no_violation, violations=[]; diagnostics сохраняет неполноту анализа.
+Это проверка работоспособности очереди, не восстановление пропущенного R04.
+Первоначальная failed-задача не изменялась. Историю новой задачи можно смотреть
+в data/worker_connection_validation/retry-result.json.
+
+Полная регрессия: 321 passed, 1 предупреждение Starlette/httpx.
+Логи фонового worker: data/worker_connection_validation/worker.*.log.

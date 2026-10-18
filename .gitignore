@@ -8,6 +8,7 @@ pytest-cache-files-*/
 .env.*
 !.env.example
 /data/
+/runs/
 *.mov
 *.MOV
 *.mp4

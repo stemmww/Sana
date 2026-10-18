@@ -1,8 +1,9 @@
 # Sana — backend и frontend для кейса ForteBank
 
 FastAPI принимает видео `.mov`, сохраняет его локально и возвращает `job_id`.
-API статусов и отдельный worker реализованы. Реальную функцию OpenCV/YOLO
-нужно подключить от AI/CV-команды; по умолчанию анализатор не настроен.
+API статусов, отдельный worker и адаптер существующего OpenCV/YOLO-анализатора
+реализованы. Для обработки загрузок задайте `ANALYZER_CALLABLE` и запустите worker;
+одного запуска API и frontend недостаточно.
 Подробный разбор задания и план: [docs/case-analysis.md](docs/case-analysis.md).
 
 React frontend находится в `frontend/`. Backend и интерфейс теперь можно получить
@@ -230,14 +231,21 @@ Worker — отдельный процесс. Он забирает задачи
 Обработчик подключается переменной в `.env`:
 
 ```dotenv
-ANALYZER_CALLABLE=your_cv_package.pipeline:analyze_video
+ANALYZER_CALLABLE=app.cv.worker_adapter:analyze_video
+SANA_DEVICE=auto
+SANA_EVENT_CONFIG=config/event_camera_service.json
 JOB_TIMEOUT_SECONDS=240
 WORKER_POLL_SECONDS=1
 ```
 
-`your_cv_package.pipeline:analyze_video` — пример пути к модулю и функции вашей
-команды, а не уже существующий обработчик. Модуль должен импортироваться из
-корня проекта. Формат функции и результата: [docs/ai-integration.md](docs/ai-integration.md).
+`app.cv.worker_adapter:analyze_video` подключает существующий Event Detector и
+сборщик результата к worker. Нужны установленные CV-зависимости и локальные
+`yolo11n.pt`, `data/cash/models/cash.pt`. `auto` использует CUDA, если она доступна.
+Зоны соответствуют настроенной фиксированной камере; для другого ракурса нужна
+другая калибровка. Экспериментальные action-гипотезы не включаются автоматически.
+Все ограничения распознавания остаются в `diagnostics`.
+Подробности: [docs/worker-start.txt](docs/worker-start.txt).
+Для своего обработчика сохранён формат: [docs/ai-integration.md](docs/ai-integration.md).
 
 После подключения настоящего обработчика запустите во втором терминале:
 
