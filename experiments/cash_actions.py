@@ -38,6 +38,14 @@ def wrist_cash(hands, cash_frames, p):
                 continue
             d, _, hand = nearby[0]
             ambiguous = len(nearby) > 1 and nearby[1][0] - d < p["cash_owner_margin_widths"]
+            competing = [h for dist, _, h in nearby if dist - d < p["cash_owner_margin_widths"]]
+            owners = {(h["owner"], h.get("body_track_id")) for h in competing}
+            same_person = (
+                len(owners) == 1
+                and hand["owner"] != "unknown"
+                and hand.get("body_track_id") is not None
+            )
+            owner_ambiguous = ambiguous and not same_person
             result.append(
                 {
                     "timestamp_sec": t,
@@ -48,8 +56,13 @@ def wrist_cash(hands, cash_frames, p):
                     "confidence": obj["confidence"],
                     "hand_track_id": hand["track_id"],
                     "wrist_xy": hand["xy"],
-                    "owner": "unknown" if ambiguous else hand["owner"],
+                    "owner": "unknown" if owner_ambiguous else hand["owner"],
                     "ambiguous": ambiguous,
+                    "owner_ambiguous": owner_ambiguous,
+                    "competing_hand_ids": [h["track_id"] for h in competing],
+                    "owner_basis": "same_known_person"
+                    if same_person
+                    else "unique_wrist_or_unknown",
                     "wrist_distance_widths": d,
                     "wrist_confidence": hand["wrist_confidence"],
                 }
@@ -349,7 +362,9 @@ def grade(proposal, p):
     elif kind == "CASH_EXTRACTION_ACTION":
         cash = f["cash_after_samples"] >= p["cash_min_samples"]
         image = roi.get("raw_during_peak", 0) >= p["roi_change_fraction"]
-        specific = image
+        # Positive cash before contact contradicts an inference of a new stack
+        # being retrieved. Lack of pre-contact cash alone never confirms retrieval.
+        specific = image and f["cash_before_samples"] == 0
     else:
         cash = f["cash_before_samples"] >= p["cash_min_samples"] and f["cash_after_samples"] >= 1
         specific = bool(f["same_logical_cash_ids"]) and f["cash_moves_to_recipient"]
@@ -362,6 +377,13 @@ def grade(proposal, p):
         reasons.append("insufficient_directional_cash_wrist_observations")
     if not specific:
         reasons.append("roi_change_or_recipient_lineage_not_supported")
+    if kind == "CASH_EXTRACTION_ACTION" and f["cash_before_samples"]:
+        reasons.append("cash_already_with_actor_before_contact; extraction_origin_unproven")
+    if any(
+        x.get("ambiguous")
+        for x in proposal["observations"]["cash_before"] + proposal["observations"]["cash_after"]
+    ):
+        reasons.append("same_person_ownership_does_not_resolve_which_hand_holds_cash")
     strong = role and motion and cash and specific
     reasons += [
         "cash_detector_can_confuse_ID_or_empty_hands",
@@ -386,14 +408,24 @@ def grade(proposal, p):
 def analyze(hands, cash_frames, roi_frames, p, duration):
     if not hands:
         return {"candidates": [], "cash_wrist_observations": []}
-    if any(b["timestamp_sec"] <= a["timestamp_sec"] for a, b in zip(hands, hands[1:])):
+    if any(
+        b["timestamp_sec"] <= a["timestamp_sec"] for a, b in zip(hands, hands[1:], strict=False)
+    ):
         raise ValueError("Hands must be time ordered")
     cash = wrist_cash(hands, cash_frames, p)
     candidates = apparatus_proposals(hands, cash, p, duration) + handover_proposals(
         hands, cash, p, duration
     )
+    candidates = [c for c in candidates if c["window_end_sec"] - c["window_start_sec"] >= 1.0]
     candidates.sort(key=lambda c: (c["timestamp_sec"], c["type"]))
     for i, c in enumerate(candidates):
+        c["observations"]["hands"] = [
+            h
+            for h in c["observations"]["hands"]
+            if c["window_start_sec"] <= h["timestamp_sec"] <= c["window_end_sec"]
+        ]
+        c["contact_end_sec"] = min(c["contact_end_sec"], c["window_end_sec"])
+        c["features"]["contact_duration_sec"] = c["contact_end_sec"] - c["timestamp_sec"]
         c["id"] = f"action-{i + 1}"
         c["roi"] = roi_evidence(c, roi_frames, p)
         grade(c, p)

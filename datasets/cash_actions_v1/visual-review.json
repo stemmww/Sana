@@ -1,0 +1,18 @@
+{
+  "provenance": "Post-prediction assistant review of original evidence frames; provisional, not independent human ground truth. Never read by predict/analyze.",
+  "positive_reviews": [
+    {"video":"x1","candidate":"action-10","visible_action":"cash extraction","algorithm_status":"hypothesis","note":"Wrist enters lower output region, withdraws; cash is visible after withdrawal. Counter origin is visually plausible, not algorithmically verified."},
+    {"video":"x5","candidate":"action-13","visible_action":"cash extraction","algorithm_status":"hypothesis","note":"Visible removal and later cash in cashier hands. Two hands from the same cashier must not create unknown person ownership."},
+    {"video":"x3","candidate":"action-10","visible_action":"cash loading","algorithm_status":"insufficient_evidence","note":"Visible loading; no two unambiguous pre-contact cash observations on acting wrist."},
+    {"video":"x1","candidate":"action-11","visible_action":"cash return to customer later in window","algorithm_status":"insufficient_evidence","note":"Return visible in frames; no reliable recipient cash observation. Other overlapping windows are not additional physical handovers."}
+  ],
+  "negative_reviews": [
+    {"video":"x3","start_sec":7.29,"end_sec":8.16,"categories":["ID interaction","opposite transfer direction"],"evidence":"x3/action-1.jpg","note":"Customer hands ID to cashier; not cash handed to customer."},
+    {"video":"x5","start_sec":54.4,"end_sec":55.7,"categories":["ID instead of cash"],"evidence":"x5/action-16.jpg","note":"Cashier returns a small card to customer."},
+    {"video":"x5","start_sec":33.58,"end_sec":35.3,"categories":["cash remains with cashier"],"evidence":"x5/action-15.jpg","note":"Cash handling in cashier hands; customer has not received this stack."},
+    {"video":"x1","start_sec":20.3,"end_sec":21.7,"categories":["cash remains with cashier"],"evidence":"x1/action-11.jpg","note":"Only the listed subinterval is negative for handover. Later in the montage there is an actual handover."},
+    {"video":"x3","start_sec":18.75,"end_sec":19.95,"categories":["hands without cash","ordinary motion near counter","no extraction"],"evidence":"x3/action-11.jpg","note":"Only the subinterval after loading is negative; earlier montage frames show genuine loading."}
+  ],
+  "unavailable": ["verified empty lower-tray touch followed by withdrawal of empty hand"],
+  "independent_validation": false
+}

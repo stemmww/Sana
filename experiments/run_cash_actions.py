@@ -4,6 +4,7 @@ import argparse
 import html
 import json
 import time
+import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
@@ -11,6 +12,7 @@ import cv2
 import numpy as np
 
 from experiments.cash_actions import analyze
+from experiments.counter_hand import distance
 from experiments.counter_occupancy import ROOT, imread, imwrite, sha
 from experiments.counter_occupancy import read_json as read
 from experiments.counter_occupancy import write_json as write
@@ -27,7 +29,7 @@ def prepare():
     cutoff = ymin + 0.45 * (ymax - ymin)
     # Polygon clipping against a fixed horizontal tray boundary, not frame labels.
     upper = []
-    for a, b in zip(counter, counter[1:] + counter[:1]):
+    for a, b in zip(counter, counter[1:] + counter[:1], strict=True):
         if a[1] <= cutoff:
             upper.append(a)
         if (a[1] <= cutoff) != (b[1] <= cutoff):
@@ -100,7 +102,7 @@ def prepare():
             "limitations": [
                 "Repeated development clips, not independent action validation",
                 "No verified empty lower-tray touch video; user confirmed unavailable",
-                "Unknown actions outside reviewed targets require visual review before counting as false",
+                "Unmatched proposals need visual review before being counted as false actions",
             ],
             "videos": targets,
         },
@@ -216,6 +218,17 @@ def predict():
             raise ValueError("Source/cache SHA mismatch")
         tracks = read(ROOT / source["cache"] / "track_history.json")["frames"]
         hands = read(base / "hands.json")["frames"]
+        if len(hands) != len(poses["frames"]) or any(
+            hf["frame_index"] != pf["frame_index"]
+            or abs(hf["timestamp_sec"] - pf["timestamp_sec"]) > 0.001
+            for hf, pf in zip(hands, poses["frames"], strict=True)
+        ):
+            raise ValueError("Wrist and pose timing mismatch")
+        if any(
+            abs(f["timestamp_sec"] - r["timestamp_sec"]) > 0.001
+            for f, r in zip(tracks, cache["frames"], strict=True)
+        ):
+            raise ValueError("Cash and tracking timing mismatch")
         cash = [
             {**f, "frame_index": r["frame_index"]}
             for f, r in zip(tracks, cache["frames"], strict=True)
@@ -256,12 +269,35 @@ def predict():
 def score():
     gt = read(META / "evaluation-only.json")
     rows = []
+    review = read(META / "visual-review.json")
+    negative_results = []
+    for clip in review["negative_reviews"]:
+        actions = read(DATA / clip["video"] / "actions.json")["candidates"]
+        hits = [
+            c["id"]
+            for c in actions
+            if c["status"] == "hypothesis"
+            and c["timestamp_sec"] <= clip["end_sec"]
+            and c["contact_end_sec"] >= clip["start_sec"]
+        ]
+        negative_results.append({**clip, "false_hypotheses": hits})
+    write(DATA / "negative-review-results.json", negative_results)
+    (DATA / "findings.txt").write_text(
+        (ROOT / "docs/cash-actions.txt").read_text(encoding="utf-8"), encoding="utf-8"
+    )
     document = """<!doctype html><meta charset="utf-8"><title>Sana cash actions</title>
 <style>body{font:16px/1.5 system-ui;margin:30px;max-width:1300px}td,th{border:1px solid #aaa;
 padding:8px}table{border-collapse:collapse}pre{white-space:pre-wrap}img{max-width:100%}</style>
 <h1>Action-based R04 diagnostic — no production integration</h1>
 <p>Only saved cash/pose/wrist observations and OpenCV ROI differences. Windows ≤3s.
 Scores are not probabilities. Hypotheses are NOT business events or confirmed violations.</p>"""
+    document += """<p><a href="findings.txt">Выводы, ошибки и следующий шаг</a> |
+<a href="negative-review-results.json">Проверенные отрицательные фрагменты</a> |
+<a href="regression.xml">Регрессионные тесты</a></p>
+<p><b>Загрузки: 0/3 денежных гипотез; извлечения: 2/2; возврат клиенту: 0/1.
+Подтверждённых событий: 0. Интеграция не выполнена.</b>
+Прежний wrist-диагност уже находил эти два извлечения; новый набор ROI-признаков
+не восстановил загрузку или возврат. 41 предложение окна — не 41 событие.</p>"""
     for source in read(META / "sources.json"):
         name = source["id"]
         result = read(DATA / name / "actions.json")
@@ -302,20 +338,53 @@ Scores are not probabilities. Hypotheses are NOT business events or confirmed vi
                 "unmatched_or_duplicate_hypotheses": len(strong) - hit,
                 "confirmed": 0,
             }
+        baseline = read(ROOT / "data/verdict_separation_v1" / name / "legacy/events.json")
+        production_types = Counter(
+            e["type"] for e in baseline["events"] if e.get("accepted", False)
+        )
         row = {
             "video": name,
             "counts": counts,
             "candidates": comparisons,
             "analysis_sec": result["elapsed_analysis_sec"],
             "with_evidence_sec": result["elapsed_with_evidence_sec"],
+            "production_event_detector": dict(production_types),
+            "production_cash_actions_detected": sum(
+                production_types[k]
+                for k in ["MONEY_TO_COUNTER", "MONEY_FROM_COUNTER", "MONEY_TRANSFER_TO_CUSTOMER"]
+            ),
+            "proposal_count": len(result["candidates"]),
+            "hypothesis_count": sum(c["status"] == "hypothesis" for c in result["candidates"]),
+            "prior_wrist_withdrawal_hypotheses": read(
+                ROOT / "data/counter_hand_v1" / name / "predictions.json"
+            )["summary"]["withdrawal_hypotheses"],
         }
         rows.append(row)
         document += f"<h2>{name.upper()}</h2><pre>{html.escape(json.dumps(counts, indent=2))}</pre>"
-        document += f'<a href="{name}/actions.json">All observations</a> | <a href="{name}/timeline.txt">Timeline</a>'
+        document += (
+            f'<a href="{name}/actions.json">All observations</a> | '
+            f'<a href="{name}/timeline.txt">Timeline</a>'
+        )
+        document += f"<p>Event Detector: {html.escape(str(row['production_event_detector']))}; "
+        document += (
+            f"analysis: {row['analysis_sec']:.2f}s; "
+            f"with evidence: {row['with_evidence_sec']:.2f}s</p>"
+        )
+        for i, target in enumerate(targets):
+            document += (
+                f'<p><a href="{name}/review-target-{i + 1}.jpg">{target["type"]}: review</a></p>'
+            )
         for c in result["candidates"]:
-            document += f"<details><summary>{c['id']} {c['timestamp_sec']:.3f}s {c['type']} {c['status']}</summary>"
-            document += f'<img src="{name}/{c["id"]}.jpg"><pre>{html.escape(json.dumps(c, indent=2))}</pre></details>'
+            document += (
+                f"<details><summary>{c['id']} {c['timestamp_sec']:.3f}s "
+                f"{c['type']} {c['status']}</summary>"
+            )
+            document += (
+                f'<img src="{name}/{c["id"]}.jpg"><pre>'
+                f"{html.escape(json.dumps(c, indent=2))}</pre></details>"
+            )
     changed = [f for f, v in read(META / "protected-before.json").items() if sha(ROOT / f) != v]
+    tests = ET.parse(DATA / "regression.xml").getroot().find("testsuite").attrib
     write(
         DATA / "summary.json",
         {
@@ -324,16 +393,112 @@ Scores are not probabilities. Hypotheses are NOT business events or confirmed vi
             "protected_changes": changed,
             "confirmed_events": 0,
             "production_integrated": False,
+            "negative_reviews": negative_results,
+            "regression": tests,
+            "new_model_inference": False,
         },
     )
     document += "<h2>Limitations</h2><pre>" + html.escape(str(gt["limitations"])) + "</pre>"
+    document += "<p>Tests: " + html.escape(str(tests)) + "</p>"
+    document += "<p>Protected files changed: " + html.escape(str(changed)) + "</p>"
     (DATA / "report.html").write_text(document, encoding="utf-8")
     if changed:
         raise AssertionError(changed)
     print(json.dumps(rows, indent=2))
 
 
+def audit_misses():
+    """Post-prediction reviewer only: labels NEVER enter action inference."""
+    p = read(META / "protocol.json")
+    gt = read(META / "evaluation-only.json")["videos"]
+    for source in read(META / "sources.json"):
+        name = source["id"]
+        out = DATA / name
+        hands = read(ROOT / "data/counter_hand_v1" / name / "hands.json")["frames"]
+        result = read(out / "actions.json")
+        records = []
+        capture = cv2.VideoCapture(source["video"])
+        for n, action in enumerate(gt[name]["actions"]):
+            selected = [
+                f for f in hands if action["start_sec"] <= f["timestamp_sec"] <= action["end_sec"]
+            ]
+            zone = "input" if action["type"] == "CASH_LOADING_ACTION" else "output"
+            polygon = np.array(p["zones"][zone]) * p["dimensions"]
+            distances = [
+                {
+                    "timestamp_sec": f["timestamp_sec"],
+                    "hand_id": h["track_id"],
+                    "owner": h["owner"],
+                    "distance_widths": distance(h["xy"], polygon) / f["counter_width_px"],
+                }
+                for f in selected
+                for h in f["hands"]
+            ]
+            known = [d for d in distances if d["owner"] == "cashier"]
+            evidence = []
+            panels = []
+            for index in np.linspace(0, len(selected) - 1, min(6, len(selected))).astype(int):
+                f = selected[index]
+                capture.set(cv2.CAP_PROP_POS_FRAMES, f["frame_index"])
+                ok, pixels = capture.read()
+                if not ok:
+                    continue
+                for poly in p["zones"].values():
+                    pts = np.rint(np.array(poly) * p["dimensions"]).astype(np.int32)
+                    cv2.polylines(pixels, [pts], True, (0, 255, 255), 1)
+                for hand in f["hands"]:
+                    point = tuple(np.rint(hand["xy"]).astype(int))
+                    cv2.circle(
+                        pixels,
+                        point,
+                        4,
+                        (0, 255, 0) if hand["owner"] == "cashier" else (0, 0, 255),
+                        -1,
+                    )
+                    cv2.putText(
+                        pixels,
+                        hand["track_id"] + " " + hand["owner"],
+                        point,
+                        0,
+                        0.32,
+                        (255, 0, 0),
+                        1,
+                    )
+                crop = pixels[275:535, :360].copy()
+                cv2.putText(crop, f"{f['timestamp_sec']:.3f}", (4, 15), 0, 0.4, (0, 0, 255), 1)
+                panels.append(crop)
+                path = out / "review-evidence" / f"{f['frame_index']:05d}.jpg"
+                imwrite(path, pixels)
+                evidence.append(str(path.relative_to(ROOT)))
+            while panels and len(panels) % 3:
+                panels.append(np.zeros_like(panels[0]))
+            if panels:
+                imwrite(
+                    out / f"review-target-{n + 1}.jpg",
+                    np.vstack([np.hstack(panels[i : i + 3]) for i in range(0, len(panels), 3)]),
+                )
+            records.append(
+                {
+                    "target": action,
+                    "evaluation_only": True,
+                    "sampled_pose_frames": len(selected),
+                    "minimum_cashier_wrist_distance_widths": min(
+                        [d["distance_widths"] for d in known], default=None
+                    ),
+                    "nearest_wrist_per_frame": distances,
+                    "cash_wrist_observations": [
+                        x
+                        for x in result["cash_wrist_observations"]
+                        if action["start_sec"] - 1 <= x["timestamp_sec"] <= action["end_sec"] + 1
+                    ],
+                    "evidence_frames": evidence,
+                }
+            )
+        capture.release()
+        write(out / "miss-audit.json", records)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["prepare", "predict", "score"])
+    parser.add_argument("command", choices=["prepare", "predict", "score", "audit_misses"])
     globals()[parser.parse_args().command]()
